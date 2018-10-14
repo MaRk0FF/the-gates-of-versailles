@@ -1,4 +1,4 @@
-﻿####### Division Templates #######
+####### Division Templates #######
 division_template = { 
 	name = "Divisione di Fanteria" 
 	division_names_group = ITA_INF_01 
@@ -196,19 +196,6 @@ units = {
 	} 
 
 	### Gruppo d'Armata Est ###
-	## 2a Armata ##
-	# V Corpo d'Armata #
-	division = { # 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 9
-		} #  "9a Divisione Autotrasportabile 'Pasubio'" 
-		location = 11735 
-		division_template = "Divisione di Fanteria"	
-		start_experience_factor = 0.2 
-		start_equipment_factor = 0.7 
-	} 
-
 	# VI Corpo d'Armata #
 	division = { # 
 		division_name = {
@@ -231,17 +218,6 @@ units = {
 	} 
 
 	# Subordinate to Army
-	division = { # 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		} #  "2° Reggimento 'Piemonte Cavalleria'" 
-		location = 6626 
-		division_template = "Reggimento di Cavalleria" 
-		start_experience_factor = 0.2 
-		start_equipment_factor = 0.7 
-	}
-
 	## 6a Armata ##
 	# Corpo d'Armata Celere #
 	division = { # 
@@ -279,7 +255,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 20
 		} #  "20a Divisione di Fanteria 'Friuli'" 
-		location = 4159 
+		location = 9904 
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2 
 		start_equipment_factor = 0.7 
@@ -289,31 +265,63 @@ units = {
 			is_name_ordered = yes
 			name_order = 25
 		} #  "25a Divisione di Fanteria 'Bologna'" 
-		location = 10074 
+		location = 9904 
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2 
 		start_equipment_factor = 0.7 
 	} 
 
 	##### Commando Superiore Africa #####
-	# Subordinate to Theater #
 	division = { # 
-		name = "7a Divisione CC.NN. 'Cirene'" 
-		location = 1149 
-		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment 
-		start_experience_factor = 0.1 
-		start_equipment_factor = 0.5 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		} #  "5a Divisione Alpina 'Pusteria'" 
+		location = 12723 
+		division_template = "Divisione Alpina" 
+		start_experience_factor = 0.3 
+	} 
+	division = { # 
+		name = "4a Divisione CC.NN. '3 Gennaio'" 
+		location = 12723 
+		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.2 
+	} 
+
+	# Corpo d'Armata Libico #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		} #  "29a Divisione di Fanteria 'Piemonte'" 
+		location = 11014 
+		division_template = "Divisione di Fanteria"	
+		start_experience_factor = 0.2 
 	} 
 	division = { # 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
-		} #  "2a Divisione Coloniale 'Libia'" 
-		location = 1130 
+			name_order = 1
+		} #  "1a Divisione Coloniale 'Libia'" 
+		location = 2063 
 		division_template = "Divisione Coloniale" # Colonial militia, lower training and equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } } 
-		start_equipment_factor = 0.5 
-	}
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		} #  "101a Divisione Coloniale 'Somalia'" 
+		location = 2020 
+		division_template = "Divisione Coloniale" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } } 
+	} 
+	division = { # 
+		name = "6a Divisione CC.NN. 'Tevere'" 
+		location = 2063 
+		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.2 
+	} 
 
 
 	##### NAVAL UNITS #####
@@ -386,8 +394,8 @@ units = {
 
 	navy = { 
 		name = "Comando Navale Basso Tirreno" # Dipartimento Militare Marittimo 'Basso Tirreno'
-		base = 819 
-		location = 819 # Naples, Italy
+		base = 11833 
+		location = 11833 # Naples, Italy
 
 		# III Squadriglia Torpediniere
 		ship = { name = "RCT Generale Marcello Prestinari" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
@@ -403,8 +411,8 @@ units = {
 	} 
 	navy = { 
 		name = "II Gruppo Sommergibili"	
-		base = 819 
-		location = 819 # Naples, Italy
+		base = 11846 
+		location = 11846 # Naples, Italy
 
 		# XXI Squadriglia Sommergibili
 		ship = { name = "RSmg Jalea" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
@@ -420,25 +428,9 @@ units = {
 	} 
 
 	navy = { 
-		name = "Comando Navale Sardegna" # Comando Militare Marittimo 'Sardegna'
-		base = 6891 
-		location = 6891 # La Maddalena, Sardinia
-
-		# II Squadriglia Torpediniere
-		ship = { name = "RCT Generale Achille Papa" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
-		ship = { name = "RCT Generale Carlo Montanari" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
-		ship = { name = "RCT Generale Antonino Cascino" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
-		ship = { name = "RCT Generale Antonio Chinotto" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
-
-		# IX Squadriglia Torpediniere
-		ship = { name = "RCT Antonio Mosto" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
-		ship = { name = "RCT Ippolito Nievo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
-		ship = { name = "RCT Fratelli Cairoli" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
-	} 
-	navy = { 
 		name = "VII Gruppo Sommergibili" 
-		base = 6891 
-		location = 6891 # La Maddalena, Sardinia
+		base = 11833 
+		location = 11833 # La Maddalena, Sardinia
 
 		# LXXI Squadriglia Sommergibili
 		ship = { name = "RSmg Medusa" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
@@ -447,8 +439,8 @@ units = {
 
 	navy = { 
 		name = "Comando Navale Sicilia" # Comando Militare Marittimo 'Sicilia'
-		base = 4159 
-		location = 4159 # Messina, Sicily
+		base = 11751 
+		location = 11751 # Messina, Sicily
 
 		# I Squadriglia Torpediniere
 		ship = { name = "RCT Palestro" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
@@ -464,8 +456,8 @@ units = {
 	} 
 	navy = { 
 		name = "III Gruppo Sommergibili" 
-		base = 4159 
-		location = 4159 # Messina, Sicily
+		base = 11751 
+		location = 11751 # Messina, Sicily
 
 		# XXXI Squadriglia Sommergibili
 		ship = { name = "RSmg Vettor Pisani" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA } } } 
@@ -488,8 +480,8 @@ units = {
 
 	navy = { 
 		name = "Comando Navale Ionio e Basso Adriatico" # Dipartimento Militare Marittimo 'Ionio e Basso Adriatico' / I Squadra
-		base = 11837 
-		location = 11837 # Taranto, Italy
+		base = 925 
+		location = 925 # Taranto, Italy
 
 		# V Divisione Corazzate
 		ship = { name = "RN Caio Duilio" definition = battleship equipment = { battleship_1 = { amount = 1 owner = ITA } } } 
@@ -557,8 +549,8 @@ units = {
 	} 
 	navy = { 
 		name = "IV Gruppo Sommergibili"	
-		base = 11837 
-		location = 11837 # Taranto, Italy
+		base = 925 
+		location = 925 # Taranto, Italy
 
 		# XLI Squadriglia Sommergibili
 		ship = { name = "RSmg Balilla" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA } } } 
@@ -597,8 +589,8 @@ units = {
 	### AFRICA ###
 	navy = { 
 		name = "Comando Navale Libia" 
-		base = 1130 
-		location = 1130 # Tobruk, Libya
+		base = 10007 
+		location = 10007 # Tobruk, Libya
 
 		# I Squadriglia Cacciatorpediniere
 		ship = { name = "RCT Aquilone" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } } 
@@ -606,22 +598,11 @@ units = {
 		ship = { name = "RCT Nembo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } } 
 		ship = { name = "RCT Turbine" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } } 
 	} 
-	navy = { 
-		name = "V Gruppo Sommergibili" 
-		base = 1130 
-		location = 1130 # Tobruk, Libya
-
-		# LI Squadriglia Sommergibili
-		ship = { name = "RSmg Delfino" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } } 
-		ship = { name = "RSmg Narvalo" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } } 
-		ship = { name = "RSmg Squalo" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } } 
-		ship = { name = "RSmg Tricheco" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } } 
-	} 
 
 	navy = { 
 		name = "Comando Navale Mar Rosso" 
-		base = 12766 
-		location = 12766 # Massawa, Eritrea
+		base = 782 
+		location = 782 # Massawa, Eritrea
 
 		# III Squadriglia Cacciatorpediniere
 		ship = { name = "RCT Francesco Nullo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
@@ -640,8 +621,8 @@ units = {
 	} 
 	navy = { 
 		name = "VIII Gruppo Sommergibili" 
-		base = 12766 
-		location = 12766 # Massawa, Eritrea
+		base = 11584 
+		location = 11584 # Massawa, Eritrea
 
 		# LXXXI Squadriglia Sommergibili
 		ship = { name = "RSmg Luigi Settembrini" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Bandiera Class" } } } 
