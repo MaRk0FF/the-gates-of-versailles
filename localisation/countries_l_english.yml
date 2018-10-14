@@ -51,6 +51,19 @@
  FRA_democratic_ADJ:0 "French"
  FRA_neutrality_ADJ:0 "French"
  FRA_communism_ADJ:0 "French"
+ 
+ AUS_fascism:0 "Austrian Reich"
+ AUS_fascism_DEF:0 "the Austrian Reich"
+ AUS_neutrality:0 "Hapsburg Austria"
+ AUS_neutrality_DEF:0 "Hapsburg Austria"
+ AUS_democratic:0 "Republic of Austria"
+ AUS_democratic_DEF:0 "the Republic of Austria"
+ AUS_communism:0 "Radical Austria"
+ AUS_communism_DEF:0 "Radical Austrian"
+ AUS_fascism_ADJ:0 "Austrian"
+ AUS_neutrality_ADJ:0 "Austrian"
+ AUS_democratic_ADJ:0 "Austrian"
+ AUS_communism_ADJ:0 "Austrian"
 ###### END
  
  ENG_fascism:0 "British Empire"
