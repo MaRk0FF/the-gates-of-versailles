@@ -23,9 +23,9 @@
  fiscal_liberalism:0 "Fiscal Liberalism"
  fiscal_liberalism_desc:0 "Fiscal liberals believe that businesses need to be regulated to prevent harm to the enviroment and large corporations."
  #### Soc. Dem. Ideology
- liberal:0 "Social Democratic"
- liberal_noun:0 "Social Democracy"
- liberal_desc:0 "Social Democracy"
+ social_democratic:0 "Social Democratic"
+ social_democratic_noun:0 "Social Democracy"
+ social_democratic_desc:0 "Social Democracy"
  social_democracy:0 "Social Democracy"
  social_democracy_desc:0 "Members of social democracy believe in economic and social interventions for promoting social justice through democratic ways."
  #### Rad. Soc. Ideology

@@ -347,6 +347,21 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_ideology_radical_socialist_group"
+		texturefile = "gfx/interface/ideologies/radical_socialist_group.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_ideology_social_democrat_group"
+		texturefile = "gfx/interface/ideologies/social_democrat_group.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_ideology_liberal_group"
+		texturefile = "gfx/interface/ideologies/liberal_group.dds"
+	}	
+
+	spriteType = {
 		name = "GFX_ideology_totalitarian_group"
 		texturefile = "gfx/interface/ideologies/totalitarian_group.dds"
 	}	
