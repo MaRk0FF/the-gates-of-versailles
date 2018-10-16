@@ -163,7 +163,9 @@ set_politics = {
 	elections_allowed = no
 }
 
-
+create_faction = pact_rome
+add_to_faction = ITA
+add_to_faction = AUS
 
 
 create_country_leader = {
