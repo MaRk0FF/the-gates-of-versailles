@@ -30,14 +30,14 @@ GER = {
 	color = rgb { 100 100 100 }
 	color_ui = rgb { 100 100 100 }
 }
+SOV = {
+	color = rgb { 3 65 6 }
+	color_ui = rgb { 2 85 6 }
+}
 ######## END
 ENG = {
 	color = rgb { 201 56 93 }
 	color_ui = rgb { 255 73 121 }
-}
-SOV = {
-	color = rgb { 125 13 24 }
-	color_ui = rgb { 163 17 31 }
 }
 SWE = {
 	color = rgb { 36 132 247 }
