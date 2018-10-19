@@ -36,7 +36,15 @@ set_politics = {
 
 set_convoys = 0
 
-
+create_country_leader = {
+	name = "Eduard Dietl"
+	desc = "POLITICS_EDUARD_DIETL_DESC"
+	picture = "Portrait_Bavaria_Eduard_Dietl.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
 
 
 
