@@ -36,6 +36,15 @@ set_politics = {
 
 set_convoys = 0
 
+create_country_leader = {
+	name = "Heinrich Trettner"
+	desc = "POLITICS_HEINRICH_TRETTNER_DESC"
+	picture = "Portrait_Westphalia_Heinrich_Trettner.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+	}
+}
 
 
 
