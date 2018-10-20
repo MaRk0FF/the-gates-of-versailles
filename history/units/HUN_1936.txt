@@ -1,4 +1,4 @@
-﻿division_template = {
+division_template = {
 	name = "Gyalogdandár"				# Infantry Brigade
 
 	division_names_group = HUN_INF_02
@@ -27,7 +27,26 @@ division_template = {
 	support = {
 		recon = { x = 0 y = 0 }   # recon bn of tankettes, ACs, mot inf
 	}
+
+division_template = { 
+	name = "Hegyi Részleg" 
+	division_names_group = ITA_MNT_01 
+
+	regiments = { 
+		mountaineers = { x = 0 y = 0 } 												# (elite) Alpini Regiment
+		mountaineers = { x = 0 y = 1 } 
+		mountaineers = { x = 0 y = 2 } 
+		mountaineers = { x = 1 y = 0 } 
+		mountaineers = { x = 1 y = 1 } 
+		mountaineers = { x = 1 y = 2 } 
+	} 
+	support = { 
+		artillery = { x = 0 y = 0 } 
+	} 
+
+	priority = 2 
 }
+
 
 units = {
 	##### Honvédelmi Fõparancsnokság #####
@@ -346,6 +365,34 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 
+	}
+
+	division= {	
+		name = "Hegyi Részleg" 
+		location = 6571
+		division_template = "Hegyi Részleg"
+		start_experience_factor = 0.2
+	}
+
+	division= {	
+		name = "Hegyi Részleg" 
+		location = 727
+		division_template = "Hegyi Részleg"
+		start_experience_factor = 0.2
+	}
+
+	division= {	
+		name = "Hegyi Részleg" 
+		location = 690
+		division_template = "Hegyi Részleg"
+		start_experience_factor = 0.2
+	}
+
+	division= {	
+		name = "Hegyi Részleg" 
+		location = 11536
+		division_template = "Hegyi Részleg"
+		start_experience_factor = 0.2
 	}
 }
 
