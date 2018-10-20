@@ -524,6 +524,7 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
+}
 
 ##### Wojska Lotnicze i Obrony Powietrzne #####
 air_wings = {
