@@ -8,9 +8,10 @@ state={
 		owner = AUS
 		add_core_of = AUS
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
+			industrial_complex = 1
 			11735 = {
-				naval_base = 5
+				naval_base = 6
 
 			}
 
