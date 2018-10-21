@@ -67,8 +67,8 @@ set_stability = 0.75
 
 create_country_leader = {
 	name = "Queen Wilhelmina"
-	desc = "POLITICS_DIRK_JAN_DE_GEER_DESC"
-	picture = "Portrait_Netherlands_Wilhemina.dds"
+	desc = "POLITICS_QUEEN_WILHELMINA_DESC"
+	picture = "Portrait_Netherlands_Queen_Wilhelmina.dds"
 	expire = "1965.1.1"
 	ideology = oligarchism
 	traits = {
