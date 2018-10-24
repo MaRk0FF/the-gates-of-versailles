@@ -1,4 +1,4 @@
-﻿capital = 50
+capital = 50
 
 OOB = "WUR_1936"
 
@@ -35,6 +35,22 @@ set_politics = {
 }
 
 set_convoys = 0
+
+create_country_leader = {
+	name = "Reinhold Maier"
+	desc = "POLITICS_NAPOLEON_VI_DESC"
+	picture = "Portrait_Wurttemburg_Reinhold_Maier.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
+
+
+
+
+
 
 
 
