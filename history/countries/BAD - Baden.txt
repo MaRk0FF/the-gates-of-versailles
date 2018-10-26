@@ -36,6 +36,16 @@ set_politics = {
 
 set_convoys = 0
 
+create_country_leader = {
+	name = "Gebhard Müller"
+	desc = "POLITICS_Gebhard_Muller_DESC"
+	picture = "Portrait_Baden_Gebhard_Muller.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+	}
+}
+
 
 
 
