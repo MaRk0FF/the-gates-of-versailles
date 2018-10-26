@@ -1,4 +1,4 @@
-division_template = {
+﻿division_template = {
 	name = "Dywizja Piechoty"		
 	division_names_group = POL_INF_01
 
@@ -255,7 +255,7 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
-
+}
 ##### Wojska Lotnicze i Obrony Powietrzne #####
 air_wings = {
 	10 = { 

@@ -1,4 +1,4 @@
-####### Division Templates #######
+﻿####### Division Templates #######
 division_template = { 
 	name = "Divisione di Fanteria" 
 	division_names_group = ITA_INF_01 
@@ -26,7 +26,7 @@ division_template = {
 		cavalry = { x = 1 y = 0 } 
 		cavalry = { x = 1 y = 1 } 
 	} 
-
+}
 division_template = { 
 	name = "Divisione Mella Montagna" 
 	division_names_group = ITA_MNT_01 
@@ -118,7 +118,7 @@ units = {
 		division_template = "Divisione Mella Montagna"
 		start_experience_factor = 0.2
 	}
-
+}
 
 	##### Naval OOB #####
 	navy = {				
