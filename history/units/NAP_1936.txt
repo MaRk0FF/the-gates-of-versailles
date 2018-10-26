@@ -154,21 +154,17 @@ units = {
 		ship = { name = "SAS Palermo" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NAP } } }
 	}
 
-	navy = { 
-		name = "Comando Navale Sicilia" # Comando Militare Marittimo 'Sicilia'
+	navy = {				
+		name = "Comando Navale Sicilia"			
 		base = 4159 
-		location = 4159 # Messina, Sicily
-
-		# I Squadriglia Torpediniere
-		ship = { name = "RCT Palestro" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
-		ship = { name = "RCT Confienza" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
-		ship = { name = "RCT San Martino" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
-		ship = { name = "RCT Solferino" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
-
-		# V Squadriglia Torpediniere
-		ship = { name = "RCT Giuseppe La Farina" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
-		ship = { name = "RCT Simone Schiaffino" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
-		ship = { name = "RCT Giuseppe Dezza" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
-		ship = { name = "RCT Giuseppe Cesare Abba" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
-	} 	
+		location = 4159 # Messina Sicily
+		ship = { name = "RCT Palestro" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NAP } } }
+		ship = { name = "RCT Confienza" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NAP } } }
+		ship = { name = "RCT San Martino" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NAP } } }
+		ship = { name = "RCT Solferino" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NAP } } }
+		ship = { name = "RCT Giuseppe La Farina" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NAP } } }
+		ship = { name = "RCT Simone Schiaffino" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NAP } } }
+		ship = { name = "RCT Giuseppe Dezza" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NAP } } }
+		ship = { name = "RCT Giuseppe Cesare Abba" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NAP } } }
+	}
 
