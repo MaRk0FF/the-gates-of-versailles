@@ -1,0 +1,1089 @@
+focus_tree = { 
+id = austria
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = AUS 
+} 
+} 
+#Focus for The Ultimate Weapon
+focus = { 
+id = AUS_theultimateweapon
+icon = GFX_focus_wonderweapons
+x = 12
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_extraresearchslot } 
+prerequisite = { focus = AUS_navalbombers } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_tech_bonus = {
+ bonus = 0.5 
+uses = 1
+category = nuclear
+}
+ } 
+
+ } 
+
+#Focus for Rocket Technlogy
+focus = { 
+id = AUS_rockettechnlogy
+icon = GFX_focus_rocketry
+x = 10
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_extraresearchslot } 
+prerequisite = { focus = AUS_navalbombers } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_tech_bonus = {
+ bonus = 0.5 
+uses = 2 
+category = rocketry
+}
+ } 
+
+ } 
+
+#Focus for Extra Research Slot
+focus = { 
+id = AUS_extraresearchslot
+icon = GFX_focus_research2
+x = 4
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_austrianwareconomy } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_research_slot = 1
+ } 
+
+ } 
+
+#Focus for Austrian War Economy
+focus = { 
+id = AUS_austrianwareconomy
+icon = GFX_goal_generic_construct_mil_factory
+x = 4
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_italiancooperation } 
+prerequisite = { focus = AUS_secretmilitarization } 
+prerequisite = { focus = AUS_expansionofmining } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+4 = {add_building_construction = { 
+type = arms_factory
+level = 3
+instant_build = yes }add_extra_state_shared_building_slots= 3
+}152 = {add_building_construction = { 
+type = arms_factory
+level = 3
+instant_build = yes }add_extra_state_shared_building_slots= 3}
+ } 
+
+ } 
+
+#Focus for Expansion of Mining
+focus = { 
+id = AUS_expansionofmining
+icon = GFX_goal_generic_construction2
+x = 6
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_syntheticrefineries } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_resource= { 
+type = rubber
+amount = 10
+state = 152
+}add_resource= { 
+type = rubber
+amount = 16
+state = 153
+}add_resource= { 
+type = steel
+amount = 20
+state = 152 
+}add_resource= { 
+type = steel
+amount = 32
+state = 153 
+}
+ } 
+
+ } 
+
+#Focus for Synthetic Refineries
+focus = { 
+id = AUS_syntheticrefineries
+icon = GFX_goal_generic_oil_refinery
+x = 6
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_autarky } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_tech_bonus = {
+ bonus = 0.5 
+uses = 2 
+category = synth_resources
+}
+ } 
+
+ } 
+
+#Focus for Italian Cooperation
+focus = { 
+id = AUS_italiancooperation
+icon = GFX_goal_unknown
+x = 2
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_volkswagen } 
+ai_will_do = { 
+ factor = 1
+ } 
+bypass = { 
+has_war_with = ITA
+ } 
+completion_reward = { 
+ITA = {country_event = {
+days = 1 
+id = austria.1 
+}}
+ } 
+
+ } 
+
+#Focus for Autobahn
+focus = { 
+id = AUS_autobahn
+icon = GFX_goal_generic_construct_infrastructure
+x = 4
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_autarky } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+every_owned_state = {add_building_construction = { 
+type = infrastructure
+level = 3
+instant_build = yes }}
+ } 
+
+ } 
+
+#Focus for Volkswagen
+focus = { 
+id = AUS_volkswagen
+icon = GFX_goal_unknown
+x = 2
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_autarky } 
+ai_will_do = { 
+ factor = 20
+ } 
+completion_reward = { 
+random_owned_controlled_state = {add_building_construction = { 
+type = industrial_complex
+level = 2 
+instant_build = yes }add_extra_state_shared_building_slots = 2 }random_owned_controlled_state = {add_building_construction = { 
+type = industrial_complex
+level = 2 
+instant_build = yes }add_extra_state_shared_building_slots = 2 }
+ } 
+
+ } 
+
+#Focus for Threaten Lichtenstein
+focus = { 
+id = AUS_threatenlichtenstein
+icon = GFX_goal_poland_goal
+x = 26
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_remilitarizetyrol } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+MAL = {country_event = {
+days = 1 
+id = austria.3
+}}
+ } 
+
+ } 
+
+#Focus for Legacy of Austria
+focus = { 
+id = AUS_legacyofaustria
+icon = GFX_goal_unknown
+x = 23
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_threatenlichtenstein } 
+mutually_exclusive = { focus = AUS_agermandream } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_ideas = AUS_legacy
+ } 
+
+ } 
+
+#Focus for Remilitarize Tyrol
+focus = { 
+id = AUS_remilitarizetyrol
+icon = GFX_goal_rhineland
+x = 26
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_theroadtoglory } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+39 = {set_demilitarized_zone  = no}153 = {set_demilitarized_zone  = no}
+ } 
+
+ } 
+
+#Focus for The Road to Glory
+focus = { 
+id = AUS_theroadtoglory
+icon = GFX_goal_generic_position_armies
+x = 26
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_political_power = 100
+ } 
+
+ } 
+
+#Focus for Naval Bombers
+focus = { 
+id = AUS_navalbombers
+icon = GFX_goal_generic_navy_doctrines_tactics
+x = 18
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_strategicaireffort focus = AUS_tacticalaireffort } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 0.5
+				uses = 2
+				category = naval_bomber
+			}
+ } 
+
+ } 
+
+#Focus for Tactical Air Effort
+focus = { 
+id = AUS_tacticalaireffort
+icon = GFX_goal_generic_air_bomber
+x = 19
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_fighterproduction } 
+mutually_exclusive = { focus = AUS_strategicaireffort } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_tech_bonus = {
+				name = op_dest_bonus
+				bonus = 0.5
+				uses = 2
+				category = battlefield_support_tree
+			}
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.5
+				uses = 1
+				category = tactical_bomber
+				category = cas_bomber			
+			}
+ } 
+
+ } 
+
+#Focus for Strategic Air Effort
+focus = { 
+id = AUS_strategicaireffort
+icon = GFX_goal_generic_air_fighter2
+x = 17
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_fighterproduction } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_tech_bonus = {
+				name = strat_dest_bonus
+				bonus = 0.5
+				uses = 2
+				category = battlefield_support_tree
+			}
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.5
+				uses = 1
+				category = cat_strategic_bomber
+			}
+ } 
+
+ } 
+
+#Focus for Fighter Production
+focus = { 
+id = AUS_fighterproduction
+icon = GFX_goal_generic_air_fighter2
+x = 18
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_austrianskies } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_ideas = AUS_fighter_productionadd_tech_bonus = {
+ bonus = 0.5 
+uses = 2 
+technology = early_fighter
+technology = fighter1
+technology = fighter2
+technology = fighter3
+}
+ } 
+
+ } 
+
+#Focus for Austrian Skies
+focus = { 
+id = AUS_austrianskies
+icon = GFX_focus_YUG_ikarus
+x = 18
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+air_experience= 25
+ } 
+
+ } 
+
+#Focus for A German Dream
+focus = { 
+id = AUS_agermandream
+icon = GFX_goal_unknown
+x = 29
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_threatenlichtenstein } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_ideas = AUS_nationalism
+ } 
+
+ } 
+
+#Focus for Fall of Slovakia
+focus = { 
+id = AUS_fallofslovakia
+icon = GFX_goal_generic_more_territorial_claims
+x = 24
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_demandczechsubmission } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+CZE = {country_event = {
+days = 1 
+id = austria.8 
+}}
+ } 
+
+ } 
+
+#Focus for Pull Serbia In
+focus = { 
+id = AUS_pullserbiain
+icon = GFX_goal_unknown
+x = 22
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_demandcroationsubmission } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+YUG = {country_event = {
+days = 1 
+id = austria.7
+}}
+ } 
+
+ } 
+
+#Focus for Demand Czech Submission
+focus = { 
+id = AUS_demandczechsubmission
+icon = GFX_goal_generic_occupy_start_war
+x = 24
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_fateofhungary } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+CZE = {country_event = {
+days = 1 
+id = austria.6
+}}
+ } 
+
+ } 
+
+#Focus for Demand Croation Submission
+focus = { 
+id = AUS_demandcroationsubmission
+icon = GFX_goal_generic_major_war
+x = 22
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_fateofhungary } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+YUG = {country_event = {
+days = 1 
+id = austria.5
+}}
+ } 
+
+ } 
+
+#Focus for Secret Militarization
+focus = { 
+id = AUS_secretmilitarization
+icon = GFX_goal_generic_military_sphere
+x = 4
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_autobahn } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_ideas = AUS_secret_militarization
+ } 
+
+ } 
+
+#Focus for Autarky
+focus = { 
+id = AUS_autarky
+icon = GFX_goal_unknown
+x = 4
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 10
+ } 
+completion_reward = { 
+add_tech_bonus = {
+ bonus = 0.5 
+uses = 2 
+category = excavation_tech 
+}
+ } 
+
+ } 
+
+#Focus for Army Innovations
+focus = { 
+id = AUS_armyinnovations
+icon = GFX_goal_unknown
+x = 11
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_tech_bonus = {
+ bonus = 0.5 
+uses = 2 
+category = land_doctrine
+}add_tech_bonus = {
+ bonus = 0.5 
+uses = 2
+category = infantry_weapons
+category = artillery
+
+}army_experience= 10
+ } 
+
+ } 
+
+#Focus for New Austrian Man
+focus = { 
+id = AUS_newaustrianman
+icon = GFX_goal_generic_small_arms
+x = 11
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_armyinnovations } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_ideas = AUS_new_austrian_man
+ } 
+
+ } 
+
+#Focus for Treaty with Britain
+focus = { 
+id = AUS_treatywithbritain
+icon = GFX_goal_generic_scientific_exchange
+x = 9
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_armyinnovations } 
+ai_will_do = { 
+ factor = 1
+ } 
+bypass = { 
+has_war_with = ENG
+ } 
+completion_reward = { 
+ENG = {country_event = {
+days = 1 
+id = austria.2 
+}}
+ } 
+
+ } 
+
+#Focus for Mechanized Force
+focus = { 
+id = AUS_mechanizedforce
+icon = GFX_goal_generic_army_motorized
+x = 13
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_armyinnovations } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_tech_bonus = {
+ bonus = 0.5 
+uses = 2 
+category = motorized_equipment
+}
+ } 
+
+ } 
+
+#Focus for Special Forces
+focus = { 
+id = AUS_specialforces
+icon = GFX_goal_generic_special_forces
+x = 11
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_mechanizedforce } 
+prerequisite = { focus = AUS_treatywithbritain } 
+prerequisite = { focus = AUS_newaustrianman } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_ideas = AUS_special_forcesadd_tech_bonus = {
+ bonus = 0.5 
+uses = 2 
+technology = paratroopers
+technology = paratroopers2
+technology = marines
+technology = marines2
+technology = tech_mountaineers
+technology = tech_mountaineers2
+}
+ } 
+
+ } 
+
+#Focus for Army Innovations II
+focus = { 
+id = AUS_armyinnovationsii
+icon = GFX_goal_unknown
+x = 11
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_specialforces } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_tech_bonus = {
+ bonus = 0.5 
+uses = 2 
+category = land_doctrine
+}add_tech_bonus = {
+ bonus = 0.5 
+uses = 2 
+category = armor
+}army_experience= 20
+ } 
+
+ } 
+
+#Focus for Fate of Hungary
+focus = { 
+id = AUS_fateofhungary
+icon = GFX_goal_generic_political_pressure
+x = 23
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_legacyofaustria } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+HUN = {country_event = {
+days = 1 
+id = austria.4
+}}
+ } 
+
+ } 
+
+#Focus for Demand Galicia
+focus = { 
+id = AUS_demandgalicia
+icon = GFX_goal_generic_military_deal
+x = 23
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_pullserbiain } 
+prerequisite = { focus = AUS_fallofslovakia } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+POL = {country_event = {
+days = 1 
+id = austria.9
+}}
+ } 
+
+ } 
+
+#Focus for Austria Victorious!
+focus = { 
+id = AUS_austriavictorious
+icon = GFX_goal_unknown
+x = 23
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_demandgalicia } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+set_cosmetic_tag  = AUS_empire
+ } 
+
+ } 
+
+#Focus for Subjugate Romania
+focus = { 
+id = AUS_subjugateromania
+icon = GFX_goal_unknown
+x = 22
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_austriavictorious } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+create_wargoal = { 
+type = puppet_wargoal
+target = ROM
+}
+ } 
+
+ } 
+
+#Focus for Claims to the Levant
+focus = { 
+id = AUS_claimstothelevant
+icon = GFX_goal_generic_position_armies
+x = 24
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_austriavictorious } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_state_claim = 454add_state_claim = 455add_state_claim = 453
+ } 
+
+ } 
+
+#Focus for Demand Bavarian Soverignty
+focus = { 
+id = AUS_demandbavariansoverignty
+icon = GFX_goal_generic_occupy_states_ongoing_war
+x = 29
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_agermandream } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+AUS = {country_event = {
+days = 1 
+id = austria.10
+}}
+ } 
+
+ } 
+
+#Focus for A Deal with France
+focus = { 
+id = AUS_adealwithfrance
+icon = GFX_goal_unknown
+x = 28
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_demandbavariansoverignty } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+FRA = {country_event = {
+days = 1 
+id = austria.11
+}}
+ } 
+
+ } 
+
+#Focus for Absorb Württemberg
+focus = { 
+id = AUS_absorbwrttemberg
+icon = GFX_goal_generic_alliance
+x = 30
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_demandbavariansoverignty } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+AUS = {country_event = {
+days = 1 
+id = austria.12 
+}}
+ } 
+
+ } 
+
+#Focus for Attack France
+focus = { 
+id = AUS_attackfrance
+icon = GFX_goal_generic_major_war
+x = 29
+y = 9
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_attackdenmark } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+declare_war_on= { 
+target = FRA
+type = puppet_wargoal
+}
+ } 
+
+ } 
+
+#Focus for Dismantle Communism!
+focus = { 
+id = AUS_dismantlecommunism
+icon = GFX_goal_generic_war_with_comintern
+x = 29
+y = 6
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_absorbwrttemberg } 
+prerequisite = { focus = AUS_adealwithfrance } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+declare_war_on= { 
+target = GER
+type = annex_everything 
+}
+ } 
+
+ } 
+
+#Focus for One Germany
+focus = { 
+id = AUS_onegermany
+icon = GFX_goal_generic_demand_territory
+x = 29
+y = 7
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_dismantlecommunism } 
+ai_will_do = { 
+ factor = 1
+ } 
+available = { 
+GER = {exists = no}64 = {is_owned_by = AUS}
+ } 
+completion_reward = { 
+set_cosmetic_tag  = AUS_germany
+ } 
+
+ } 
+
+#Focus for Ban Fascism
+focus = { 
+id = AUS_banfascism
+icon = GFX_goal_generic_forceful_treaty
+x = 48
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_opposefascism } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_ideas = AUS_curtail_fascism
+ } 
+
+ } 
+
+#Focus for Submarine Culture
+focus = { 
+id = AUS_submarineculture
+icon = GFX_goal_generic_navy_submarine
+x = 33
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_navalrearmanent } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_tech_bonus = {
+ bonus = 0.5 
+uses = 2 
+technology = early_submarine
+technology = basic_submarine
+technology = improved_submarine
+technology = advanced_submarine
+}
+ } 
+
+ } 
+
+#Focus for Naval Rearmanent
+focus = { 
+id = AUS_navalrearmanent
+icon = GFX_goal_generic_construct_naval_dockyard
+x = 35
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+59 = {add_extra_state_shared_building_slots= 2 add_building_construction = { 
+type = dockyard
+level = 2 
+instant_build = yes }}5 = {add_extra_state_shared_building_slots= 2 
+add_building_construction = { 
+type = dockyard
+level = 2 
+instant_build = yes }}
+ } 
+
+ } 
+
+#Focus for Attack Denmark
+focus = { 
+id = AUS_attackdenmark
+icon = GFX_goal_unknown
+x = 29
+y = 8
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_onegermany } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+declare_war_on= { 
+target = DEN
+type = puppet_wargoal
+}
+ } 
+
+ } 
+
+#Focus for Oppose Fascism
+focus = { 
+id = AUS_opposefascism
+icon = GFX_focus_generic_anti_fascist_diplomacy
+x = 48
+y = 0
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = AUS_theroadtoglory } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+country_event = {
+days = 1 
+id = austria.13
+}
+ } 
+
+ } 
+
+#Focus for Rebuild Austria
+focus = { 
+id = AUS_rebuildaustria
+icon = GFX_goal_unknown
+x = 48
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_banfascism } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_ideas = AUS_rebuild_nation
+ } 
+
+ } 
+
+#Focus for Restore the Monarchy!
+focus = { 
+id = AUS_restorethemonarchy
+icon = GFX_goal_unknown
+x = 44
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = AUS_banfascism } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+country_event = {
+days = 1 
+id = austria.14
+}
+ } 
+
+ } 
+
+#End of focuses 
+ }

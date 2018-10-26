@@ -25,6 +25,10 @@ WIN = {
 	color = rgb { 1 118 167 }
 	color_ui = rgb { 1 118 167 }
 }
+IND = {
+	color = rgb { 192 49 49 }
+	color_ui = rgb { 234 91 91 }
+}
 ######## CHANGED VANILLA COLORS
 GER = {
 	color = rgb { 100 100 100 }
