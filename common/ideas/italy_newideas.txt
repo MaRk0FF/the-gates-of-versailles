@@ -1,0 +1,49 @@
+ideas = {
+	country = {
+		confused_government = {
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = generic_spy_political
+			
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.5 
+				political_advisor_cost_factor = 0.25 
+				trade_laws_cost_factor = 0.25 
+				mobilization_laws_cost_factor = 0.25 
+				economy_cost_factor = 0.25 
+			}
+		}
+		
+		novus_imperium_romanum = {
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = vittoria_mutilata
+			
+			modifier = {
+                war_support_factor = 0.10
+                army_core_attack_factor = 0.1
+				army_defence_factor = 0.1
+				conscription_factor = 0.1
+			}
+		}
+	}
+}

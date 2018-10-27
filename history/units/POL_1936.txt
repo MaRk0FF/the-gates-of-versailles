@@ -181,7 +181,7 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.3
 
-	}11286
+	}
 
 	division= {	# "30 Dywizja Piechoty"
 		division_name = {

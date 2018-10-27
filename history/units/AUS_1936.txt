@@ -21,7 +21,7 @@
 division_template = {
 	name = "Panzer-Division"
 
-	division_names_group = AUS_Arm_01
+	division_names_group = AUS_ARM_01
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }

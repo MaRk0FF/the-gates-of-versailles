@@ -1,4 +1,4 @@
-##############################################
+﻿##############################################
 # French Events - Gates to Versailles Edition#
 ##############################################
 
@@ -10,10 +10,15 @@ country_event = {
 	desc = france.35.d
 	picture = GFX_report_event_generic_riot
 	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 35
+	}
+	
 	trigger = {
 		tag = FRA
 		date > 1940.1.1
-		date < 1940.3.1
 		IND = { exists = no }
 	}
 	

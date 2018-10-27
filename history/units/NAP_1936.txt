@@ -118,7 +118,6 @@ units = {
 		division_template = "Divisione Mella Montagna"
 		start_experience_factor = 0.2
 	}
-}
 
 	##### Naval OOB #####
 	navy = {				
@@ -167,4 +166,4 @@ units = {
 		ship = { name = "RCT Giuseppe Dezza" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NAP } } }
 		ship = { name = "RCT Giuseppe Cesare Abba" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = NAP } } }
 	}
-
+}

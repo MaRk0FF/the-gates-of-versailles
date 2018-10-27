@@ -7,9 +7,15 @@ state={
 		owner = GER
 		buildings = {
 			infrastructure = 6
+			6282 = {
+				naval_base = 4
 
+			}
 		}
 		add_core_of = GER
+		victory_points = {
+			6282 1 
+		}
 		1939.1.1 = {
 			buildings = {
 				air_base = 8

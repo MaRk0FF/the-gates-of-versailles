@@ -15,9 +15,6 @@ state={
 		victory_points = {
 			3211 10 
 		}
-		victory_points = {
-			9498 15 
-		}
 		buildings = {
 			infrastructure = 8
 			arms_factory = 4
@@ -28,10 +25,6 @@ state={
 				naval_base = 10
 
 			}
-			9498 = {
-				naval_base = 5
-
-			}
 
 		}
 
@@ -40,7 +33,7 @@ state={
 	provinces={
 		68 391 3211 3314 8622 
 	}
-	manpower=4123000
+	manpower=371800
 	buildings_max_level_factor=1.000
 	state_category=metropolis
 }

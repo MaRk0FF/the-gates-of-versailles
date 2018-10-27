@@ -43,8 +43,6 @@ set_technology = {
 	fleet_in_being = 1
 }
 
-# DIPLOMACY / WAR 36
-	give_guarantee = ALB
 
 1939.1.1 = {
 
