@@ -1,6 +1,10 @@
 #reload countrycolors
 
 ######## GATES OF VERSAILLES NATIONS
+LIC = {
+	color = rgb { 0 0 128 }
+	color_ui = rgb { 0 0 128 }
+}
 BAD = {
 	color = rgb { 75 83 32 }
 	color_ui = rgb { 75 83 32 }
