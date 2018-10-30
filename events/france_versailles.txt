@@ -93,8 +93,8 @@ country_event = { #France lost the war of Independence
 	option = {
 		name = france.36.a
 		FRA = {
-		stability_factor = -0.05
-		war_support_factor = -0.10
+		add_stability = -0.05
+		add_War_support = -0.10
 		white_peace = IND
 		white_peace = SIA
 			IND = { transfer_state = 799 }
