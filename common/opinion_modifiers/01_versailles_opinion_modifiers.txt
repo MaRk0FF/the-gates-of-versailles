@@ -1,0 +1,14 @@
+#########################################################################
+# THE GATES OF VERSAILLES - OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+	#France
+	ENG_FRA_accusation_of_october_events = { value = -50 }
+}
