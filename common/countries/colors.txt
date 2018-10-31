@@ -58,6 +58,10 @@ POL = {
 	color = rgb { 224 103 123 }
 	color_ui = rgb { 224 103 123 }
 }
+QUE = {
+	color = rgb { 25 60 164 }
+	color_ui = rgb { 25 60 164 }
+}
 ######## END
 SWE = {
 	color = rgb { 36 132 247 }
