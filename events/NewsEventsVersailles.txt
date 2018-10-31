@@ -1,0 +1,51 @@
+###################################
+#News Events - Gates of Versailles#
+###################################
+
+add_namespace = news
+
+news_event = { #October Events in France
+	id = news.334
+	title = news.334.t
+	desc = news.334.desc
+	picture = GFX_news_event_france_october_events
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.333.a
+		trigger = {
+			TAG = FRA
+		}
+	}
+	option = {
+		name = news.333.b
+		trigger = {
+			is_in_faction_with = FRA
+			NOT = { TAG = FRA}
+		}
+	}
+	option = {
+		name = news.333.c
+		trigger = {
+			TAG = ENG
+		}
+	}
+	option = {
+		name = news.333.d
+		trigger = {
+			TAG = GER
+		}
+	}
+	option = {
+		name = news.333.e
+		trigger = {
+			NOT = { TAG = ENG }
+			NOT = { TAG = GER }
+			NOT = { TAG = FRA }
+			NOT = { is_in_faction_with = FRA }
+		}
+	}
+}
