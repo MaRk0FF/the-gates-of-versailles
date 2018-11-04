@@ -2,7 +2,8 @@ state={
 	id=778
 	name="STATE_778"
 	history={
-		owner = IRQ
+		owner = SAU
+		add_core_of = SAU
 		buildings = {
 			infrastructure = 3
 

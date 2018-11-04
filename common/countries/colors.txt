@@ -33,6 +33,18 @@ IND = {
 	color = rgb { 192 49 49 }
 	color_ui = rgb { 234 91 91 }
 }
+QUE = {
+	color = rgb { 25 60 164 }
+	color_ui = rgb { 25 60 164 }
+}
+TKM = {
+	color = rgb { 101 147 79 }
+	color_ui = rgb { 101 147 79 }
+}
+LEG = {
+	color = rgb { 31 96 149 }
+	color_ui = rgb { 31 96 149 }
+}
 ######## CHANGED VANILLA COLORS
 GER = {
 	color = rgb { 100 100 100 }
@@ -58,9 +70,13 @@ POL = {
 	color = rgb { 224 103 123 }
 	color_ui = rgb { 224 103 123 }
 }
-QUE = {
-	color = rgb { 25 60 164 }
-	color_ui = rgb { 25 60 164 }
+TUR = {
+	color = rgb { 169 17 1 }
+	color_ui = rgb { 169 17 1 }
+}
+SAU = {
+	color = rgb { 0 112 0 }
+	color_ui = rgb { 0 112 0 }
 }
 ######## END
 SWE = {
@@ -111,10 +127,6 @@ YUG = {
 SWI = {
 	color = rgb { 224 5 5 }
 	color_ui = rgb { 193 81 81 }
-}
-TUR = {
-	color = rgb { 171 190 152 }
-	color_ui = rgb { 222 247 198 }
 }
 GRE = {
 	color = rgb { 93 181 227 }
@@ -263,10 +275,6 @@ PRU = {
 SAF = {
 	color = rgb { 152 130 191 }
 	color_ui = rgb { 198 169 248 }
-}
-SAU = {
-	color = rgb { 171 190 152 }
-	color_ui = rgb { 222 247 198 }
 }
 SIA = {
 	color = rgb { 171 190 152 }
