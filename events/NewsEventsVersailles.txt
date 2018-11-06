@@ -49,3 +49,61 @@ news_event = { #October Events in France
 		}
 	}
 }
+
+news_event = { #Mussolini Assassinated
+	id = news.335
+	title = news.335.t
+	desc = news.335.desc
+	picture = GFX_news_event_generic_funeral
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.335.a
+		trigger = {
+			TAG = ITA
+		}
+	}
+	option = {
+		name = news.335.b
+		trigger = {
+			TAG = FRA
+		}
+	}
+	option = {
+		name = news.335.c
+		trigger = {
+			TAG = AUS
+		}
+	}
+	option = {
+		name = news.335.d
+		trigger = {
+			TAG = ENG
+		}
+	}
+	option = {
+		name = news.335.e
+		trigger = {
+			TAG = GER
+		}
+	}
+	option = {
+		name = news.335.f
+		trigger = {
+			is_in_faction_with = FRA 
+		}
+	}
+	option = {
+		name = news.335.g
+		trigger = {
+			NOT = { TAG = AUS }
+			NOT = { TAG = ITA }
+			NOT = { TAG = GER }
+			NOT = { TAG = FRA }
+			NOT = { is_in_faction_with = AUS }
+		}
+	}
+}
