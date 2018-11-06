@@ -395,7 +395,8 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-add_ideas = AUS_fighter_productionadd_tech_bonus = {
+add_ideas = AUS_fighter_production
+add_tech_bonus = {
  bonus = 0.5 
 uses = 2 
 technology = early_fighter
@@ -605,6 +606,9 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
+set_rule = {
+    can_use_kamikaze_pilots = yes
+}
 add_ideas = AUS_new_austrian_man
  } 
 
@@ -671,7 +675,8 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-add_ideas = AUS_special_forcesadd_tech_bonus = {
+add_ideas = special_forces
+add_tech_bonus = {
  bonus = 0.5 
 uses = 2 
 technology = paratroopers
@@ -1123,7 +1128,11 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-add_ideas = AUS_national_destiny
+add_timed_idea = {
+    idea = AUS_national_destiny
+    days = 180
+}
+
  } 
 
  } 
