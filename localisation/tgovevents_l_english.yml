@@ -11,3 +11,17 @@ siam.1.t:0 "Indochina want help for the war"
 siam.1.d:0 "The leader of the Indochinese Union requests help from us to help in their war of independence. Even though there are communists, we can't let Europeans imperliasits having a foothold in our country or in the region. What should we do?"
 siam.1.a:0 "Siam will help them!"
 siam.1.b:0 "No way! we shouldn't take any risk..."
+#Italy Events#
+italy.17.t:0 "Mussolini Assassinated!"
+italy.17.d:0 "Today our leader Benito Mussolini was assassinated in Rome during a speech! Shots were fired at our Duce's bodyguards and himself he was shot in his lower abdomen by a Communist who was arrested later"
+italy.17.a:0 "Farwell our great leader!"
+#Italian News Events#
+news.335.t:0 "Mussolini Assassinated
+news.335.desc:0 "The Leader of the Italian Confederation, Benito Mussolini is dead. Reports came from Rome, Italy where the Duce was holding a speech about traitors in the government when a shot went out. Reports say many people fled the scene while screaming and crying. three people died Mussolini's two bodyguards and the Duce himself. The Italian nation is weakened without their leader who knows what will happen to them?"
+news.335.a:0 "We will miss our dear leader..."
+news.335.b:0 "Good we shall take advantage of the situation"
+news.335.c:0 "Farewell our friend Mussolini"
+news.335.d:0 "Good the Italians are useful to our master plan!"
+news.335.e:0 "Farewell Mussolini..."
+news.335.f:0 "They will crumble before us!"
+news.335.g:0 "They are in trouble..."
