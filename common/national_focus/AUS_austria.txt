@@ -456,7 +456,7 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-CZE = {country_event = {
+SLO = {country_event = {
 days = 1 
 id = austria.8 
 }}
@@ -519,7 +519,7 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-YUG = {country_event = {
+CRO = {country_event = {
 days = 1 
 id = austria.5
 }}
@@ -791,7 +791,7 @@ ai_will_do = {
  } 
 completion_reward = { 
 create_wargoal = { 
-type = puppet_wargoal
+type = puppet_wargoal_focus
 target = ROM
 }
  } 
@@ -811,7 +811,9 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-add_state_claim = 454add_state_claim = 455add_state_claim = 453
+	add_state_claim = 454
+	add_state_claim = 455
+	add_state_claim = 453
  } 
 
  } 
@@ -829,7 +831,7 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-AUS = {country_event = {
+BAV = {country_event = {
 days = 1 
 id = austria.10
 }}
@@ -845,6 +847,9 @@ x = 28
 y = 5
 cost = 10
 available_if_capitulated = yes 
+available = {
+	 	is_neighbor_of = BAD
+}
 prerequisite = { focus = AUS_demandbavariansoverignty } 
 ai_will_do = { 
  factor = 1
@@ -871,7 +876,7 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-AUS = {country_event = {
+WUR = {country_event = {
 days = 1 
 id = austria.12 
 }}
@@ -894,7 +899,7 @@ ai_will_do = {
 completion_reward = { 
 declare_war_on= { 
 target = FRA
-type = puppet_wargoal
+type = puppet_wargoal_focus
 }
  } 
 
@@ -956,7 +961,7 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-YUG = {country_event = {
+CRO = {country_event = {
 days = 1 
 id = austria.18 
 }}
@@ -977,7 +982,7 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-CZE = {country_event = {
+SLO = {country_event = {
 days = 1 
 id = austria.17
 }}
@@ -1089,7 +1094,7 @@ ai_will_do = {
 completion_reward = { 
 declare_war_on= { 
 target = DEN
-type = puppet_wargoal
+type = puppet_wargoal_focus
 }
  } 
 
@@ -1205,7 +1210,7 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-create_faction= 'AUS_carpathia_pact'
+create_faction= AUS_carpathia_pact
  } 
 
  } 
@@ -1320,7 +1325,7 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-YUG = {country_event = {
+BAV = {country_event = {
 days = 1 
 id = austria.20
 }}
@@ -1341,7 +1346,7 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-YUG = {country_event = {
+WUR = {country_event = {
 days = 1 
 id = austria.21 
 }}
@@ -1441,6 +1446,9 @@ y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = AUS_holdelections } 
+available = {
+	always = no
+}
 ai_will_do = { 
  factor = 1
  } 
@@ -1459,6 +1467,9 @@ y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = AUS_holdelections } 
+available = {
+	always = no
+}
 ai_will_do = { 
  factor = 1
  } 
@@ -1477,6 +1488,9 @@ y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = AUS_holdelections } 
+available = {
+	always = no
+}
 ai_will_do = { 
  factor = 1
  } 
@@ -1629,7 +1643,9 @@ navy_experience = 25
 736 = {add_extra_state_shared_building_slots= 2 add_building_construction = { 
 type = dockyard
 level = 2 
-instant_build = yes }add_ideas = AUS_navy}
+instant_build = yes }
+}
+add_ideas = AUS_navy
  } 
 
  } 
@@ -1646,7 +1662,9 @@ prerequisite = { focus = AUS_conservativevictory }
 ai_will_do = { 
  factor = 1
  } 
-
+	completion_reward = {
+		custom_effect_tooltip = AUS_conservative_tt
+	}
  } 
 
 #Focus for Individual Rights
@@ -1661,7 +1679,9 @@ prerequisite = { focus = AUS_righttoarms }
 ai_will_do = { 
  factor = 1
  } 
-
+	completion_reward = {
+		custom_effect_tooltip = AUS_conservative_tt
+	}
  } 
 
 #Focus for Austrian Patriotism
@@ -1676,7 +1696,12 @@ prerequisite = { focus = AUS_individualrights }
 ai_will_do = { 
  factor = 1
  } 
-
+	completion_reward = {
+		custom_effect_tooltip = AUS_conservative_tt
+		hidden_effect = {
+			set_country_flag = AUS_conservative_constitution 
+		}		
+	}
  } 
 
 #Focus for Social Welfare
@@ -1691,7 +1716,9 @@ prerequisite = { focus = AUS_liberalvictory }
 ai_will_do = { 
  factor = 1
  } 
-
+	completion_reward = {
+		custom_effect_tooltip = AUS_liberal_tt
+	}
  } 
 
 #Focus for Workers Rights
@@ -1706,7 +1733,9 @@ prerequisite = { focus = AUS_socialwelfare }
 ai_will_do = { 
  factor = 1
  } 
-
+	completion_reward = {
+		custom_effect_tooltip = AUS_liberal_tt
+	}
  } 
 
 #Focus for Social Equality
@@ -1721,9 +1750,13 @@ prerequisite = { focus = AUS_workersrights }
 ai_will_do = { 
  factor = 1
  } 
-
+	completion_reward = {
+		custom_effect_tooltip = AUS_liberal_tt
+		hidden_effect = {
+			set_country_flag = AUS_liberal_constitution 
+		}		
+	}
  } 
-
 #Focus for Free Healthcare
 focus = { 
 id = AUS_freehealthcare
@@ -1736,7 +1769,9 @@ prerequisite = { focus = AUS_socialdemocraticvictory }
 ai_will_do = { 
  factor = 1
  } 
-
+	completion_reward = {
+		custom_effect_tooltip = AUS_socdem_tt
+	}
  } 
 
 #Focus for Encourage Immigration
@@ -1751,7 +1786,9 @@ prerequisite = { focus = AUS_freehealthcare }
 ai_will_do = { 
  factor = 1
  } 
-
+	completion_reward = {
+		custom_effect_tooltip = AUS_socdem_tt
+	}
  } 
 
 #Focus for Progressive Taxes
@@ -1766,7 +1803,12 @@ prerequisite = { focus = AUS_encourageimmigration }
 ai_will_do = { 
  factor = 1
  } 
-
+	completion_reward = {
+		custom_effect_tooltip = AUS_socdem_tt
+		hidden_effect = {
+			set_country_flag = AUS_socdem_constitution 
+		}		
+	}
  } 
 
 #Focus for The Austrian Constitution
@@ -1784,7 +1826,7 @@ ai_will_do = {
 completion_reward = { 
 country_event = {
 days = 1 
-id = austria.22
+id = austria.23
 }
  } 
 
@@ -1800,6 +1842,7 @@ cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = AUS_theaustrianconstitution } 
 mutually_exclusive = { focus = AUS_jointhebritish } 
+mutually_exclusive = { focus = AUS_jointhecontinentalalliance } 
 ai_will_do = { 
  factor = 1
  } 
@@ -1819,15 +1862,14 @@ cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = AUS_theaustrianconstitution } 
 mutually_exclusive = { focus = AUS_jointhebritish } 
-mutually_exclusive = { focus = AUS_neutralstance } 
-mutually_exclusive = { focus = AUS_ } 
+mutually_exclusive = { focus = AUS_neutralstance }
 ai_will_do = { 
  factor = 1
  } 
 completion_reward = { 
-CHOOSE COUNTRY = {country_event = {
+FRA = {country_event = {
 days = 1 
-id = austria.24
+id = austria.25
 }}
  } 
 
@@ -1842,13 +1884,15 @@ y = 10
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = AUS_theaustrianconstitution } 
+mutually_exclusive = { focus = AUS_jointhecontinentalalliance } 
+mutually_exclusive = { focus = AUS_neutralstance }
 ai_will_do = { 
  factor = 1
  } 
 completion_reward = { 
 ENG = {country_event = {
 days = 1 
-id = austria.25 
+id = austria.24
 }}
  } 
 
