@@ -261,6 +261,9 @@ ideas = {
 			allowed = {
 				original_tag = AUS
 				always = no
+				NOT = {
+					has_war_with = ENG
+				}
 			}
 
 			allowed_civil_war = {

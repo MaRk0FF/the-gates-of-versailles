@@ -236,7 +236,7 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-MAL = {country_event = {
+LIC = {country_event = {
 days = 1 
 id = austria.3
 }}
@@ -434,6 +434,7 @@ y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = AUS_threatenlichtenstein } 
+mutually_exclusive = { focus = AUS_legacyofaustria }
 ai_will_do = { 
  factor = 1
  } 

@@ -433,7 +433,6 @@ country_event = {
 	AUS = {
 		country_event = { days = 1 id = austria.107 }
 		}
-	custom_effect_tooltip = GAME_OVER_TT
 	}
 	option = { # Refuse offer
 		name = austria.7.b
@@ -456,7 +455,7 @@ country_event = {
 	
 	option = {
 		name = austria.107.a
-		puppet = SER
+		puppet = YUG
 	}
 }
 
@@ -558,7 +557,6 @@ country_event = {
 	AUS = {
 		country_event = { days = 1 id = austria.109 }
 		}
-	custom_effect_tooltip = GAME_OVER_TT
 	}
 	option = { # Refuse offer
 		name = austria.9.b
@@ -581,10 +579,45 @@ country_event = {
 	
 	option = {
 		name = austria.109.a
-		AUS = {
+			if = {
+				limit = {
+					POL = {
+						owns_state = 88
+				}
+			}
 			transfer_state = 88
+		}
+			if = {
+				limit = {
+					POL = {
+						owns_state = 89
+				}
+			}
 			transfer_state = 89
+		}
+			if = {
+				limit = {
+					POL = {
+						owns_state = 91
+				}
+			}
 			transfer_state = 91
+		}
+			if = {
+				limit = {
+					POL = {
+						owns_state = 773
+				}
+			}
+			transfer_state = 773
+		}
+			if = {
+				limit = {
+					POL = {
+						owns_state = 80
+				}
+			}
+			transfer_state = 80
 		}
 	}
 }
@@ -848,52 +881,25 @@ country_event = {
 	option = { # yeet this from the nazis boys
 		name = austria.13.a
 		hidden_effect = {
-				set_politics = {
-					parties = {
-						democratic = { 
-							popularity = 18
-						}
-						
-						liberal = { 
-							popularity = 7
-						}
-						
-						social_democratic = { 
-							popularity = 11
-						}
-
-						fascism = {
-							popularity = 18
-						}
-						
-						communism = {
-							popularity = 11
-						}
-						
-						radical_socialist = {
-							popularity = 3
-						}
-						
-						neutrality = { 
-							popularity = 38
-						}
-					}
-					
-					ruling_party = neutrality
-				}
+				set_country_flag = AUS_civil_war
+				set_capital = 152
 				leave_faction = yes
-				start_civil_war = {
-				ruling_party = fascism
-				ideology = ROOT
-				size = 0.4
-				only_own_territory = no
-				capital = 4
-				states = { 
-					4  
+			start_civil_war = {
+				ruling_party = neutrality
+				ideology = fascism
+				size = 0.5
+				states = { 4 153 39 }
 			}
+			random_other_country = {
+				limit = {
+					original_tag = AUS
+					has_government = fascism
+				}
+				load_oob = "AUS_militia2"
+			}
+			load_oob = "AUS_militia1"
 		}
-}
-}
+	}
 }
 
 
