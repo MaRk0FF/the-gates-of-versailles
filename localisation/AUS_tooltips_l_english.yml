@@ -1,4 +1,5 @@
 ﻿l_english: 
- AUS_conservative_tt:0 "§MThis will affect the Austrian Constitution idea.§!"
- AUS_liberal_tt:0 "§MThis will affect the Austrian Constitution idea.§!"
- AUS_socdem_tt:0 "§MThis will affect the Austrian Constitution idea.§!"
+ AUS_conservative_tt:0 "§MThis will orient the Austrian Constitution towards conservatism.§!"
+ AUS_liberal_tt:0 "§MThis will orient the Austrian Constitution towards liberalism.§!"
+ AUS_socdem_tt:0 "§MThis will orient the Austrian Constitution towards social democracy.§!"
+ AUS_king_tt:0 "The King gets a new leader trait."
