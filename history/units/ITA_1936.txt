@@ -1,4 +1,4 @@
-﻿####### Division Templates #######
+####### Division Templates #######
 division_template = { 
 	name = "Divisione di Fanteria" 
 	division_names_group = ITA_INF_01 
@@ -202,7 +202,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		} #  "8a Divisione Motorizzata 'Po'" 
-		location = 628 
+		location = 6635 
 		division_template = "Divisione di Fanteria"	
 		start_experience_factor = 0.2 
 		start_equipment_factor = 0.7 
@@ -212,7 +212,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		} #  "3a Divisione Alpina 'Julia'" 
-		location = 628 
+		location = 9584 
 		division_template = "Divisione Alpina" 
 		start_experience_factor = 0.3 
 	} 
@@ -225,7 +225,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		} #  "1a Divisione Celere 'Eugenio di Savoia'" 
-		location = 11584 
+		location = 6635 
 		division_template = "Divisione Celere" 
 		start_experience_factor = 0.3 
 	} 
@@ -234,7 +234,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		} #  "2a Divisione Celere 'Emanuele Filiberto'" 
-		location = 11584 
+		location = 11587 
 		division_template = "Divisione Celere" 
 		start_experience_factor = 0.3 
 	} 
@@ -243,7 +243,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		} #  "3a Divisione Celere 'Principe Amedeo'" 
-		location = 11584 
+		location = 9584 
 		division_template = "Divisione Celere" 
 		start_experience_factor = 0.3 
 	} 
@@ -545,8 +545,8 @@ units = {
 	### EAGEAN SEA ###
 	navy = { 
 		name = "Comando Navale Mar Egeo" 
-		base = 10007 
-		location = 10007 # Rhodes, Greece
+		base = 6788 
+		location = 6788 # Genoa, Italy
 
 		# IV Squadriglia Cacciatorpediniere
 		ship = { name = "RCT Francesco Crispi" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA } } } 
@@ -558,8 +558,8 @@ units = {
 	} 
 	navy = { 
 		name = "VI Gruppo Sommergibili"	
-		base = 10007 
-		location = 10007 # Rhodes, Greece
+		base = 6788 
+		location = 6788 # Genoa, Italy
 
 		# LXI Squadriglia Sommergibili
 		ship = { name = "RSmg Sirena" definition = submarine equipment = { submarine_1 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
@@ -571,9 +571,9 @@ units = {
 
 	### AFRICA ###
 	navy = { 
-		name = "Comando Navale Libia" 
-		base = 10007 
-		location = 10007 # Tobruk, Libya
+		name = "Comando Navale Genoa" 
+		base = 6788
+		location = 6788 # Genoa, Italy
 
 		# I Squadriglia Cacciatorpediniere
 		ship = { name = "RCT Aquilone" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ITA version_name = "Navigatori Class" } } } 
@@ -839,3 +839,4 @@ instant_effect = {
 		} 
 	} 
 } 
+
