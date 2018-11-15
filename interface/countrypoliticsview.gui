@@ -90,7 +90,7 @@ guiTypes = {
 				spriteType = "GFX_pol_piechart_overlay_63x63"
 				position = { x= -2 y = 1s }
 			}
-		}		
+		}
 		
 		containerWindowType = {
 			name = "ruling_party_info"
@@ -106,6 +106,15 @@ guiTypes = {
 				maxWidth = 100
 				maxHeight = 20
 				format = center
+			}
+					
+			instantTextboxType = {
+				name = "ideology"
+				position = { x = 99999 y = 8 }
+				font = "hoi_18mbs"
+				text = "ideology"
+				maxWidth = 155
+				maxHeight = 20
 			}
 			
 			buttonType = {

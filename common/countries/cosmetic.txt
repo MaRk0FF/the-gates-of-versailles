@@ -3,6 +3,10 @@ AUS_empire = {
 	color = rgb { 166 166 166 }
     color_ui = rgb { 166 166 166 }
 }
+AUS_germany = {
+	color = rgb { 80 80 80 }
+    color_ui = rgb { 80 80 80 }
+}
 ### END
 MAL_UK = {
     color = rgb { 201 56 93 }

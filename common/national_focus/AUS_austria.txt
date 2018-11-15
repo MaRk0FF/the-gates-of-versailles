@@ -774,6 +774,34 @@ ai_will_do = {
  } 
 completion_reward = { 
 set_cosmetic_tag  = AUS_empire
+custom_effect_tooltip = AUS_integrate_tt
+	hidden_effect = {
+		country_event = {
+			id = austria.16
+			days = 100
+			random = 24
+		}
+		country_event = {
+			id = austria.17
+			days = 150
+			random = 24
+		}
+		country_event = {
+			id = austria.18
+			days = 200
+			random = 24
+		}
+		country_event = {
+			id = austria.19
+			days = 250
+			random = 24
+		}
+		country_event = {
+			id = austria.20
+			days = 300
+			random = 24
+		}
+	}
  } 
 
  } 

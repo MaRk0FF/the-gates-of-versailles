@@ -677,6 +677,13 @@ country_event = {
 				
 			}
 		}
+		hidden_effect = {
+			set_party_name = { 
+				ideology = neutrality 
+				long_name = AUS_monarchy_long
+				name = AUS_monarchy
+			}
+		}
 	}
 }
 
@@ -953,5 +960,172 @@ country_event = {
 		ai_chance = { factor = 50 }
 		add_ideas = neutrality_idea
 		
+	}
+}
+
+# Integrate Hungarians Event 16
+country_event = {
+	id = austria.16
+	title = austria.16.t
+	desc = austria.16.d
+	picture = GFX_report_event_soldiers_in_france
+	
+	is_triggered_only = yes
+		option = {
+		name = austria.16.a
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = HUN
+				}
+				add_core_of = AUS
+			}
+		}
+	}
+}
+
+# Integrate Czechs Event 17
+country_event = {
+	id = austria.17
+	title = austria.17.t
+	desc = austria.17.d
+	picture = GFX_report_event_soldiers_in_france
+	
+	is_triggered_only = yes
+		option = {
+		name = austria.17.a
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = CZE
+				}
+				add_core_of = AUS
+			}
+		}
+	}
+}
+
+# Integrate Slovakians Event 18
+country_event = {
+	id = austria.18
+	title = austria.18.t
+	desc = austria.18.d
+	picture = GFX_report_event_soldiers_in_france
+	
+	is_triggered_only = yes
+		option = {
+		name = austria.18.a
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = SLO
+				}
+				add_core_of = AUS
+			}
+		}
+	}
+}
+
+# Integrate Croatians Event 19
+country_event = {
+	id = austria.19
+	title = austria.19.t
+	desc = austria.19.d
+	picture = GFX_report_event_soldiers_in_france
+	
+	is_triggered_only = yes
+		option = {
+		name = austria.19.a
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = CRO
+				}
+				add_core_of = AUS
+			}
+		}
+	}
+}
+
+# Integrate Polish Event 20
+country_event = {
+	id = austria.20
+	title = austria.20.t
+	desc = austria.20.d
+	picture = GFX_report_event_soldiers_in_france
+	
+	is_triggered_only = yes
+		option = {
+		name = austria.20.a
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = POL
+				}
+				add_core_of = AUS
+			}
+		}
+	}
+}
+
+# Polish Puppet State Event 21
+country_event = {
+	id = austria.21
+	title = austria.21.t
+	desc = austria.21.d
+	picture = GFX_report_event_riot_police_poland
+	
+		trigger = {
+			has_full_control_of_state = 10
+		}
+		fire_only_once = yes
+		mean_time_to_happen = { days = 0 }
+		option = {
+		name = austria.21.a
+		hidden_effect = {
+			release_puppet = POL
+			AUS = {
+				if = {
+					limit = {
+						POL = {
+							owns_state = 88
+						}
+					}
+				transfer_state = 88
+				}
+				if = {
+					limit = {
+						POL = {
+							owns_state = 89
+						}
+					}
+				transfer_state = 89
+				}
+				if = {
+					limit = {
+						POL = {
+							owns_state = 91
+						}
+					}
+				transfer_state = 91
+				}
+				if = {
+					limit = {
+						POL = {
+							owns_state = 80
+						}
+					}
+				transfer_state = 80
+				}
+				if = {
+					limit = {
+						POL = {
+							owns_state = 773
+						}
+					}
+				transfer_state = 773
+				}
+			}
+		}
 	}
 }
