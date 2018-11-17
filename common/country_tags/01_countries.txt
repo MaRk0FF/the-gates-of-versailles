@@ -1,6 +1,9 @@
 ################ GATES OF VERSAILLES NATIONS
 BAD = "countries/Baden.txt"
 BAV = "countries/Bavaria.txt"
+HAN = "countries/Hanover.txt"
+SAX = "countries/Saxony.txt"
+MEK = "countries/Mecklenburg.txt"
 WUR = "countries/Wurttemberg.txt"
 NAP = "countries/Naples.txt"
 WES = "countries/Westphalia.txt"
