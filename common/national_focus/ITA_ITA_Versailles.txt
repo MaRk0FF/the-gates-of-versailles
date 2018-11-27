@@ -1,4 +1,4 @@
-ffocus_tree = { 
+focus_tree = { 
 id = ITA_Versailles
 country = { 
 factor = 0 
@@ -7,7 +7,6 @@ add = 10
 tag = ITA 
 } 
 }
-
 continuous_focus_position = { x = 50 y = 1750 }
  
 #Focus for Tour Central Italy
@@ -22,18 +21,22 @@ prerequisite = { focus = ITA_tournorthernitaly }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = { 
+add_political_power = 25
+add_ideas = central_italy_support
  } 
+
+ }  
 
 #Focus for The Grand Speech
 focus = { 
 id = ITA_thegrandspeech
 icon = GFX_goal_generic_propaganda
-x = 5
+x = 6
 y = 6
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = ITA_promotethenewemperor focus = ITA_ridofmussolinisloyalists focus = ITA_keepmussoliniloyalists } 
+prerequisite = { focus = ITA_ridofmussolinisloyalists focus = ITA_keepmussoliniloyalists } 
 ai_will_do = { 
  factor = 1
  } 
@@ -89,7 +92,7 @@ ai_will_do = {
 focus = { 
 id = ITA_editmussolinisconstitution
 icon = GFX_goal_tfv_strengthen_commonwealth_ties
-x = 21
+x = 23
 y = 4
 cost = 10
 available_if_capitulated = yes 
@@ -109,7 +112,7 @@ custom_effect_tooltip = path_for_totalitarian_or_monarchy
    focus = { 
    id = ITA_promotetheprovisionalgovernment
    icon = GFX_goal_generic_propaganda
-   x = 18
+   x = 20
    y = 3
    cost = 10
    available_if_capitulated = no 
@@ -148,11 +151,16 @@ y = 5
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = ITA_trainmussolini } 
+mutually_exclusive = { focus = ITA_keepmussoliniloyalists } 
 ai_will_do = { 
  factor = 1
+ }  
+completion_reward = { 
+add_political_power = 25
+add_ideas = rid_loyalists
  } 
 
- } 
+ }  
 
 #Focus for Keep Mussolini Loyalists
 focus = { 
@@ -166,6 +174,10 @@ prerequisite = { focus = ITA_trainmussolini }
 mutually_exclusive = { focus = ITA_ridofmussolinisloyalists } 
 ai_will_do = { 
  factor = 1
+ }  
+completion_reward = { 
+add_political_power = -25
+add_ideas = keep_loyalists
  } 
 
  } 
@@ -174,12 +186,15 @@ ai_will_do = {
 focus = { 
 id = ITA_replacemussolinisconstitution
 icon = GFX_focus_renounce_the_treaty_of_trianon
-x = 15
+x = 17
 y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = ITA_promotetheprovisionalgovernment }
-mutually_exclusive = { focus = ITA_editmussolinisconstitution }  
+mutually_exclusive = { focus = ITA_editmussolinisconstitution }
+ai_will_do = { 
+ factor = 1
+ }   
 completion_reward = { 
 add_political_power = 50
 custom_effect_tooltip = path_for_democratic
@@ -197,8 +212,9 @@ cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = ITA_mussolinilegions } 
 prerequisite = { focus = ITA_mussolinipropaganda } 
-ai_will_do = { 
- factor = 1
+completion_reward = { 
+add_political_power = 25
+add_country_leader_trait = trained_leader
  } 
 
  } 
@@ -207,7 +223,7 @@ ai_will_do = {
 focus = { 
 id = ITA_stabilizegovernment
 icon = GFX_goal_generic_neutrality_focus
-x = 14
+x = 16
 y = 3
 cost = 10
 available_if_capitulated = yes 
@@ -227,7 +243,7 @@ add_ideas = unstable_government_1
 focus = { 
 id = ITA_killthetraitors
 icon = GFX_focus_generic_little_entente
-x = 21
+x = 25
 y = 3
 cost = 10
 available_if_capitulated = yes 
@@ -238,13 +254,13 @@ ai_will_do = {
 completion_reward = { 
 add_political_power = 75
 custom_effect_tooltip = no_more_fascists_tt
-remove_unit_leader = 100000000000
-remove_unit_leader = 999999910
-remove_unit_leader = 999999913
-remove_unit_leader = 999999914
-remove_unit_leader = 999999915
-remove_unit_leader = 999999916
-remove_unit_leader = 999999919
+remove_unit_leader = 502
+remove_unit_leader = 503
+remove_unit_leader = 506
+remove_unit_leader = 507
+remove_unit_leader = 508
+remove_unit_leader = 509
+remove_unit_leader = 512
  } 
 
  } 
@@ -433,8 +449,14 @@ prerequisite = { focus = ITA_pathtogreatness }
 available = { 
 date > 1937.1.20
  } 
+ai_will_do = { 
+ factor = 1
+ } 
 completion_reward = { 
-kill_country_leader = yes
+country_event = {
+hours = 2 
+id = italy.17 
+}
  } 
 
  } 
@@ -454,7 +476,7 @@ ai_will_do = {
  factor = 1
  } 
 completion_reward = { 
-add_country_leader_trait = warmonger
+add_stability = 0.05
  } 
 
  } 
@@ -518,6 +540,9 @@ available_if_capitulated = yes
 prerequisite = { focus = ITA_keepmussoliniinpower } 
 ai_will_do = { 
  factor = 1
+ }
+completion_reward = { 
+add_ideas = mussolini_propaganda
  } 
 
  } 
@@ -525,7 +550,7 @@ ai_will_do = {
 #Focus for Mussolini Legions
 focus = { 
 id = ITA_mussolinilegions
-icon = GFX_focus_prc_infiltration
+icon = GFX_ITA_mussolini_legions_1
 x = 3
 y = 3
 cost = 10
@@ -533,9 +558,12 @@ available_if_capitulated = yes
 prerequisite = { focus = ITA_keepmussoliniinpower } 
 ai_will_do = { 
  factor = 1
+ }
+completion_reward = { 
+add_ideas = mussolini_legions
  } 
 
- } 
+ }  
 
 #Focus for Democratic Light
 focus = { 
@@ -545,7 +573,8 @@ x = 15
 y = 5
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = ITA_ridofmussolini } 
+prerequisite = { focus = ITA_ridofmussolini }
+prerequisite = { focus = ITA_replacemussolinisconstitution  } 
 ai_will_do = { 
  factor = 1
  } 
@@ -564,6 +593,12 @@ prerequisite = { focus = ITA_ridofmussolini }
 mutually_exclusive = { focus = ITA_democraticlight } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+country_event = {
+days = 1 
+id = italy.18 
+}
  } 
 
  } 
@@ -757,12 +792,20 @@ x = 15
 y = 14
 cost = 4
 available_if_capitulated = yes 
-prerequisite = { focus = ITA_promoterevolutionariesinfrance } 
+prerequisite = { focus = ITA_promoterevolutionariesinfrance }
+available = {
+			OR = {
+				FRA = { communism > 0.3 }
+		} 
+	}
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = { 
+FRA = { add_ideas = northern_france_communists }
  } 
+
+ }
 
 #Focus for Send Military Advisors to Spain
 focus = { 
@@ -878,11 +921,23 @@ y = 13
 cost = 7
 available_if_capitulated = yes 
 prerequisite = { focus = ITA_therisingofthefrenchcommune } 
+available = {
+			OR = {
+				FRA = { communism > 0.5 }
+				FRA = { radical_socialist > 0.5 }
+			}
+		} 
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = { 
+custom_effect_tooltip = france_revolution_begin
+FRA = {
+				country_event = { id = italy.20 days = 1 }
+			}
  } 
+
+ }
 
 #Focus for Promote Revolutionaries in France
 focus = { 
@@ -896,13 +951,23 @@ prerequisite = { focus = ITA_therisingofthefrenchcommune }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = { 
+add_political_power = 15
+custom_effect_tooltip = france_revolutionaries
+hidden_effect = {
+			FRA = {
+				country_event = { id = italy.21 days = 1 }
+			}
+		}
+ } 
 
  } 
+ 
 
 #Focus for The Rising of the French Commune?
 focus = { 
 id = ITA_therisingofthefrenchcommune
-icon = GFX_goal_unknown
+icon = GFX_ITA_possibily_of_french_commune
 x = 16
 y = 12
 cost = 1
@@ -911,8 +976,11 @@ prerequisite = { focus = ITA_promotewesterneuroperevolutionaries }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = { 
+add_political_power = 15
  } 
+
+ }
 
 #Focus for Promote Western Europe Revolutionaries
 focus = { 
@@ -922,12 +990,33 @@ x = 18
 y = 11
 cost = 5
 available_if_capitulated = yes 
-prerequisite = { focus = ITA_focusonwesterneurope } 
+prerequisite = { focus = ITA_focusonwesterneurope }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = { 
+add_political_power = 25
  } 
+ 
+ }
+ 
+#Focus for Focus on Western Europe
+focus = { 
+id = ITA_focusonwesterneurope
+icon = GFX_goal_generic_propaganda
+x = 19
+y = 10
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ITA_setuptheinternationalrevolutionaryuprisings } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_political_power = 25
+ } 
+ 
+ }
 
 #Focus for Focus on Western Europe
 focus = { 
@@ -941,8 +1030,12 @@ prerequisite = { focus = ITA_setuptheinternationalrevolutionaryuprisings }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = { 
+add_ideas = focus_on_western_europe
+add_political_power = 25
  } 
+
+ }
 
 #Focus for Focus on Eastern Europe
 focus = { 
@@ -983,9 +1076,18 @@ x = 28
 y = 6
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = ITA_communistred } 
+prerequisite = { focus = ITA_communistred }
+available = {
+			communism > 0.5
+		} 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
  } 
 
  } 
@@ -998,10 +1100,19 @@ x = 26
 y = 6
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = ITA_communistred } 
+prerequisite = { focus = ITA_communistred }
+available = {
+			radical_socialist > 0.5
+		} 
 mutually_exclusive = { focus = ITA_themoderates } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
  } 
 
  } 
@@ -1017,6 +1128,25 @@ available_if_capitulated = yes
 prerequisite = { focus = ITA_theexecutionoftheking } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+add_political_power = 25
+add_opinion_modifier = {
+    target = ENG
+    modifier = anti_colonialism_campaign
+ }
+add_opinion_modifier = {
+    target = FRA
+    modifier = anti_colonialism_campaign
+ }
+add_opinion_modifier = {
+    target = SPR
+    modifier = anti_colonialism_campaign
+ }
+add_opinion_modifier = {
+    target = JAP
+    modifier = anti_colonialism_campaign
+ }
  } 
 
  } 
@@ -1047,9 +1177,12 @@ available_if_capitulated = yes
 prerequisite = { focus = ITA_theexecutionoftheking } 
 ai_will_do = { 
  factor = 1
+ }
+completion_reward = { 
+add_political_power = 50
  } 
 
- } 
+ }
 
 #Focus for Set up "The International Revolutionary Uprisings"
 focus = { 
@@ -1062,9 +1195,12 @@ available_if_capitulated = yes
 prerequisite = { focus = ITA_antiimperialcampaign } 
 ai_will_do = { 
  factor = 1
+ }
+completion_reward = { 
+add_ideas = workers_propaganda
  } 
 
- } 
+ }
 
 #Focus for Establish Secret Police
 focus = { 
@@ -1092,9 +1228,12 @@ available_if_capitulated = yes
 prerequisite = { focus = ITA_theradicals focus = ITA_themoderates } 
 ai_will_do = { 
  factor = 1
+ }
+completion_reward = { 
+add_ideas = workers_propaganda
  } 
 
- } 
+ }
 
 #Focus for Hire the Mafia
 focus = { 
@@ -1123,74 +1262,40 @@ prerequisite = { focus = ITA_theradicals focus = ITA_themoderates }
 ai_will_do = { 
  factor = 1
  } 
-
+completion_reward = { 
+add_political_power = 100
+hidden_effect = {
+			country_event = { days = 1 id = news.336 }
+		}
+		create_country_leader = {
+	        name = "Umberto II"
+	        desc = "POLITICS_UMBERTO_II_DESC"
+	        picture = "Portrait_ITA_UmbertoII.dds"
+	        expire = "1965.1.1"
+	        ideology = despotism
+	        traits = {
+		        #
+	        }
+        }
  } 
 
-#Focus for Teach our Loyalists II
-focus = { 
-id = ITA_teachourloyalistsii
-icon = GFX_goal_generic_national_unity
-x = 0
-y = 7
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = ITA_teachourloyalists } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
+ }  
 
 #Focus for Phone Hitler
 focus = { 
 id = ITA_phonehitler
 icon = GFX_goal_molotov_ribbentrop_pact
-x = 10
+x = 9
 y = 6
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = ITA_promotethenewemperor } 
+prerequisite = { focus = ITA_promotethenewemperor }
+prerequisite = { focus = ITA_ridofmussolinisloyalists }  
 ai_will_do = { 
  factor = 1
  } 
 
- } 
-
-#Focus for Teach our Loyalists
-focus = { 
-id = ITA_teachourloyalists
-icon = GFX_goal_generic_national_unity
-x = 0
-y = 6
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = ITA_keepmussoliniloyalists } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Find a new leader
-focus = { 
-id = ITA_findanewleader
-icon = GFX_goal_generic_demand_territory
-x = 11
-y = 7
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = ITA_thetrialofmussolini } 
-ai_will_do = { 
- factor = 1
- } 
-completion_reward = { 
-country_event = {
-days = 1 
-id = finland.1 
-}
- } 
-
- } 
+ }   
 
 #Focus for The Vienna Meeting
 focus = { 
@@ -1203,6 +1308,13 @@ available_if_capitulated = yes
 prerequisite = { focus = ITA_keepmussoliniloyalists } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+add_political_power = 25
+add_opinion_modifier = {
+    target = AUS
+    modifier = vienna_meeting
+ }
  } 
 
  } 
@@ -1219,6 +1331,10 @@ prerequisite = { focus = ITA_beginthetour }
 ai_will_do = { 
  factor = 1
  } 
+completion_reward = { 
+add_political_power = -50
+add_ideas = northern_italy_support
+ } 
 
  } 
 
@@ -1228,11 +1344,14 @@ id = ITA_beginthetour
 icon = GFX_goal_generic_propaganda
 x = 5
 y = 3
-cost = 10
+cost = 2
 available_if_capitulated = yes 
 prerequisite = { focus = ITA_keepmussoliniinpower } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+add_political_power = -50
  } 
 
  } 
@@ -1241,7 +1360,7 @@ ai_will_do = {
 focus = { 
 id = ITA_thetrialofmussolini
 icon = GFX_focus_ger_assassinate_mussolini
-x = 12
+x = 11
 y = 6
 cost = 10
 available_if_capitulated = yes 
@@ -1273,11 +1392,15 @@ id = ITA_thefateoftheking
 icon = GFX_goal_tfv_sever_ties_with_uk
 x = 8
 y = 3
-cost = 10
+cost = 1
 available_if_capitulated = yes 
 prerequisite = { focus = ITA_keepmussoliniinpower } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+add_political_power = 5
+remove_ideas = victor_emmanuel
  } 
 
  } 
@@ -1294,6 +1417,24 @@ prerequisite = { focus = ITA_thefateoftheking }
 mutually_exclusive = { focus = ITA_keepmussoliniasheis } 
 ai_will_do = { 
  factor = 1
+ } 
+completion_reward = { 
+custom_effect_tooltip = mussolini_caesar
+add_stability = -0.05
+add_political_power = -50
+hidden_effect = {
+			kill_country_leader = yes
+			create_country_leader = {
+	        name = "Augustus Mussolini"
+	        desc = "POLITICS_AUGUSTUS_MUSSOLINI_DESC"
+	        picture = "Portrait_ITA_Augustus_Mussolini.dds"
+	        expire = "1965.1.1"
+	        ideology = fascism_ideology
+	        traits = {
+		        #
+	        }
+        }
+	}
  } 
 
  } 
@@ -1332,11 +1473,12 @@ ai_will_do = {
 focus = { 
 id = ITA_kickaustriaout
 icon = GFX_goal_generic_attack_allies
-x = 10
-y = 8
+x = 9
+y = 7
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = ITA_keepmussoliniloyalists focus = ITA_promotethenewemperor focus = ITA_findanewleader } 
+prerequisite = { focus = ITA_phonehitler } 
+prerequisite = { focus = ITA_thetrialofmussolini }
 ai_will_do = { 
  factor = 1
  } 
@@ -1348,10 +1490,10 @@ focus = {
 id = ITA_keepourfaithfulally
 icon = GFX_goal_molotov_ribbentrop_pact
 x = 2
-y = 8
+y = 7
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = ITA_promotethenewemperor } 
+prerequisite = { focus = ITA_theviennameeting } 
 mutually_exclusive = { focus = ITA_kickaustriaout } 
 ai_will_do = { 
  factor = 1
