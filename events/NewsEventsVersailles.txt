@@ -1,4 +1,4 @@
-﻿###################################
+###################################
 #News Events - Gates of Versailles#
 ###################################
 
@@ -103,6 +103,60 @@ news_event = { #Mussolini Assassinated
 			NOT = { TAG = ITA }
 			NOT = { TAG = GER }
 			NOT = { TAG = FRA }
+			NOT = { TAG = ENG }
+			NOT = { is_in_faction_with = AUS }
+		}
+	}
+}
+
+news_event = { #Victor Emmanuel III Executed
+	id = news.336
+	title = news.336.t
+	desc = news.336.desc
+	picture = GFX_news_event_french_parade
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.336.a
+		trigger = {
+			TAG = ITA
+		}
+	}
+	option = {
+		name = news.336.b
+		trigger = {
+			TAG = FRA
+		}
+	}
+	option = {
+		name = news.336.c
+		trigger = {
+			TAG = AUS
+		}
+	}
+	option = {
+		name = news.336.d
+		trigger = {
+			TAG = ENG
+		}
+	}
+	option = {
+		name = news.336.e
+		trigger = {
+			TAG = GER
+		}
+	}
+	option = {
+		name = news.336.f
+		trigger = {
+			NOT = { TAG = AUS }
+			NOT = { TAG = ITA }
+			NOT = { TAG = GER }
+			NOT = { TAG = FRA }
+			NOT = { TAG = ENG }
 			NOT = { is_in_faction_with = AUS }
 		}
 	}
