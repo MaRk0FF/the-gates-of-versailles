@@ -156,15 +156,15 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 18
+			popularity = 12
 		}
 
 		fascism = {
-			popularity = 1
+			popularity = 2
 		}
 		
 		communism = {
-			popularity = 1
+			popularity = 6
 		}
 		
 		neutrality = {
@@ -172,19 +172,15 @@ set_politics = {
 		}
 		
 		totalitarian = {
-			popularity = 1
+			popularity = 4
 		}
 		
 		liberal = {
-			popularity = 17
-		}
-		
-		social_democratic = {
-			popularity = 2
+			popularity = 10
 		}
 		
 		 radical_socialist = {
-			popularity = 1
+			popularity = 7
 		}
 	}
 	
@@ -247,9 +243,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Philippe Pétain"
-	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
-	picture = "Portrait_France_Philippe_Petain.dds"
+	name = "Marcel Bucard"
+	desc = "POLITICS_MARCEL_BUCARD_DESC"
+	picture = "Portrait_FRA_Marcel_Bucard.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
