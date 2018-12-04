@@ -3636,6 +3636,22 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_political_support.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_giorgio_amendola"
+		texturefile = "gfx/interface/ideas/giorgio_amendola.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_costantino_lazzari"
+		texturefile = "gfx/interface/ideas/costantino_lazzari.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_pietro_badoglio_versailles"
+		texturefile = "gfx/interface/ideas/pietro_badoglio_versailles.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_umberto_ii"
+		texturefile = "gfx/interface/ideas/umberto_ii.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_novus_imperium_romanum"
 		texturefile = "gfx/interface/ideas/Idea_Novus_Imperium_Romanum.dds"
 	}
@@ -3680,17 +3696,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/generic_communism_drift_bonus.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_revolutionary_activity_1"
-		texturefile = "gfx/interface/ideas/radical_socialist_influence.dds"
-	}
-	spriteType = {
 		name = "GFX_idea_french_commune_supported"
 		texturefile = "gfx/interface/ideas/french_commune_supported.dds"
 	}
-	spriteType = {
-		name = "GFX_idea_french_commune_supported_1"
-		texturefile = "gfx/interface/ideas/french_commune_supported.dds"
-	}
-	
-	
 }
