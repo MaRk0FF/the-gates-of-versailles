@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  confused_government:0 "Unstable Government"
  confused_government_desc:0 "When the Great War was over, the new Italian democracy brought with it uncertainty and instability. Although the democracy has been dealt with, the instability still lingers."
  novus_imperium_romanum:0 "Novus Imperium Romanum"
@@ -33,4 +33,10 @@ l_english:
  french_commune_supported_desc:0 "Some sort of outside force is influencing our population to turn to communism!"
  french_commune_supported_1:0 "French Radical Socialists being supported!"
  french_commune_supported_1_desc:0 "Some sort of outside force is influencing our population to turn to radical socialism!"
+ #New Ministers#
+ giorgio_amendola:0 "Giorgio Amendola"
+ costantino_lazzari:0 "Constantino Lazzari"
+ pietro_badoglio_versailles:0 "Pietro Badoglio"
+ umberto_ii:0 "Umberto II"
+ 
 

@@ -1,5 +1,5 @@
-l_english:
- #### Totalitarian Ideology
+﻿l_english:
+ ### Totalitarian Ideology
  totalitarian:0 "Totalitarian"
  totalitarian_noun:0 "Totalitarianism"
  totalitarian_desc:0 "Totalitarian Regime"
@@ -36,16 +36,16 @@ l_english:
  anarchist_desc:0 "Anarchist believe in the near abolition of the government, or a stateless society, where only the people govern themselves."
  collective_socialist:0 "Collective Socialism"
  collective_socialist_desc:0 "Collective socialism is a more radical form of socialism where nearly everybody is equal and there is little to no private property and corporations."
- #### Democracy Ideology more
- christian_democracy:0 "Christian Democracy"
- christian_democracy_desc:0 "Christian democratic political ideology advocates for a commitment to social market principles and qualified interventionism. It was conceived as a combination of modern democratic ideas and traditional Christian values."
  #### End
  communism:0 "Communist"
  communism_noun:0 "Communism"
+ democratic:0 "Democratic"
+ democratic_noun:0 "Democracy"
  fascism:0 "Fascist"
  fascism_noun:0 "Fascism"
- fascism_desc:0 "Facist Regime"
- communism_desc:0 "Communist Regime"
+ fascism_desc:0 "Totalitarian Regime"
+ communism_desc:0 "Totalitarian Regime"
+ democratic_desc:0 "Democratic Regime"
  conservatism:0 "Conservatism"
  conservatism_desc:0 "Considering rapid changes to society to be potentially harmful, conservatism espouses tradition and moderate reforms, sometimes advocating a return to old moral values."
  liberalism:0 "Liberalism"
@@ -70,6 +70,8 @@ l_english:
  falangism_desc:0 "An authoritarian ideology with traits of fascism and conservatism, Falangism values national and Catholic identity."
  rexism:0 "Rexism"
  rexism_desc:0 "Strongly opposed to both liberal and communist ideals, Rexism is a staunchly conservative nationalist movement who advocate a corporatist economic policy. Employing increasingly populist and authoritarian rhetoric, their ideals are shifting closer to other fascist movements."
+ neutrality:0 "Non-Aligned"
+ neutrality_desc:0 "Authoritarian Regime"
  despotism:0 "Despotic"
  despotism_desc:0 "Despotism is a form of government in which a single person rules with absolute power."
  oligarchism:0 "Oligarchic"
@@ -552,4 +554,3 @@ l_english:
  YUN_communism_party_long:0 "Communist Party of China"
  MAN_fascism_party:0 "MX"
  MAN_fascism_party_long:0 "Manzhōuguó Xiéhehuì"
-
