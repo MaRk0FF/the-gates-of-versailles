@@ -20,6 +20,52 @@ leader_traits = {
 		}
 	}
 	
+	#Versailles Minister TRAITS
+	
+	liberal_reformer = {
+		random = no
+		# Boosts Liberalism
+		sprite = 13
+		liberal_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	social_democratic_crusader = {
+		random = no
+		# Boosts Social Democraticism
+		sprite = 13
+		social_democratic_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	authoritarian_democratic_believer = {
+		random = no
+		# Boosts Aut. Democratic
+		sprite = 13
+		neutrality_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	totalitarian_fanatic = {
+		random = no
+		# Boosts Totalitaranism
+		sprite = 13
+		totalitarian_drift = 0.1
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
 	#Base Game
 	dictator = {
 		random = no
