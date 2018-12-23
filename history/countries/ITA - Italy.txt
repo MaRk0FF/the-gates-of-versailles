@@ -1,10 +1,10 @@
-﻿capital = 2
+capital = 2
 
 oob = "ITA_1936"
 
 set_research_slots = 4
-set_stability = 0.6
-set_war_support = 0.7
+set_stability = 0.5
+set_war_support = 0.4
 add_ideas = {
 	victor_emmanuel
 	confused_government
@@ -60,6 +60,10 @@ set_politics = {
 			popularity = 7
 		}
 		
+		neutrality = {
+			popularity = 3
+		}
+		
 		radical_socialist = {
 			popularity = 5
 		}
@@ -73,7 +77,7 @@ set_politics = {
 		}
 		
 		totalitarian = {
-			popularity = 6
+			popularity = 3
 		}
 	}
 	
@@ -99,7 +103,18 @@ create_country_leader = {
 	}
 }
 
-reate_country_leader = {
+create_country_leader = {
+	name = "Alcide De Gasperi"
+	desc = "POLITICS_ALCIDE_DE_GASPERI_DESC"
+	picture = "Portrait_ITA_Alcide_De_Gasperi.dds"
+	expire = "1965.1.1"
+	ideology = christian_democracy
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
 	name = "Victor Emmanuel III"
 	desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
 	picture = "Portrait_ItalianConfederation_Victor_Emmanuel_III.dds"
@@ -121,16 +136,49 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Antonio Gramsci"
+	desc = "POLITICS_ANTONIO_GRAMSCI_DESC"
+	picture = "Portrait_ITA_Antonio_Gramsci.dds"
+	expire = "1965.1.1"
+	ideology = collective_socialist
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Arturo Labriola"
+	desc = "POLITICS_ARTURO_LABRIOLA_DESC"
+	picture = "Portrait_ITA_Arturo_Labriola.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	        name = "Pietro Badoglio"
+	        desc = "POLITICS_PIETRO_BADOGLIO_DESC"
+	        picture = "Portrait_Italy_Pietro_Badoglio.dds"
+	        expire = "1965.1.1"
+	        ideology = totalitarianism
+	        traits = {
+		        #
+	        }
+        }
+
 create_field_marshal = {
 	name = "Pietro Badoglio"
 	picture = "Portrait_Italy_Pietro_Badoglio.dds"
 	traits = { defensive_doctrine old_guard inflexible_strategist }
-	skill = 1
+	skill = 2
 	attack_skill = 2
 	defense_skill = 2
-	planning_skill = 1
+	planning_skill = 2
 	logistics_skill = 1
-	id = 9999999
+	id = 501
 }
 
 create_field_marshal = {
@@ -142,7 +190,7 @@ create_field_marshal = {
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
-	id = 100000000000
+	id = 502
 }
 
 create_corps_commander = {
@@ -155,7 +203,7 @@ create_corps_commander = {
 	defense_skill = 1
 	planning_skill = 2
 	logistics_skill = 3
-	id = 999999910
+	id = 503
 }
 
 create_corps_commander = {
@@ -168,7 +216,7 @@ create_corps_commander = {
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 4
-	id = 99999911
+	id = 504
 }
 
 create_corps_commander = {
@@ -180,7 +228,7 @@ create_corps_commander = {
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
-	id = 999999912
+	id = 505
 }
 
 create_corps_commander = {
@@ -192,7 +240,7 @@ create_corps_commander = {
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
-	id = 999999913
+	id = 506
 }
 
 create_corps_commander = {
@@ -204,7 +252,7 @@ create_corps_commander = {
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 1
-	id = 999999914
+	id = 507
 }
 
 create_field_marshal = {
@@ -216,7 +264,7 @@ create_field_marshal = {
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 1
-	id = 999999915
+	id = 508
 }
 
 create_navy_leader = {
@@ -224,7 +272,7 @@ create_navy_leader = {
 		picture = "Portrait_Italy_Inigo_Campioni.dds"
 	traits = { superior_tactician spotter }
 	skill = 2
-	id = 999999916
+	id = 509
 }
 
 create_navy_leader = {
@@ -232,7 +280,7 @@ create_navy_leader = {
 		picture = "Portrait_Italy_Alberto_Da_Zara.dds"
 	traits = { superior_tactician }
 	skill = 3
-	id = 999999917
+	id = 510
 }
 
 create_navy_leader = {
@@ -240,7 +288,7 @@ create_navy_leader = {
 		picture = "Portrait_Italy_Giuseppe_Fioravanzo.dds"
 	traits = { superior_tactician }
 	skill = 3
-	id = 999999918
+	id = 511
 }
 
 create_navy_leader = {
@@ -248,7 +296,7 @@ create_navy_leader = {
 		picture = "Portrait_Italy_Carlo_Bergamini.dds"
 	traits = { superior_tactician }
 	skill = 2
-	id = 999999919
+	id = 512
 }
 
 create_navy_leader = {
@@ -256,7 +304,7 @@ create_navy_leader = {
 		picture = "Portrait_Italy_Angelo_Iachino.dds"
 	traits = { superior_tactician spotter }
 	skill = 2
-	id = 999999920
+	id = 513
 }
 
 ### Ship Variants ###

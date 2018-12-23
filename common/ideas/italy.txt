@@ -144,8 +144,9 @@ ideas = {
 			allowed = {
 				original_tag = "ITA"
 			}
-			
-
+			available = {
+				NOT = { has_completed_focus = ITA_killthetraitors }			
+			}
 			
 			traits = { fascist_demagogue }
 
@@ -159,11 +160,115 @@ ideas = {
 				factor = 0
 			}
 		}
+		
+		giorgio_amendola = {
+			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			available = {
+				has_government = neutrality			
+			}
+			
 
+			
+			traits = { liberal_reformer }
+
+			do_effect = {
+				NOT = {
+					has_government = liberal
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		costantino_lazzari = {
+			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			available = {
+				has_government = neutrality			
+			}
+			
+
+			
+			traits = { social_democratic_crusader }
+
+			do_effect = {
+				NOT = {
+					has_government = social_democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		pietro_badoglio_versailles = {
+			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			available = {
+				NOT = { has_government = neutrality	}		
+			}
+			
+
+			
+			traits = { authoritarian_democratic_believer }
+
+			do_effect = {
+				NOT = {
+					has_government = neutrality
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		umberto_ii = {
+			
+			
+			allowed = {
+				original_tag = "ITA"
+			}
+			available = {
+				has_government = neutrality
+			}
+			
+
+			
+			traits = { totalitarian_fanatic }
+
+			do_effect = {
+				NOT = {
+					has_government = totalitarian
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		
 		ITA_giovanni_marinelli = {
 						
 			allowed = {
 				original_tag = "ITA"
+			}
+			available = {
+				NOT = { has_completed_focus = ITA_killthetraitors }			
 			}
 
 			picture = generic_political_advisor_europe_5
@@ -184,6 +289,9 @@ ideas = {
 			allowed = {
 				original_tag = "ITA"
 			}
+			available = {
+				NOT = { has_completed_focus = ITA_killthetraitors }			
+			}
 
 			picture = generic_political_advisor_europe_6
 						
@@ -203,6 +311,9 @@ ideas = {
 			allowed = {
 				original_tag = "ITA"
 			}
+			available = {
+				NOT = { has_completed_focus = ITA_killthetraitors }			
+			}
 
 			picture = generic_army_europe_1
 						
@@ -218,6 +329,9 @@ ideas = {
 			
 			allowed = {
 				original_tag = "ITA"
+			}
+			available = {
+				NOT = { has_completed_focus = ITA_killthetraitors }			
 			}
 
 			picture = generic_political_advisor_europe_3
@@ -238,6 +352,9 @@ ideas = {
 			allowed = {
 				original_tag = "ITA"
 			}
+			available = {
+				NOT = { has_completed_focus = ITA_killthetraitors }			
+			}
 
 			picture = generic_political_advisor_europe_1
 						
@@ -257,6 +374,9 @@ ideas = {
 			allowed = {
 				original_tag = "ITA"
 			}
+			available = {
+				NOT = { has_completed_focus = ITA_killthetraitors }			
+			}
 
 			picture = generic_political_advisor_europe_2
 						
@@ -275,6 +395,9 @@ ideas = {
 			
 			allowed = {
 				original_tag = "ITA"
+			}
+			available = {
+				NOT = { has_completed_focus = ITA_killthetraitors }			
 			}
 
 			picture = generic_army_europe_2
@@ -341,7 +464,7 @@ ideas = {
 			
 
 			
-			traits = { army_chief_morale_1 }
+			traits = { army_chief_morale_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -352,7 +475,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = ITA
+				original_tag = "ITA"
+			}
+			available = {
+				NOT = { has_completed_focus = ITA_killthetraitors }			
 			}
 			
 
@@ -368,7 +494,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = ITA
+				original_tag = "ITA"
+			}
+			available = {
+				NOT = { has_completed_focus = ITA_killthetraitors }			
 			}
 			
 
@@ -419,7 +548,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = ITA
+				original_tag = "ITA"
+			}
+			available = {
+				NOT = { has_completed_focus = ITA_killthetraitors }			
 			}
 			
 
@@ -438,7 +570,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = ITA
+				original_tag = "ITA"
+			}
+			available = {
+				NOT = { has_completed_focus = ITA_killthetraitors }			
 			}
 			
 
@@ -454,7 +589,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = ITA
+				original_tag = "ITA"
+			}
+			available = {
+				NOT = { has_completed_focus = ITA_killthetraitors }			
 			}
 			
 
@@ -470,7 +608,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = ITA
+				original_tag = "ITA"
+			}
+			available = {
+				NOT = { has_completed_focus = ITA_killthetraitors }			
 			}
 			
 
@@ -489,7 +630,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = ITA
+				original_tag = "ITA"
+			}
+			available = {
+				NOT = { has_completed_focus = ITA_killthetraitors }			
 			}
 			
 
@@ -537,7 +681,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = ITA
+				original_tag = "ITA"
+			}
+			available = {
+				NOT = { has_completed_focus = ITA_killthetraitors }			
 			}
 			
 
@@ -617,7 +764,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = ITA
+				original_tag = "ITA"
+			}
+			available = {
+				NOT = { has_completed_focus = ITA_killthetraitors }			
 			}
 			
 

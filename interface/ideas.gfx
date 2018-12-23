@@ -3630,10 +3630,73 @@ spriteTypes = {
 		name = "GFX_idea_ROM_iuliu_maniu"
 		texturefile = "gfx/interface/ideas/idea_generic_democratic_europe.dds"
 	}
-	#GATES OF VERSAILES#
+	#GATES OF VERSAIlLES#
 	spriteType = {
 		name = "GFX_idea_promoted_government"
 		texturefile = "gfx/interface/ideas/idea_generic_political_support.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_giorgio_amendola"
+		texturefile = "gfx/interface/ideas/giorgio_amendola.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_costantino_lazzari"
+		texturefile = "gfx/interface/ideas/costantino_lazzari.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_pietro_badoglio_versailles"
+		texturefile = "gfx/interface/ideas/pietro_badoglio_versailles.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_umberto_ii"
+		texturefile = "gfx/interface/ideas/umberto_ii.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_novus_imperium_romanum"
+		texturefile = "gfx/interface/ideas/Idea_Novus_Imperium_Romanum.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_radical_socialist_influence"
+		texturefile = "gfx/interface/ideas/radical_socialist_influence.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_workers_propaganda"
+		texturefile = "gfx/interface/ideas/generic_production_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mussolini_propaganda"
+		texturefile = "gfx/interface/ideas/FRA_scw_intervention_nationalists_focus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mussolini_legions"
+		texturefile = "gfx/interface/ideas/mussolini_legions_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_keep_loyalists"
+		texturefile = "gfx/interface/ideas/idea_generic_deal_with_the_devil.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_rid_loyalists"
+		texturefile = "gfx/interface/ideas/idea_generic_purge.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_northern_italy_support"
+		texturefile = "gfx/interface/ideas/generic_pp_unity_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_central_italy_support"
+		texturefile = "gfx/interface/ideas/generic_pp_unity_bonus.dds"generic_spy_intel
+	}
+	spriteType = {
+		name = "GFX_idea_focus_on_western_europe"
+		texturefile = "gfx/interface/ideas/generic_spy_intel.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_revolutionary_activity"
+		texturefile = "gfx/interface/ideas/generic_communism_drift_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_french_commune_supported"
+		texturefile = "gfx/interface/ideas/french_commune_supported.dds"
+	}
 }

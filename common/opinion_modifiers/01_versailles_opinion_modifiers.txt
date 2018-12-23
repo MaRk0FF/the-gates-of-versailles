@@ -12,3 +12,13 @@ opinion_modifiers = {
 	#France
 	ENG_FRA_accusation_of_october_events = { value = -50 }
 }
+
+opinion_modifiers = {
+	#Italy
+	vienna_meeting = { value = 30 }                                                
+}
+
+opinion_modifiers = {
+	#Italy
+	anti_colonialism_campaign = { value = -45 }                                                
+}
