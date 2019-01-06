@@ -137,7 +137,11 @@ country_event = { #October Events
 		add_stability = -0.1
 			add_popularity = {
 				ideology = democratic
-				popularity = -0.10
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = liberals
+				popularity = -0.02
 			}
 		set_country_flag = fra_october_events	
 		}
@@ -151,6 +155,70 @@ country_event = { #October Events
 		}
 		FRA = {
 		set_country_flag = fra_october_events
+		}
+	}
+}
+
+country_event = { #La solution radicale
+	id = france.38
+	title = france.38.t
+	desc = france.38.d
+	picture = GFX_report_event_france_october_events
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = france.38.a
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.5
+			}
+			add_popularity = {
+				ideology = liberals
+				popularity = -0.5
+			}
+			hidden_effect = {
+				country_event = { days = 3 id = france.39 }
+			}
+			add_stability = -0.03
+			add_manpower = -24054
+			add_war_support = 0.03
+		}
+	}
+
+country_event = { #De Gaulle escape to Flanders
+	id = france.39
+	title = france.39.t
+	desc = france.39.d
+	picture = GFX_report_event_france_october_events
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = france.39.a
+		
+		BEL = {
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Charles de Gaulle"
+			desc = "POLITICS_CHARLES_DE_GAULLES_BELGIUM_DESC"
+			picture = "Portrait_Belgium_Charles_de_Gaulle.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+			
+				}
+			}
+			add_opinion_modifier = {
+			target = FRA
+			modifier = BEL_deportation_attempt
+			}
+		FRA = {
+			add_opinion_modifier = {
+			target = BEL
+			modifier = FRA_failure_of_deportation
+				}
+			}
 		}
 	}
 }
