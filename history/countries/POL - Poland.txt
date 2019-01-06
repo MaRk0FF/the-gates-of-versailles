@@ -1,4 +1,4 @@
-﻿capital = 10
+capital = 10
 
 oob = "POL_1936"
 
@@ -33,15 +33,31 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 75
+			popularity = 71
 		}
 		
 		communism = {
+			popularity = 3
+		}
+		
+		neutrality = {
+			popularity = 3
+		}
+		
+		radical_socialist = {
+			popularity = 4
+		}
+		
+		social_democratic = {
 			popularity = 5
 		}
 		
-		neutrality = { 
-			popularity = 10
+		liberal = {
+			popularity = 2
+		}
+		
+		totalitarian = {
+			popularity = 2
 		}
 	}
 	
@@ -52,7 +68,7 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Władysław Sikorski"
+	name = "Wladyslaw Sikorski"
 	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Sikorski_Versailles.dds"
 	expire = "1965.1.1"
@@ -63,7 +79,7 @@ create_country_leader = {
 }
 
 create_field_marshal = {
-	name = "Władysław Sikorski"
+	name = "Wladyslaw Sikorski"
 	picture = "Portrait_Poland_Wladyslaw_Sikorski_Versailles.dds"
 	traits = { defensive_doctrine }
 	skill = 3
@@ -74,7 +90,7 @@ create_field_marshal = {
 }
 
 create_field_marshal = {
-	name = "Władysław Bortnowski"
+	name = "Wladyslaw Bortnowski"
 	gfx = "GFX_POL_wladyslaw_bortnowski"
 	traits = {  thorough_planner }
 	skill = 3
@@ -85,7 +101,7 @@ create_field_marshal = {
 }
 
 create_field_marshal = {
-	name = "Stanisław Kopański"
+	name = "Stanislaw Kopanski"
 	gfx = "GFX_POL_stanislav_kopanski"
 	traits = {  offensive_doctrine }
 	skill = 3
@@ -96,7 +112,7 @@ create_field_marshal = {
 }
 
 create_corps_commander = {
-	name = "Władysław Anders"
+	name = "Wladyslaw Anders"
 	gfx = "GFX_POL_wladislaw_anders"
 	traits = {  armor_officer }
 	skill = 4
