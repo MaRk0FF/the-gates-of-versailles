@@ -16,6 +16,8 @@
  democratic_desc:0 "Conservative Republic"
  fiscal_conservatism:0 "Fiscal Conservatism"
  fiscal_conservatism_desc:0 "Believing regulationist measures on the economy to be potentially dangerous, fiscal conservatives advocate for deregulation of the economy and businesses."
+ christian_democracy:0 "Christian Democracy"
+ christian_democracy_desc:0 "Christian democracy is political ideology based on Christian humanism and Catholic social teachings. While generally socially conservative, Christian democrats inch toward an economic model of social markets or social democracy, especially where the political spectrum is leaning towards the left."
  #### Liberal Ideology
  liberal:0 "Liberal"
  liberal_noun:0 "Liberalism"
