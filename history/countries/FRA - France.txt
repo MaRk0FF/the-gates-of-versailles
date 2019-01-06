@@ -200,9 +200,9 @@ add_ideas = {
 
 #Order matters here Daladier will start as leaders because added last
 create_country_leader = {
-	name = "Charles de Gaulle"
-	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-	picture = "Portrait_France_Charles_De_Gaulle.dds"
+	name = "Pierre-Etienne Flandin"
+	desc = "POLITICS_PIERRE_ETIENNE_FLANDIN_DESC"
+	picture = "Portrait_Pierre-Etienne_Flandin.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
