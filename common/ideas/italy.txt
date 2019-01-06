@@ -100,6 +100,9 @@ ideas = {
 			allowed = {
 				original_tag = "ITA"
 			}
+			available = {
+				has_completed_focus = ITA_ridofmussolini 				
+			}
 			
 
 			
@@ -121,6 +124,9 @@ ideas = {
 			
 			allowed = {
 				original_tag = "ITA"
+			}
+			available = {
+				has_completed_focus = ITA_ridofmussolini 		
 			}
 			
 
@@ -168,7 +174,7 @@ ideas = {
 				original_tag = "ITA"
 			}
 			available = {
-				has_government = neutrality			
+				has_completed_focus = ITA_ridofmussolini 		
 			}
 			
 
@@ -193,7 +199,7 @@ ideas = {
 				original_tag = "ITA"
 			}
 			available = {
-				has_government = neutrality			
+				has_completed_focus = ITA_ridofmussolini 		
 			}
 			
 
@@ -218,7 +224,7 @@ ideas = {
 				original_tag = "ITA"
 			}
 			available = {
-				NOT = { has_government = neutrality	}		
+				has_completed_focus = ITA_ridofmussolini 		
 			}
 			
 
@@ -243,7 +249,7 @@ ideas = {
 				original_tag = "ITA"
 			}
 			available = {
-				has_government = neutrality
+				has_completed_focus = ITA_ridofmussolini 		
 			}
 			
 
@@ -270,8 +276,6 @@ ideas = {
 			available = {
 				NOT = { has_completed_focus = ITA_killthetraitors }			
 			}
-
-			picture = generic_political_advisor_europe_5
 						
 			traits = { prince_of_terror }
 	
@@ -292,8 +296,6 @@ ideas = {
 			available = {
 				NOT = { has_completed_focus = ITA_killthetraitors }			
 			}
-
-			picture = generic_political_advisor_europe_6
 						
 			traits = { compassionate_gentleman }
 	
@@ -314,8 +316,6 @@ ideas = {
 			available = {
 				NOT = { has_completed_focus = ITA_killthetraitors }			
 			}
-
-			picture = generic_army_europe_1
 						
 			traits = { backroom_backstabber }
 
