@@ -148,6 +148,17 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Benedetto Croce"
+	desc = "POLITICS_BENDETTO_CROCE_DESC"
+	picture = "Portrait_ITA_Benedetto_Croce.dds"
+	expire = "1965.1.1"
+	ideology = collective_socialist
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
 	name = "Arturo Labriola"
 	desc = "POLITICS_ARTURO_LABRIOLA_DESC"
 	picture = "Portrait_ITA_Arturo_Labriola.dds"
@@ -159,15 +170,15 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	        name = "Pietro Badoglio"
-	        desc = "POLITICS_PIETRO_BADOGLIO_DESC"
-	        picture = "Portrait_Italy_Pietro_Badoglio.dds"
-	        expire = "1965.1.1"
-	        ideology = totalitarianism
-	        traits = {
-		        #
-	        }
-        }
+	name = "Victor Emmanuel III"
+	desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
+	picture = "Portrait_ItalianConfederation_Victor_Emmanuel_III.dds"
+	expire = "1965.1.1"
+	ideology = totalitarianism
+	traits = {
+		
+	}
+}
 
 create_field_marshal = {
 	name = "Pietro Badoglio"
