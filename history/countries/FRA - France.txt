@@ -226,7 +226,7 @@ create_country_leader = {
 	desc = "POLITICS_NAPOLEON_VI_DESC"
 	picture = "Portrait_France_NapoleonVI.dds"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = despotism
 	traits = {
 		stout_defender
 	}
