@@ -94,7 +94,7 @@
  STATE_93:0 "Wolyn"
  STATE_94:0 "Polesie"
  STATE_95:0 "Nowogrodek"
- STATE_96:0 "Wilno"
+ STATE_96:1 "Vilinus"
  STATE_97:0 "Bialystok"
  STATE_98:0 "Plock"
  STATE_99:0 "Jutland"
@@ -816,3 +816,4 @@
  STATE_815:0 "Naxos Islands"
  STATE_816:0 "Upper Saxony"
  STATE_817:0 "Lower Sudetenland"
+ STATE_818:0 "Ida-Viru"
