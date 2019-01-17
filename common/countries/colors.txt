@@ -113,8 +113,8 @@ AUS = {
 	color_ui = rgb { 255 255 255 }
 }
 LIT = {
-	color = rgb { 219 219 119 }
-	color_ui = rgb { 255 255 155 }
+	color = rgb { 111 67 122 }
+	color_ui = rgb { 111 67 122 }
 }
 EST = {
 	color = rgb { 50 135 175 }
@@ -428,8 +428,8 @@ ICE = {
 }
 
 UKR = {
-	color = rgb { 0  80  230 }
-	color_ui = rgb { 0  80  230 }	
+	color = rgb { 153 61 0 }
+	color_ui = rgb { 153 61 0 }
 }
 
 AZR = {
@@ -476,10 +476,9 @@ MNT = {
 	color = rgb { 77  90  105 }
 	color_ui = rgb { 77  90  105 }
 }
-
 BLR = {
-	color = rgb { 180 220 190 }
-	color_ui = rgb { 180 220 190 }
+	color = rgb { 209 208 189 }
+	color_ui = rgb { 209 208 189 }
 }
 MAN = {
 	color = rgb { 255 120 71 }
@@ -489,7 +488,6 @@ ANG = {
 	color = rgb { 37 140 61 }
 	color_ui = rgb { 37 140 61 }
 }
-
 COG = {
 	color = rgb { 152 159 209 }
 	color_ui = rgb { 152 159 209 }
