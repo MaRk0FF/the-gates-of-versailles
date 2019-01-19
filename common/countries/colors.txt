@@ -433,18 +433,18 @@ UKR = {
 }
 
 AZR = {
-	color = rgb { 69  151  49 }
-	color_ui = rgb { 69  151  49 }
+	color = rgb { 206 181 97 }
+	color_ui = rgb { 206 181 97 }
 }
 
 GEO = {
-	color = rgb { 255  150  150 }
-	color_ui = rgb { 255  204  204 }
+	color = rgb { 97 10 7 }
+	color_ui = rgb { 157 32 24 }
 }
 
 ARM = {
-	color = rgb { 176  102  180 }
-	color_ui = rgb { 176  102  180 }
+	color = rgb { 75 49 96 }
+	color_ui = rgb { 75 49 96 }
 }
 
 LAO = {

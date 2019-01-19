@@ -39,3 +39,8 @@ opinion_modifiers = {
 opinion_modifiers = {
 	anti_colonialism_campaign = { value = -45 }                                                
 }
+
+#Ethiopia
+opinion_modifiers = {
+	anti_colonialist = { value = -50 }
+}

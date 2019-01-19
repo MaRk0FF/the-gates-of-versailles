@@ -25,9 +25,9 @@ state={
 	}
 
 	provinces={
-		1964 1966 2020 2063 4909 5065 8000 8164 10818 10891 10928 12840 12991 
+		1964 2020 2063 5065 8164 10928 12840 12991 
 	}
-	manpower=987895
+	manpower=787895
 	buildings_max_level_factor=1.000
 	state_category=rural
 }
