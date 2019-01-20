@@ -240,6 +240,8 @@ set_politics = {
 
 create_faction = russian_alliance
 add_to_faction = SOV
+add_to_faction = GEO
+add_to_faction = BLR
 
 
 add_ideas = {
