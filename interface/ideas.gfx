@@ -1,4 +1,4 @@
-spriteTypes = {	
+spriteTypes = {
 
 
 
@@ -1899,6 +1899,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_victor_emmanuel.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_amadeo_bordiga"
+		texturefile = "gfx/interface/ideas/idea_amadeo_bordiga.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ivanoe_bonomi"
+		texturefile = "gfx/interface/ideas/idea_ivanoe_bonomi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_carlo_scorza"
+		texturefile = "gfx/interface/ideas/idea_carlo_scorza.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_pietro_badoglio"
 		texturefile = "gfx/interface/ideas/idea_pietro_badoglio.dds"
 	}
@@ -3628,16 +3640,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/giorgio_amendola.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ivanoe_bonomi"
-		texturefile = "gfx/interface/ideas/ivanoe_bonomi_versailles.dds"
-	}
-	spriteType = {
 		name = "GFX_idea_costantino_lazzari"
 		texturefile = "gfx/interface/ideas/costantino_lazzari.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_carlo_scorza_versailles"
-		texturefile = "gfx/interface/ideas/carlo_scorza_versailles.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_pietro_badoglio_versailles"
@@ -3646,26 +3650,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_umberto_ii"
 		texturefile = "gfx/interface/ideas/umberto_ii.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_amadeo_bordiga"
-		texturefile = "gfx/interface/ideas/amadeo_bordiga_versailles.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_ITA_giovanni_marinelli"
-		texturefile = "gfx/interface/ideas/giovanni_marinelli_versailles.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_ITA_gian_galeazzo_ciano"
-		texturefile = "gfx/interface/ideas/gian_galeazzo_ciano_versailles.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_ITA_roberto_farinacci"
-		texturefile = "gfx/interface/ideas/roberto_farinacci_versailles.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_ITA_roberto_farinacci"
-		texturefile = "gfx/interface/ideas/roberto_farinacci_versailles.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_novus_imperium_romanum"
@@ -3701,7 +3685,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_central_italy_support"
-		texturefile = "gfx/interface/ideas/generic_pp_unity_bonus.dds"
+		texturefile = "gfx/interface/ideas/generic_pp_unity_bonus.dds"generic_spy_intel
 	}
 	spriteType = {
 		name = "GFX_idea_focus_on_western_europe"
@@ -3715,4 +3699,11 @@ spriteTypes = {
 		name = "GFX_idea_french_commune_supported"
 		texturefile = "gfx/interface/ideas/french_commune_supported.dds"
 	}
-}
+	#spriteType = {
+		name = "GFX_idea_the_polish_spirit"
+		texturefile = "gfx/interface/ideas/fixed_polish_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_catholic_influence"
+		texturefile = "gfx/interface/ideas/poland_catholic_influence.dds"
+	}
