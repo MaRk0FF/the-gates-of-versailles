@@ -1,6 +1,10 @@
 #reload countrycolors
 
 ######## GATES OF VERSAILLES NATIONS
+TEX = {
+	color = rgb { 2 35 166 }
+	color_ui = rgb { 2 35 166 }
+}
 LIC = {
 	color = rgb { 0 0 128 }
 	color_ui = rgb { 0 0 128 }
@@ -313,8 +317,8 @@ YUN = {
 	color_ui = rgb { 222 247 198 }
 }
 USA = {
-	color = rgb { 20 133 237 }
-	color_ui = rgb { 87 160 255 }
+	color = rgb { 45 80 152 }
+	color_ui = rgb { 45 80 152 }
 }
 MON = {
 	#color = HSV { 0.1 0.15 0.4 }
