@@ -160,3 +160,10 @@ create_corps_commander = {
 	logistics_skill = 3
 }
 
+create_navy_leader = {
+	name = "Américo Tomás"
+	picture = "Portrait_Portugal_Americo_Tomas.dds"
+	traits = { superior_tactician spotter }
+	skill = 3
+}
+
