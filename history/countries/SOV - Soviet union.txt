@@ -271,6 +271,17 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Alexei Khvostov"
+	desc = "POLITICS_Mikhail_Tereshchenko_DESC"
+	picture = "Portrait_SOV_Alexei_Khvostov.dds"
+	expire = "1953.3.1"
+	ideology = conservatism
+	traits = {
+		
+	}
+}
+
 add_namespace = {
 	name = "unit_leader_sov"
 	type = unit_leader
