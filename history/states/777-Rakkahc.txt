@@ -1,17 +1,21 @@
 state={
 	id=777
 	name="STATE_777"
-	history = {
-		owner = TUR
-		add_core_of = TUR
+
+	history={
+		owner = SYR
+		add_core_of = SYR
 		buildings = {
 			infrastructure = 1
+
 		}
+
 	}
+
 	provinces={
-		1549 1578 1606 1634 3942 6883 10882 13215 
+		1606 1634 3942 6883 13215 
 	}
 	manpower=81200
-	state_category=wasteland
 	buildings_max_level_factor=1.000
+	state_category=wasteland
 }

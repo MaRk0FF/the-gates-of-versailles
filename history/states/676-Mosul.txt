@@ -7,20 +7,20 @@ state={
 	}
 
 	history={
-		owner = TUR
+		owner = IRQ
 		buildings = {
 			infrastructure = 3
 
 		}
 		victory_points = {
-			10106 3
+			10106 3 
 		}
-		add_core_of = TUR
+		add_core_of = IRQ
 
 	}
 
 	provinces={
-		1463 3916 5014 7530 10106 10804 10811 12476
+		1549 1578 3916 5014 10106 10804 10811 10882 
 	}
 	manpower=1061741
 	buildings_max_level_factor=1.000

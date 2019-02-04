@@ -16,6 +16,6 @@ state={
 		4473 12434 
 	}
 	manpower=297720
-	state_category=rural
+	state_category=pastoral
 	buildings_max_level_factor=1.000
 }
