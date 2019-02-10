@@ -36,9 +36,17 @@ available_if_capitulated = yes
 prerequisite = { focus = FRA_agressivediplomacy } 
 ai_will_do = { 
  factor = 1
- } 
+} 
 
- } 
+ 	completion_reward = { 
+	add_political_power = 20
+	army_experience = 10
+	navy_experience = 10
+	air_experience = 10
+	add_war_support = 0.05
+	add_stability = 0.1
+	} 
+} 
 
 #Focus for Anti-British Propaganda
 focus = { 
@@ -1010,11 +1018,11 @@ ai_will_do = {
 focus = { 
 id = FRA_puppetthenetherlands
 icon = GFX_goal_generic_more_territorial_claims
-x = 25
-y = 3
+x = 24
+y = 4
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = FRA_thenewdream } 
+prerequisite = { focus = FRA_puppetthenetherlands} 
 ai_will_do = { 
  factor = 1
  } 
@@ -1025,16 +1033,32 @@ ai_will_do = {
 focus = { 
 id = FRA_breachofbelgianneutrality
 icon = GFX_goal_generic_more_territorial_claims
-x = 24
-y = 4
+x = 25
+y = 3
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = FRA_puppetthenetherlands } 
-ai_will_do = { 
- factor = 1
- } 
+prerequisite = { focus = FRA_thenewdream } 
+	ai_will_do = { 
+	factor = 1
+	}
 
- } 
+	available = {
+		NOT = {
+			BEL = { is_puppet_of = FRA }
+			BEL = { exists = no }
+		}
+	}
+
+	completion_reward = {
+	FRA = {
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = BEL
+			add_named_threat = { threat = 3 name = FRA_disprespect_of_flanders_neutrality }
+			}
+		}
+	}
+} 
 
 #Focus for Dismantle the United Kingdom
 focus = { 
