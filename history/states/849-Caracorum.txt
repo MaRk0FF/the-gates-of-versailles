@@ -1,0 +1,15 @@
+state={
+	id=849
+	name="STATE_849"
+	provinces={
+		5042 7273 
+	}
+
+	history={
+		owner = TIB
+		add_core_of = TIB
+		add_core_of = RAJ
+
+	manpower=162522
+	buildings_max_level_factor=1.000
+}

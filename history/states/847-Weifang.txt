@@ -1,0 +1,21 @@
+
+state={
+	id=847
+	name="STATE_847"
+
+	history={
+		owner = MAN
+		add_core_of = MAN
+		add_core_of = CHI
+		manpower = 275490
+		buildings_max_level_factor = 1.000
+
+	}
+
+	provinces={
+		1184 7105 12074 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=town
+}
