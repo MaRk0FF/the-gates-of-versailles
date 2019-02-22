@@ -8,25 +8,9 @@ set_technology = {
 	
 }
 
-if = {
-	limit = { has_dlc = "Waking the Tiger" }
-	set_country_flag = MAN_northern_bandits
-	set_country_flag = MAN_eastern_bandits
-	set_country_flag = MAN_western_bandits
-	add_ideas = MAN_banditry
-	add_ideas = MAN_kwantung_veto
-	add_ideas = MAN_low_legitimacy_5
-}
-
 set_convoys = 5
 
 1939.1.1 = {
-
-	add_to_war = {
-		targeted_alliance = JAP
-		enemy = CHI
-		hostility_reason = puppet
-	}
 	
 	add_political_power = 1198
 	
@@ -190,7 +174,4 @@ create_corps_commander = {
 	planning_skill = 2
 	logistics_skill = 2
 	female = yes
-}
-
-1939.1.1 = {
 }
