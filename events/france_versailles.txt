@@ -382,6 +382,7 @@ country_event = { #The Fate of the Dutch East Indies
 #	picture = 
 
 	trigger = {
+	tag = FRA
 	HOL = { is_puppet_of = FRA }
 	NOT = {
 		INS = { exists = no }
@@ -419,6 +420,9 @@ country_event = { #The Fate of the Dutch East Indies
 		white_peace = INS
 		INS = {
 		set_cosmetic_tag = INS_independent_neutrality
+		}
+		FRA = {
+		add_named_threat = { threat = -2 name = FRA_set_free_INS }
 		}
 	}
 }
