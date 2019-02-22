@@ -374,3 +374,51 @@ country_event = { #Debate about Border Control
 			add_stability = 0.03
 		}
 	}
+	
+country_event = { #The Fate of the Dutch East Indies
+	id = france.42
+	title = france.42.t
+	desc = france.42.d
+#	picture = 
+
+	trigger = {
+	HOL = { is_puppet_of = FRA }
+	NOT = {
+		INS = { exists = no }
+		INS = { has_war = no }
+		INS = { is_puppet_of = FRA }
+		}
+	}
+
+	option = {
+		name = france.42.a #We will take the colony
+		white_peace = INS
+		FRA = {
+		puppet = INS
+		}
+	}
+	
+	option = {
+		name = france.42.b #Direct rule from Paris! (hehe Kaiserreich memes are best memes...)
+		white_peace = INS
+		add_named_threat = { threat = 6 name = FRA_Annexed_INS }
+		INS = {
+			FRA = { transfer_state = 672 }
+			FRA = { transfer_state = 335 }
+			FRA = { transfer_state = 667 }
+			FRA = { transfer_state = 334 }
+			FRA = { transfer_state = 673 }
+			FRA = { transfer_state = 668 }
+			FRA = { transfer_state = 669 }
+			FRA = { transfer_state = 738 }
+		}
+	}
+	
+	option = {
+		name = france.42.c #Create an independent nation and let them do whatever they want
+		white_peace = INS
+		INS = {
+		set_cosmetic_tag = INS_independent_neutrality
+		}
+	}
+}
