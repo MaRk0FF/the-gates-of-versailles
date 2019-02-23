@@ -3701,7 +3701,7 @@ spriteTypes = {
 	}
 	#spriteType = {
 		name = "GFX_idea_the_polish_spirit"
-		texturefile = "gfx/interface/ideas/fixed_polish_idea.dds"
+		texturefile = "gfx/interface/ideas/polish_nationalism.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_catholic_influence"
