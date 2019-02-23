@@ -14,6 +14,21 @@ ideologies = {
 			
 			centrist_conservative = {
 			}
+			
+			conservatism = {
+			}
+		
+			fiscal_conservatism = {
+			}
+			
+			conservatism = {
+			}
+		
+			liberalism = {
+			}
+		
+			socialism = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -186,6 +201,18 @@ ideologies = {
 			
 			veblenism = {
 			}
+			
+			leninism = {
+			}
+			
+			stalinism = {
+			}
+			
+			anti_revisionism = {
+			}
+			
+			anarchist_communism = {
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -277,7 +304,7 @@ ideologies = {
 		ai_fascist = yes # uses the fascist AI behaviour
 	}
 	
-	authoritarian = {
+	neutrality = {
 	
 		types = {
 		
@@ -288,6 +315,18 @@ ideologies = {
 			}
 			
 			developmentalist_state = {
+			}
+			
+			despotism  = {
+			}
+			
+			oligarchism  = {
+			}
+			
+			moderatism = {
+			}
+			
+			centrism = {
 			}
 		}
 
@@ -341,6 +380,15 @@ ideologies = {
 			}
 			
 			integralism = {
+			}
+			
+			nazism = {
+			}
+			
+			fascism_ideology = {
+			}
+			
+			rexism = {
 			}
 		}
 		
