@@ -208,31 +208,39 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 33
-		}
-		
-		liberal = { 
-			popularity = 50
-		}
-		
-		social_democratic = {
-			popularity = 9
+			popularity = 64
 		}
 
-		totalitarian = {
-			popularity = 1
+		fascism = {
+			popularity = 5
 		}
 		
 		communism = {
+			popularity = 4
+		}
+		
+		theocracy = {
+			popularity = 7
+		}
+		
+		neutrality = {
+			popularity = 3
+		}
+		
+		social_democratic = {
+			popularity = 2
+		}
+		
+		liberal = {
 			popularity = 5
 		}
-
-		neutrality = {
-			popularity = 2
+		
+		monarchist = {
+			popularity = 10
 		}
 	}
 	
-	ruling_party = liberal
+	ruling_party = democratic
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -245,8 +253,6 @@ add_to_faction = BLR
 
 
 add_ideas = {
-	trotskyite_plot
-	home_of_revolution
 }
 
 create_country_leader = {
@@ -254,7 +260,7 @@ create_country_leader = {
 	desc = "POLITICS_Michael_Alexandrovich_DESC"
 	picture = "Portrait_Russia_Michael_Alexandrovich.dds"
 	expire = "1953.3.1"
-	ideology = despotism
+	ideology = imperium
 	traits = {
 		
 	}
@@ -265,7 +271,7 @@ create_country_leader = {
 	desc = "POLITICS_Mikhail_Tereshchenko_DESC"
 	picture = "Portrait_SOV_Mikhail_Tereshchenko.dds"
 	expire = "1953.3.1"
-	ideology = liberalism
+	ideology = classical_liberalism
 	traits = {
 		
 	}
@@ -276,7 +282,7 @@ create_country_leader = {
 	desc = "POLITICS_Mikhail_Tereshchenko_DESC"
 	picture = "Portrait_SOV_Alexei_Khvostov.dds"
 	expire = "1953.3.1"
-	ideology = conservatism
+	ideology = national_conservatism
 	traits = {
 		
 	}
