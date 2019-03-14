@@ -4,7 +4,7 @@ state={
 	name="STATE_96"
 
 	history={
-		owner = LIT
+		owner = BLR
 		victory_points = {
 			3320 5
 		}
@@ -19,7 +19,7 @@ state={
 	}
 
 	provinces={
-		233 3320 9274 9295 11342 11391 
+		3320
 	}
 	manpower=1226000
 	buildings_max_level_factor=1.000
