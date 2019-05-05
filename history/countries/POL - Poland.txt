@@ -23,6 +23,14 @@ set_technology = {
 	trench_warfare = 1
 }
 
+add_ideas = {
+	the_polish_spirit
+	catholic_influence
+	POL_industry
+	military_in_charge
+	unpopular_in_the_military
+}
+
 set_convoys = 10
 
 set_politics = {
@@ -33,7 +41,7 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 14
+			popularity = 12
 		}
 		
 		communism = {
@@ -41,19 +49,23 @@ set_politics = {
 		}
 		
 		neutrality = {
-			popularity = 65
+			popularity = 61
 		}
 		
-		social_democratic = {
-			popularity = 5
+		theocracy = {
+			popularity = 4
 		}
-		
+				
 		liberal = {
-			popularity = 2
+			popularity = 4
 		}
-		
+
 		monarchist = {
-			popularity = 3
+			popularity = 4
+		}
+
+		social_democratic = {
+			popularity = 4
 		}
 	}
 	
@@ -63,12 +75,79 @@ set_politics = {
 	elections_allowed = no
 }
 
+##fascist##
+
 create_country_leader = {
-	name = "Wladyslaw Sikorski"
+	name = "Bolesław Piasecki"
 	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
+	#picture = "Portrait_Poland_Wladyslaw_Sikorski_Versailles.dds"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+		#
+	}
+}
+
+##liberal##
+
+create_country_leader = {
+	name = "Stanisław Wojciechowski"
+	#desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
+	#picture = "Portrait_Poland_Wladyslaw_Sikorski_Versailles.dds"
+	expire = "1965.1.1"
+	ideology = classical_liberalism
+	traits = {
+		#
+	}
+}
+
+##neutrality##
+
+create_country_leader = {
+	name = "Władysław Sikorski"
+	#desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Sikorski_Versailles.dds"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+##communism##
+
+create_country_leader = {
+	name = "Adolf Warski"
+	#desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
+	picture = "Portrait_Poland_Adolf_Warski.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+##democratic##
+
+create_country_leader = {
+	name = "Wojciech Korfanty"
+	#desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
+	#picture = "Portrait_Poland_Wladyslaw_Sikorski_Versailles.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+##social democratic##
+
+create_country_leader = {
+	name = "Wincenty Witos"
+	#desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
+	#picture = "Portrait_Poland_Wladyslaw_Sikorski_Versailles.dds"
+	expire = "1965.1.1"
+	ideology = reformist_socialist
 	traits = {
 		#
 	}
@@ -76,6 +155,7 @@ create_country_leader = {
 
 create_field_marshal = {
 	name = "Wladyslaw Sikorski"
+	id = 600
 	picture = "Portrait_Poland_Wladyslaw_Sikorski_Versailles.dds"
 	traits = { defensive_doctrine }
 	skill = 3
@@ -86,7 +166,7 @@ create_field_marshal = {
 }
 
 create_field_marshal = {
-	name = "Wladyslaw Bortnowski"
+	name = "Władysław Bortnowski"
 	gfx = "GFX_POL_wladyslaw_bortnowski"
 	traits = {  thorough_planner }
 	skill = 3
@@ -97,7 +177,7 @@ create_field_marshal = {
 }
 
 create_field_marshal = {
-	name = "Stanislaw Kopanski"
+	name = "Stanisław Kopański"
 	gfx = "GFX_POL_stanislav_kopanski"
 	traits = {  offensive_doctrine }
 	skill = 3
@@ -108,7 +188,7 @@ create_field_marshal = {
 }
 
 create_corps_commander = {
-	name = "Wladyslaw Anders"
+	name = "Władysław Anders"
 	gfx = "GFX_POL_wladislaw_anders"
 	traits = {  armor_officer }
 	skill = 4
