@@ -321,7 +321,22 @@ units = {
 		location = 12991 
 		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment
 		start_experience_factor = 0.2 
-	}  
+	} 
+
+
+	##### NAVAL UNITS #####
+	### ITALY ###
+
+
+	
+
+
+	### EAGEAN SEA ###
+
+	### AFRICA ###
+
+} 
+
 
 ##### AIR WINGS #####
 air_wings = { 

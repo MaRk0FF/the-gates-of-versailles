@@ -1,21 +1,18 @@
-units = {
+﻿units = {
 
-	### Naval OOB ###
-	fleet = {				
+	##### NAVAL UNITS #####
+	### ROYAL NAVY ###
+	fleet = {
 		name = "Koninklijke Marine"			
-		naval_base = 3314 
-		task_force = {
-			name = "Koninklijke Marine"			
+		naval_base = 3314  # Amsterdam
+		task_force = {				
+			name = "Koninklijke Vloot"			
 			location = 3314  # Amsterdam
 			ship = { name = "HrMs Hertog Hendrik" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }		
 			ship = { name = "HrMs Jacob van Heemskerck" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } } }		
 			ship = { name = "HrMs Van Galen" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HOL } } }		
 		}				
-	}
-	fleet = {				
-		name = "Koninklijke Onderzeeboot Smaldeel"			
-		naval_base = 3314 
-		task_force = {
+		task_force = {				
 			name = "Koninklijke Onderzeeboot Smaldeel"			
 			location = 3314  # Amsterdam
 			ship = { name = "HrMs O-9" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HOL version_name = "K-XIV Class" } } }
@@ -27,10 +24,12 @@ units = {
 			ship = { name = "HrMs O-15" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HOL version_name = "K-XIV Class" } } }
 		}				
 	}
-	fleet = {				
-		name = "Nederlands-Indië Eskader"			
-		naval_base = 7381 
-		task_force = {
+
+	### EAST INDIES SQUADRON ###
+	fleet = {
+		name = "Nederlands-Indië Marine"			
+		naval_base = 7381  # Batavia	
+		task_force = {				
 			name = "Nederlands-Indië Eskader"			
 			location = 7381  # Batavia	
 			ship = { name = "HrMs Soerabaja" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = HOL } }	}		
@@ -45,11 +44,7 @@ units = {
 			ship = { name = "HrMs Banckert" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HOL } } }	
 			ship = { name = "HrMs Van Nes" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = HOL } } }	
 		}				
-	}
-	fleet = {				
-		name = "Nederlands-Indië Onderzeeboot Smaldeel"			
-		naval_base = 4608
-		task_force = {
+		task_force = {				
 			name = "Nederlands-Indië Onderzeeboot Smaldeel"			
 			location = 4608  # Soerbaja
 			ship = { name = "HrMs K-VII" definition = submarine equipment = { submarine_1 = { amount = 1 owner = HOL } } }
@@ -70,3 +65,5 @@ units = {
 		}				
 	}
 }
+
+

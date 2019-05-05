@@ -48,19 +48,19 @@ set_politics = {
 			popularity = 3
 		}
 		
-		neutrality = {
+		totalitarian = {
 			popularity = 65
 		}
 	}
 	
-	ruling_party = neutrality
+	ruling_party = fascism
 	last_election = "1933.2.16"
 	election_frequency = 36
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_convoys = 150
-set_stability = 0.7
+set_stability = 0.5
 
 create_country_leader = {
 	name = "Francisco Franco"
@@ -78,7 +78,18 @@ create_country_leader = {
 	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
 	picture = "Portrait_Spain_Francisco_Franco_Versailles.dds"
 	expire = "1965.1.1"
-	ideology = military_junta
+	ideology = totalitarianism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Francisco Franco"
+	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+	picture = "Portrait_Spain_Francisco_Franco_Versailles.dds"
+	expire = "1965.1.1"
+	ideology = despotism
 	traits = {
 		#
 	}

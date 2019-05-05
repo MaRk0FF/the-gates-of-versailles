@@ -65,18 +65,23 @@ ai_will_do = {
 
 #Focus for Pay Spain for Catalonia
 focus = { 
-id = FRA_payspainforcatalonia
-icon = GFX_goal_generic_forceful_treaty
-x = 32
-y = 3
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_thenewdream } 
-ai_will_do = { 
- factor = 1
- } 
+	id = FRA_payspainforcatalonia
+	icon = GFX_goal_generic_forceful_treaty
+	x = 32
+	y = 3
+	cost = 3
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_thenewdream } 
+	ai_will_do = { 
+	factor = 1
+	} 
 
- } 
+	completion_reward = {
+		SPR = {
+			country_event = { id = spain.11 hours = 18 }
+		}
+	}
+} 
 
 #Focus for Prepare the War
 focus = { 
@@ -834,17 +839,24 @@ ai_will_do = {
 
 #Focus for the Great Campaign
 focus = { 
-id = FRA_thegreatcampaign
-icon = GFX_goal_generic_small_arms
-x = 29
-y = 3
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_thenewdream } 
-ai_will_do = { 
- factor = 1
- } 
-
+	id = FRA_thegreatcampaign
+	icon = GFX_goal_generic_small_arms
+	x = 29
+	y = 3
+	cost = 10
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_thenewdream } 
+	ai_will_do = { 
+	factor = 1
+	} 
+	available = {
+	has_country_flag = fra_domination_benelux
+	}
+	
+ 	completion_reward = { 
+	add_political_power = 50
+	add_war_support = 0.10
+	} 
  } 
 
 #Focus for Puppet Wurtemburg
