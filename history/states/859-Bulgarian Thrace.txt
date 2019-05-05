@@ -11,7 +11,7 @@ state={
 		add_core_of = BUL
 	}
 	provinces={
-		11774 11905 
+		11774 11905 13231
 	}
 	manpower=228100
 	state_category=rural

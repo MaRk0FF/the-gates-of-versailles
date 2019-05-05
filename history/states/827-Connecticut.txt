@@ -20,7 +20,7 @@ state={
 
 	}
 	provinces={
-		6909 9832 9847 9850 13234 
+		6909 9832 9847 9850 13243
 	}
 	manpower=1709242
 	buildings_max_level_factor=1.000
