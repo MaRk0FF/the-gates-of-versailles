@@ -1,0 +1,18 @@
+################
+#### POLISH ####
+################
+
+POL_resources = {
+	
+	allowed = {
+		original_tag = POL
+	}
+
+	available = {
+		has_completed_focus = POL_search_for_iron
+	}
+
+	visible = {
+		has_completed_focus = POL_search_for_iron
+	}
+}
