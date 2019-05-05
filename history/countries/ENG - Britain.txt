@@ -267,36 +267,13 @@ add_to_faction = MAL
 create_country_leader = {
 	name = "Winston Churchill"
 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-	picture = "Portrait_Britain_Winston_Churchill.dds"
+	picture = "Portrait_ENG_Winston_Churchill.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
-	traits = {
-		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
-	}
-}
-
-
-create_country_leader = {
-	name = "Stanley Baldwin"
-	desc = "POLITICS_STANLEY_BALDWIN_DESC"
-	picture = "gfx//leaders//ENG//Portrait_Britain_Stanley_Baldwin.dds"
-	expire = "1938.1.1"
-	ideology = liberalism
 	traits = {
 		
 	}
 }
-
-#create_country_leader = {
-#	name = "Neville Chamberlain"
-#	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
-#	picture = "Portrait_Britain_Neville_Chamberlain.dds"
-#	expire = "1965.1.1"
-#	ideology = liberalism
-#	traits = {
-#		
-#	}
-#}
 
 create_country_leader = {
 	name = "Oswald Mosley"
@@ -315,6 +292,17 @@ create_country_leader = {
 	picture = "Portrait_Britain_Palme_Dutt.dds"
 	expire = "1965.1.1"
 	ideology = leninism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Clement Attlee"
+	desc = "POLITICS_CLEMENT_ATTLEE_DESC"
+	picture = "Portrait_ENG_Clement_Attlee.dds"
+	expire = "1965.1.1"
+	ideology = labourism
 	traits = {
 		
 	}

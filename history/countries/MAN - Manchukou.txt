@@ -8,7 +8,7 @@ set_technology = {
 	
 }
 
-set_convoys = 5
+set_convoys = 65
 
 1939.1.1 = {
 	
@@ -83,25 +83,27 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 0
-			banned = yes
+			popularity = 9
 		}
 
 		fascism = {
-			popularity = 80
-		}
-		
-		communism = {
-			popularity = 0
-			banned = yes
+			popularity = 6
 		}
 
 		neutrality = {
-			popularity = 20
+			popularity = 10
+		}
+		
+		monarchist = {
+			popularity = 65
+		}
+		
+		theocracy = {
+			popularity = 10
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = monarchist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -109,21 +111,9 @@ set_politics = {
 
 create_country_leader = {
 	name = "Aisin Gioro Puyi"
-	
-	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
+	picture = "Portrait_CHI_Puyi.dds"
 	expire = "1960.1.1"
-	ideology = rexism
-	traits = {
-		warrior_code
-	}
-}
-
-create_country_leader = {
-	name = "Aisin Gioro Puyi"
-	
-	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
-	expire = "1960.1.1"
-	ideology = despotism
+	ideology = absolutism
 	traits = {
 		warrior_code
 	}

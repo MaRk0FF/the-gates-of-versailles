@@ -183,49 +183,22 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 0
+			popularity = 21
 		}
 
 		fascism = {
-			popularity = 100
+			popularity = 10
 		}
 		
-		communism = {
-			popularity = 0
-			#banned = no #default is no
+		monarchism = {
+			popularity = 69
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = monarchism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
-}
-
-
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 0
-			}
-
-			fascism = {
-				popularity = 100
-			}
-			
-			communism = {
-				popularity = 0
-				#banned = no #default is no
-			}
-		}
-		
-		ruling_party = fascism
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
 }
 
 create_country_leader = {
@@ -233,13 +206,12 @@ create_country_leader = {
 	desc = "POLITICS_Hirohito_DESC"
 	picture = "Portrait_Japan_Hirohito_Versailles.dds"
 	expire = "1989.1.1"
-	ideology = fascism_ideology
+	ideology = absolutism
 	traits = {
 		warrior_code
 		emperor_showa
 		imperial_sanction
 	}
-	id = 700 #Hirohito
 }
 
 create_country_leader = {

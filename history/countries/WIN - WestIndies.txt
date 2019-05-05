@@ -36,6 +36,17 @@ set_politics = {
 
 set_convoys = 25
 
+create_country_leader = {
+	name = "Bede Clifford"
+	desc = "POLITICS_BEDE_CLIFFORD_DESC"
+	picture = "Portrait_WIN_Bede_Clifford.dds"
+	expire = "1965.1.1"
+	ideology = colonial_government
+	traits = {
+		#
+	}
+}
+
 
 
 

@@ -31,12 +31,12 @@ set_politics = {
 			popularity = 0
 		}
 		
-		totalitarian = {
+		monarchism = {
 			popularity = 75
 		}
 	}
 	
-	ruling_party = totalitarian
+	ruling_party = monarchism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -49,7 +49,7 @@ create_country_leader = {
 	desc = "POLITICS_FREDRICK_AUGUSTUS_III_DESC"
 	picture = "Portrait_Saxony_Frederick_Augustus_III.dds"
 	expire = "1965.1.1"
-	ideology = monarchism
+	ideology = absolutism
 	traits = {
 	}
 }

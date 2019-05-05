@@ -91,7 +91,7 @@ set_politics = {
 		fascism = {
 			popularity = 11
 		}
-		totalitarian = {
+		monarchist = {
 			popularity = 8
 		}
 		neutrality = {
@@ -138,7 +138,7 @@ set_stability = 0.75
 create_country_leader = {
 	name = "Hubert Pierlot"
 	desc = "POLITICS_HUBERT_PIERLOT_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
+	picture = "Portrait_BEL_Hubert_Pierlot.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
