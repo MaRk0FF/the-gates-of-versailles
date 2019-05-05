@@ -1,2 +1,10 @@
 ﻿l_english: 
  POL_economy_tt:0 "§MThis is one of many reforms we need to do to get a better economy.§!"
+ POL_young_officers_tt:0 "§MThis will make us favour the young officers.§!"
+ POL_compromise_tt:0 "§RThis will form a compromise, however it is not the optimal solution.§!"
+ POL_old_generals_tt:0 "§GThis will make us favour the old generals.§!"
+ POL_polish_forts_tt:0 "§YWe will begin a fort construction project.§!"
+ POL_sikorski_back_tt:0 "§MSikorski will be invited back to Poland, without trial.§!"
+ POL_hunt_sikorski_tt:0 "§RWe will hunt down Sikorski.§!"
+ POL_sikorski_returns_tt:0 "§TSikorski returns to the country.§!"
+ POL_sikorski_rerires_tt:0 "§MSikorski will be forced into retirement.§!"
