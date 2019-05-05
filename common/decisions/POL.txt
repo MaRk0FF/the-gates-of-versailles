@@ -1,0 +1,67 @@
+POL_resources = {
+	POL_iron_in_warsaw = {
+
+		icon = generic_prospect_for_resources
+
+		available = {
+			has_completed_focus = POL_search_for_iron
+			controls_state = 10
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			has_completed_focus = POL_search_for_iron
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			
+			country_event = {
+				days = 30
+				id = poland.26
+					}
+				}
+
+		days_remove = 30
+
+	}
+
+POL_iron_in_lodz = {
+
+		icon = generic_prospect_for_resources
+
+		available = {
+			has_completed_focus = POL_search_for_iron
+			controls_state = 87
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			has_completed_focus = POL_search_for_iron
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			
+			country_event = {
+				days = 30
+				id = poland.27
+					}
+				}
+
+		days_remove = 30
+
+	}	
+}
