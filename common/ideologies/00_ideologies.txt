@@ -40,7 +40,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
 		
-		color = { 192 36 27 }
+		color = { 70 37 251 }
 		
 		rules = {
 			can_declare_war_on_same_ideology = yes
@@ -97,7 +97,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
 		
-		color = { 9 42 83 }
+		color = { 227 204 31 }
 		
 		rules = {
 			can_declare_war_on_same_ideology = no
@@ -155,7 +155,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
 		
-		color = { 186 24 35 }
+		color = { 183 31 119 }
 		
 		rules = {
 			can_declare_war_on_same_ideology = yes
@@ -273,7 +273,7 @@ ideologies = {
 			"FACTION_NAME_NONALIGNED_5"
 		}
 		
-		color = { 40 19 25 }
+		color = { 95 44 129 }
 		
 		
 		war_impact_on_world_tension = 0.35		
@@ -317,6 +317,9 @@ ideologies = {
 			developmentalist_state = {
 			}
 			
+			colonial_government = {
+			}
+			
 			despotism  = {
 			}
 			
@@ -338,7 +341,7 @@ ideologies = {
 			"FACTION_NAME_AUTHORITARIAN_5"
 		}
 		
-		color = { 25 25 25 }
+		color = { 42 42 39 }
 		
 		
 		war_impact_on_world_tension = 0.25		#no major danger
@@ -450,7 +453,7 @@ ideologies = {
 			"FACTION_NAME_THEOCRACY_5"
 		}
 		
-		color = { 36 70 9 }
+		color = { 39 63 31 }
 		
 		war_impact_on_world_tension = 1.0			#evil!
 		faction_impact_on_world_tension = 1.0
