@@ -41,7 +41,7 @@ create_country_leader = {
 	desc = "POLITICS_EDUARD_DIETL_DESC"
 	picture = "Portrait_Bavaria_Eduard_Dietl.dds"
 	expire = "1965.1.1"
-	ideology = oligarchism
+	ideology = despotism
 	traits = {
 	}
 }

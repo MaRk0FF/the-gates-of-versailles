@@ -41,11 +41,7 @@ set_politics = {
 		}
 		
 		neutrality = {
-			popularity = 3
-		}
-		
-		radical_socialist = {
-			popularity = 4
+			popularity = 65
 		}
 		
 		social_democratic = {
@@ -56,12 +52,12 @@ set_politics = {
 			popularity = 2
 		}
 		
-		totalitarian = {
-			popularity = 61
+		monarchist = {
+			popularity = 3
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "1935.9.8"
 	election_frequency = 36
 	elections_allowed = no
@@ -72,7 +68,7 @@ create_country_leader = {
 	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Sikorski_Versailles.dds"
 	expire = "1965.1.1"
-	ideology = totalitarianism
+	ideology = military_junta
 	traits = {
 		#
 	}
