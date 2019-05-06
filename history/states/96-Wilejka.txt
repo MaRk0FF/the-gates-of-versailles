@@ -14,7 +14,6 @@ state={ #Hrodna
 			air_base = 5
 
 		}
-		add_core_of = LIT
 
 	}
 
