@@ -31,12 +31,12 @@ set_politics = {
 			popularity = 0
 		}
 		
-		monarchism = {
+		monarchist = {
 			popularity = 75
 		}
 	}
 	
-	ruling_party = monarchism
+	ruling_party = monarchist
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no

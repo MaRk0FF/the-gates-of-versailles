@@ -158,6 +158,17 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Pius XII"
+	desc = "POLITICS_PIUS_XII_DESC"
+	picture = "Portrait_ITA_Pope_Pius_XII.dds"
+	expire = "1965.1.1"
+	ideology = catholic_theocracts 
+	traits = {
+		
+	}
+}
+
 create_field_marshal = {
 	name = "Pietro Badoglio"
 	picture = "Portrait_Italy_Pietro_Badoglio.dds"
