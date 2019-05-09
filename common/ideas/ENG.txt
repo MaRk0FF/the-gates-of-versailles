@@ -94,7 +94,7 @@ ideas = {
 			}
 
 		}
-		ENG_greater_britain = {
+		ENG_greater_britain_2 = {
 
 		allowed = {
 			always = no
