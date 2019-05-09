@@ -1,6 +1,0 @@
-spriteTypes = {
-	spriteType = {
-		name = "GFX_amazing_empty_bg"
-		texturefile = "gfx/interface/amazing_empty_bg.dds"
-	}
-}

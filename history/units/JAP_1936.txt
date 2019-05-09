@@ -543,58 +543,7 @@ units = {
 		division_template = "Hohei Shidan"
 		start_experience_factor = 0.3
 	}
-
-
-
-### IJN ###
-#Taiwan (Goaxing)
-
-
-#Yokosuka (Tokyo)
-	
-
-
-		#Dai 5 Kuchikutai
-		ship = { name = "Asakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-		ship = { name = "Harukaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-		ship = { name = "Matsukaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-		ship = { name = "Hatakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-	}
-	
-#Sasebo (Nagasaki)
-	}
-
-		ship = { name = "Natori" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma Class"} } }
-		ship = { name = "Yura" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma Class"} } }
-		ship = { name = "Kitakami" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma Class"} } }
-		ship = { name = "Tatsuta" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }
-		#Dai 22 Kuchikutai
-		ship = { name = "Satsuki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-		ship = { name = "Minazuki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-		ship = { name = "Fumizuki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-		ship = { name = "Nagatsuki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-		# Dai 23 Kuchikutai 
-		ship = { name = "Kikuzuki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-		ship = { name = "Mikazuki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-		ship = { name = "Mochizuki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-		ship = { name = "Yuzuki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-	}
-	
-#Hiroshima (Kure)
-
-
-#Ominato
-
-#Pusan
-
-	
-#Truk
-
 }
-
-
-
-
 #AIRCRAFT
 air_wings = {
 	### IJA Air Forces ###

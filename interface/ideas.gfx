@@ -3707,3 +3707,4 @@ spriteTypes = {
 		name = "GFX_idea_catholic_influence"
 		texturefile = "gfx/interface/ideas/poland_catholic_influence.dds"
 	}
+}

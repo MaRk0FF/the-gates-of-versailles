@@ -1,5 +1,4 @@
 ideas = {
-
 	country = {
 		ENG_anglo_french_rivalry = {
 			
@@ -14,19 +13,17 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				add_opinion_modifier = {
-					opinion = -20
-				}
-
-				FRA = {
-					add_opinion_modifier = {
-						opinion = -20
-					}
-				}
+				#add_opinion_modifier = {
+				#	opinion = -20
+				#}
+				#
+				#FRA = {
+				#	add_opinion_modifier = {
+				#		opinion = -20
+				#	}
+				#}
 			}
 		}
-
-	country = {
 		ENG_fascist_influence = {
 
 			allowed = {
@@ -43,8 +40,6 @@ ideas = {
 				fascism_acceptance = 80
 			}
 		}
-
-	country = {
 		ENG_rule_brittania = {
 
 			allowed = {
@@ -63,8 +58,6 @@ ideas = {
 			}
 
 		}
-
-	country = {
 		ENG_greater_britain = {
 
 			allowed = {
@@ -79,12 +72,10 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.15
-				consription = 0.05
+				conscription = 0.05
 			}
 
 		}
-
-	country = {
 		ENG_weak_puppet_master = {
 
 			allowed = {
@@ -103,8 +94,6 @@ ideas = {
 			}
 
 		}
-
-	country = {
 		ENG_greater_britain = {
 
 		allowed = {
@@ -119,6 +108,8 @@ ideas = {
 
 		modifier = {
 			fascism_drift = 0.10
-			conservative_drift = -0.10
+			democratic_drift = -0.10
 			liberal_drift = -0.10
 		}
+	}
+}
