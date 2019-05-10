@@ -414,7 +414,7 @@ focus = {
 			modifier = FRA_passive_diplomacy
 		}
 		add_opinion_modifier = {
-			target = RUS
+			target = SOV
 			modifier = FRA_passive_diplomacy
 		}
 		add_opinion_modifier = {
@@ -468,7 +468,7 @@ focus = {
 			modifier = FRA_agressive_diplomacy
 		}
 		add_opinion_modifier = {
-			target = RUS
+			target = SOV
 			modifier = FRA_agressive_diplomacy
 		}
 		add_opinion_modifier = {
@@ -636,9 +636,9 @@ ai_will_do = {
 
  } 
 
-#Focus for Pressure the Prussian Commune
+#Focus for Pressure the PSOVsian Commune
 focus = { 
-id = FRA_pressuretheprussiancommune
+id = FRA_pressurethepSOVsiancommune
 icon = GFX_goal_generic_war_with_comintern
 x = 13
 y = 3
@@ -808,9 +808,9 @@ ai_will_do = {
 
  } 
 
-#Focus for Topple Prussian Goverment
+#Focus for Topple PSOVsian Goverment
 focus = { 
-id = FRA_toppleprussiangoverment
+id = FRA_topplepSOVsiangoverment
 icon = GFX_goal_anti_comintern_pact
 x = 29
 y = 7
@@ -913,15 +913,15 @@ ai_will_do = {
 
  } 
 
-#Focus for End the Russian Hegemony
+#Focus for End the SOVsian Hegemony
 focus = { 
-id = FRA_endtherussianhegemony
+id = FRA_endtheSOVsianhegemony
 icon = GFX_focus_ger_strike_at_the_source
 x = 29
 y = 8
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = FRA_toppleprussiangoverment } 
+prerequisite = { focus = FRA_topplepSOVsiangoverment } 
 ai_will_do = { 
  factor = 1
  } 
@@ -1055,7 +1055,7 @@ x = 24
 y = 9
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = FRA_endtherussianhegemony } 
+prerequisite = { focus = FRA_endtheSOVsianhegemony } 
 prerequisite = { focus = FRA_dismantletheunitedkingdom } 
 ai_will_do = { 
  factor = 1
@@ -1559,9 +1559,9 @@ ai_will_do = {
 
  } 
 
-#Focus for Align with Prussia
+#Focus for Align with PSOVsia
 focus = { 
-id = FRA_alignwithprussia
+id = FRA_alignwithpSOVsia
 icon = GFX_goal_generic_war_with_comintern
 x = 42
 y = 7
@@ -2087,7 +2087,7 @@ x = 43
 y = 9
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = FRA_helpprussiaunifythegermanscountries focus = FRA_thebritishcivilwar } 
+prerequisite = { focus = FRA_helppSOVsiaunifythegermanscountries focus = FRA_thebritishcivilwar } 
 ai_will_do = { 
  factor = 1
  } 
@@ -2109,15 +2109,15 @@ ai_will_do = {
 
  } 
 
-#Focus for Help Prussia Unify the Germans Countries
+#Focus for Help PSOVsia Unify the Germans Countries
 focus = { 
-id = FRA_helpprussiaunifythegermanscountries
+id = FRA_helppSOVsiaunifythegermanscountries
 icon = GFX_focus_generic_support_the_left_right
 x = 42
 y = 8
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = FRA_alignwithprussia } 
+prerequisite = { focus = FRA_alignwithpSOVsia } 
 ai_will_do = { 
  factor = 1
  } 
@@ -2229,9 +2229,9 @@ ai_will_do = {
 
  } 
 
-#Focus for Spread to Russia
+#Focus for Spread to SOVsia
 focus = { 
-id = FRA_spreadtorussia
+id = FRA_spreadtoSOVsia
 icon = GFX_goal_generic_war_with_comintern
 x = 46
 y = 11
