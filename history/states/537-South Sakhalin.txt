@@ -11,6 +11,7 @@ state= {
 	history= {
 		owner = SOV
 		add_core_of = SOV
+		add_core_of = FAR
 		#add_claim_by = SOV # Removed because of too much aggression
 		buildings = {
 			infrastructure = 3
