@@ -1,0 +1,35 @@
+###################################################
+# Switzerland Events - Gates to Versailles Edition#
+###################################################
+
+add_namespace = switzerland
+
+country_event = { #Switzerland Civil War - AI Edition event
+	id = switzerland.1
+	title = switzerland.1.t
+	desc = switzerland.1.d
+#	picture =
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+	days = 30
+	}
+	
+	trigger = {
+		tag = SWI
+		NOT = { has_government = liberal }
+		date > 1937.6.1
+		has_country_flag = swi_cdg_liberal
+	}
+	
+	option = {
+		name = switzerland.1.a
+		hidden_effect = {
+		start_civil_war = {
+		ideology = liberal
+		size = 0.6
+			}
+		}
+	}
+}	

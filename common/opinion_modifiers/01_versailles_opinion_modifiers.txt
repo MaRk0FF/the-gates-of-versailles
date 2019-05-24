@@ -25,7 +25,11 @@ opinion_modifiers = {
 	FRA_failure_of_deportation = { value = -100 }
 }
 
-#Flanders
+opinion_modifiers = {
+	FRA_faction_restructuration = { value = -15 }
+}
+
+#Switzlerand (that use Belgium tag yeah ik right)
 opinion_modifiers = {
 	BEL_deportation_attempt = { value = -100 }
 }

@@ -636,9 +636,9 @@ ai_will_do = {
 
  } 
 
-#Focus for Pressure the PSOVsian Commune
+#Focus for Pressure the Prussian Commune
 focus = { 
-id = FRA_pressurethepSOVsiancommune
+id = FRA_pressuretheprussiancommune
 icon = GFX_goal_generic_war_with_comintern
 x = 13
 y = 3
@@ -784,7 +784,10 @@ focus = {
 	factor = 1
 	} 
 	available = {
-	has_country_flag = fra_domination_benelux
+		AND = {
+		has_country_flag = fra_domination_benelux
+		has_country_flag = fra_announce_faction_restructuration
+		}
 	}
 	
  	completion_reward = { 
@@ -808,9 +811,9 @@ ai_will_do = {
 
  } 
 
-#Focus for Topple PSOVsian Goverment
+#Focus for Topple Prussian Goverment
 focus = { 
-id = FRA_topplepSOVsiangoverment
+id = FRA_toppleprussiangoverment
 icon = GFX_goal_anti_comintern_pact
 x = 29
 y = 7
@@ -870,18 +873,38 @@ ai_will_do = {
 
 #Focus for Inner Faction Rarrangement
 focus = { 
-id = FRA_innerfactionrarrangement
-icon = GFX_goal_generic_national_unity
-x = 36
-y = 3
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_thenewdream } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
+	id = FRA_innerfactionrarrangement
+	icon = GFX_goal_generic_national_unity
+	x = 36
+	y = 3
+	cost = 10
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_thenewdream } 
+	ai_will_do = { 
+	factor = 1
+	}
+	
+	completion_reward = {
+		add_opinion_modifier = {
+		target = NAP
+		modifier = FRA_faction_restructuration
+		}
+		add_opinion_modifier = {
+		target = BAD
+		modifier = FRA_faction_restructuration
+		}
+		add_opinion_modifier = {
+		target = SWI
+		modifier = FRA_faction_restructuration
+		}
+		add_opinion_modifier = {
+		target = WST
+		modifier = FRA_faction_restructuration
+		}
+		custom_effect_tooltip = war_risk_and_puppet_rebelion
+		set_country_flag = fra_announce_faction_restructuration
+	}
+} 
 
 #Focus for Ultimatum to Switzerland
 focus = { 
@@ -913,15 +936,15 @@ ai_will_do = {
 
  } 
 
-#Focus for End the SOVsian Hegemony
+#Focus for End the Russian Hegemony
 focus = { 
-id = FRA_endtheSOVsianhegemony
+id = FRA_endtherussianhegemony
 icon = GFX_focus_ger_strike_at_the_source
 x = 29
 y = 8
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = FRA_topplepSOVsiangoverment } 
+prerequisite = { focus = FRA_toppleprussiangoverment } 
 ai_will_do = { 
  factor = 1
  } 
@@ -1055,7 +1078,7 @@ x = 24
 y = 9
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = FRA_endtheSOVsianhegemony } 
+prerequisite = { focus = FRA_endtherussianhegemony } 
 prerequisite = { focus = FRA_dismantletheunitedkingdom } 
 ai_will_do = { 
  factor = 1
@@ -1080,33 +1103,39 @@ ai_will_do = {
 
 #Focus for Ultimatum to Baden
 focus = { 
-id = FRA_ultimatumtobaden
-icon = GFX_goal_generic_military_sphere
-x = 36
-y = 4
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_innerfactionrarrangement } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
+	id = FRA_ultimatumtobaden
+	icon = GFX_goal_generic_military_sphere
+	x = 36
+	y = 4
+	cost = 10
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_innerfactionrarrangement } 
+	ai_will_do = { 
+	factor = 1
+	} 
+	
+	completion_reward = {
+		country_event = { id = france.47 }
+	}
+}	 
 
 #Focus for Ultimatum to Westphalia
 focus = { 
-id = FRA_ultimatumtowestphalia
-icon = GFX_goal_generic_military_sphere
-x = 38
-y = 4
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_innerfactionrarrangement } 
-ai_will_do = { 
- factor = 1
- } 
+	id = FRA_ultimatumtowestphalia
+	icon = GFX_goal_generic_military_sphere
+	x = 38
+	y = 4
+	cost = 10
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_innerfactionrarrangement } 
+	ai_will_do = { 
+	factor = 1
+	} 
 
- } 
+	completion_reward = {
+	country_event = { id = france.48 }
+	}
+} 
 
 #Focus for Purge the Democratic Parties
 focus = { 
@@ -1559,9 +1588,9 @@ ai_will_do = {
 
  } 
 
-#Focus for Align with PSOVsia
+#Focus for Align with Prussia
 focus = { 
-id = FRA_alignwithpSOVsia
+id = FRA_alignwithprussia
 icon = GFX_goal_generic_war_with_comintern
 x = 42
 y = 7
@@ -2087,7 +2116,7 @@ x = 43
 y = 9
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = FRA_helppSOVsiaunifythegermanscountries focus = FRA_thebritishcivilwar } 
+prerequisite = { focus = FRA_helpprussiaunifythegermanscountries focus = FRA_thebritishcivilwar } 
 ai_will_do = { 
  factor = 1
  } 
@@ -2109,15 +2138,15 @@ ai_will_do = {
 
  } 
 
-#Focus for Help PSOVsia Unify the Germans Countries
+#Focus for Help Prussia Unify the Germans Countries
 focus = { 
-id = FRA_helppSOVsiaunifythegermanscountries
+id = FRA_helpprussiaunifythegermanscountries
 icon = GFX_focus_generic_support_the_left_right
 x = 42
 y = 8
 cost = 10
 available_if_capitulated = yes 
-prerequisite = { focus = FRA_alignwithpSOVsia } 
+prerequisite = { focus = FRA_alignwithprussia } 
 ai_will_do = { 
  factor = 1
  } 
@@ -2229,9 +2258,9 @@ ai_will_do = {
 
  } 
 
-#Focus for Spread to SOVsia
+#Focus for Spread to russia
 focus = { 
-id = FRA_spreadtoSOVsia
+id = FRA_spreadtorussia
 icon = GFX_goal_generic_war_with_comintern
 x = 46
 y = 11

@@ -204,19 +204,22 @@ country_event = { #De Gaulle escape to Belgium
 		create_country_leader = {
 			name = "Charles de Gaulle"
 			desc = "POLITICS_CHARLES_DE_GAULLES_BELGIUM_DESC"
-			picture = "Portrait_Belgium_Charles_de_Gaulle.dds"
+			picture = "Portrait_Switzerland_Charles_de_Gaulle.dds"
 			expire = "1965.1.1"
-			ideology = conservatism
+			ideology = liberaterianism
 			traits = {
 				}
 			}
 			add_popularity = {
-				ideology = democratic
+				ideology = liberal
 				popularity = 0.07
 				}
 			add_opinion_modifier = {
 			target = FRA
 			modifier = BEL_deportation_attempt
+				}
+			hidden_effect = {
+			set_country_flag = swi_cdg_liberal
 				}
 			}
 		FRA = {
@@ -655,5 +658,59 @@ country_event = { #Debate about Freedom and Civil Rights
 			}
 			add_stability = 0.03
 			country_event = { id = france.46 hours = 24 }
+	}
+}
+
+country_event = { #Create a puppet state with the Duchy of Baden
+	id = france.47
+	title = france.47.t
+	desc = france.47.d
+#	picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = france.47.a #PUPPET
+		FRA = {
+		puppet = BAD
+		add_named_threat = { threat = 3 name = FRA_puppeting_baden }
+		}
+	}
+}
+
+country_event = { #Rearrange the Kingdom of Westphalia - Accords de Düsseldorf
+	id = france.48
+	title = france.48.t
+	desc = france.48.d
+#	picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = france.48.a # Take the Ruhr and puppet them
+		FRA = {
+		puppet = WST
+		add_named_threat = { threat = 5 name = FRA_accord_dusseldorf }
+		}
+		WST = {
+			FRA = { transfer_state = 850 }
+		}
+	}
+}
+
+country_event = {
+	id = france.49
+	title = france.49.t
+	desc = france.49.d
+#	picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = france.49.a #Intervene in the civil war - Authoritarian Side
+		
 	}
 }
