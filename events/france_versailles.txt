@@ -97,7 +97,7 @@ country_event = { #France lost the war of Independence
 		add_stability = -0.05
 		white_peace = IND
 		white_peace = SIA
-			IND = { transfer_state = 799 }
+			IND = { transfer_state = 798 }
 			IND = { transfer_state = 286 }
 			IND = { transfer_state = 741 }
 			IND = { transfer_state = 670 }
@@ -200,7 +200,7 @@ country_event = { #De Gaulle escape to Belgium
 	option = {
 		name = france.39.a
 		
-		BEL = {
+		SWI = {
 		create_country_leader = {
 			name = "Charles de Gaulle"
 			desc = "POLITICS_CHARLES_DE_GAULLES_BELGIUM_DESC"
@@ -221,7 +221,7 @@ country_event = { #De Gaulle escape to Belgium
 			}
 		FRA = {
 			add_opinion_modifier = {
-			target = BEL
+			target = SWI
 			modifier = FRA_failure_of_deportation
 				}
 			}
@@ -241,7 +241,7 @@ country_event = { #State religion question
 		name = france.40.a #Enforce Catholicism
 			add_popularity = {
 				ideology = neutrality
-				popularity = 0.1
+				popularity = 0.05
 			}
 			add_popularity = {
 				ideology = communism
@@ -261,7 +261,7 @@ country_event = { #State religion question
 			}
 			add_popularity = {
 				ideology = theocracy
-				popularity = -0.02
+				popularity = 0.02
 			}
 			add_popularity = {
 				ideology = social_democratic
@@ -274,7 +274,7 @@ country_event = { #State religion question
 		name = france.40.b #Secular country
 			add_popularity = {
 				ideology = neutrality
-				popularity = -0.1
+				popularity = -0.05
 			}
 			add_popularity = {
 				ideology = communism
@@ -294,7 +294,7 @@ country_event = { #State religion question
 			}
 			add_popularity = {
 				ideology = theocracy
-				popularity = 0.02
+				popularity = -0.02
 			}
 			add_popularity = {
 				ideology = social_democratic
@@ -317,7 +317,7 @@ country_event = { #Debate about Border Control
 		name = france.41.a #Strict Border Control
 			add_popularity = {
 				ideology = neutrality
-				popularity = 0.1
+				popularity = 0.05
 			}
 			add_popularity = {
 				ideology = communism
@@ -337,7 +337,7 @@ country_event = { #Debate about Border Control
 			}
 			add_popularity = {
 				ideology = theocracy
-				popularity = -0.02
+				popularity = 0.02
 			}
 			add_popularity = {
 				ideology = social_democratic
@@ -351,7 +351,7 @@ country_event = { #Debate about Border Control
 		name = france.41.b #Not-strict Bordel Control
 			add_popularity = {
 				ideology = neutrality
-				popularity = -0.1
+				popularity = -0.05
 			}
 			add_popularity = {
 				ideology = communism
@@ -371,7 +371,7 @@ country_event = { #Debate about Border Control
 			}
 			add_popularity = {
 				ideology = theocracy
-				popularity = 0.02
+				popularity = -0.02
 			}
 			add_popularity = {
 				ideology = social_democratic
@@ -515,7 +515,7 @@ country_event = { #Debate about Naturalisation and Colonisation
 		name = france.45.a #Do not allow these people to be French
 			add_popularity = {
 				ideology = neutrality
-				popularity = 0.1
+				popularity = 0.05
 			}
 			add_popularity = {
 				ideology = communism
@@ -535,7 +535,7 @@ country_event = { #Debate about Naturalisation and Colonisation
 			}
 			add_popularity = {
 				ideology = theocracy
-				popularity = -0.02
+				popularity = 0.02
 			}
 			add_popularity = {
 				ideology = social_democratic
@@ -549,7 +549,7 @@ country_event = { #Debate about Naturalisation and Colonisation
 		name = france.45.b #Allow naturalisation and consider indigenous people "French"
 			add_popularity = {
 				ideology = neutrality
-				popularity = -0.1
+				popularity = -0.05
 			}
 			add_popularity = {
 				ideology = communism
@@ -569,7 +569,7 @@ country_event = { #Debate about Naturalisation and Colonisation
 			}
 			add_popularity = {
 				ideology = theocracy
-				popularity = 0.02
+				popularity = -0.02
 			}
 			add_popularity = {
 				ideology = social_democratic
@@ -593,7 +593,7 @@ country_event = { #Debate about Freedom and Civil Rights
 		name = france.46.a #l'Etat c'est moi!
 			add_popularity = {
 				ideology = neutrality
-				popularity = 0.1
+				popularity = 0.05
 			}
 			add_popularity = {
 				ideology = communism
@@ -613,7 +613,7 @@ country_event = { #Debate about Freedom and Civil Rights
 			}
 			add_popularity = {
 				ideology = theocracy
-				popularity = -0.02
+				popularity = 0.02
 			}
 			add_popularity = {
 				ideology = social_democratic
@@ -627,7 +627,7 @@ country_event = { #Debate about Freedom and Civil Rights
 		name = france.46.b #We shall become an empire like Great-Britain,the more liberties they have,the less they will try to escape our country! (yes i know this is so fucking long so FUCK IS SOMEONE DISCOVER THIS)
 			add_popularity = {
 				ideology = neutrality
-				popularity = -0.1
+				popularity = -0.05
 			}
 			add_popularity = {
 				ideology = communism
@@ -647,7 +647,7 @@ country_event = { #Debate about Freedom and Civil Rights
 			}
 			add_popularity = {
 				ideology = theocracy
-				popularity = 0.02
+				popularity = -0.02
 			}
 			add_popularity = {
 				ideology = social_democratic
