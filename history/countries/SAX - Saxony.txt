@@ -1,4 +1,4 @@
-﻿capital = 60
+﻿capital = 65
 
 OOB = "SAX_1936"
 
