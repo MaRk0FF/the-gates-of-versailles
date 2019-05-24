@@ -172,11 +172,11 @@ country_event = { #La solution radicale
 		name = france.38.a
 			add_popularity = {
 				ideology = democratic
-				popularity = -0.5
+				popularity = -0.1
 			}
 			add_popularity = {
 				ideology = liberal
-				popularity = -0.5
+				popularity = -0.1
 			}
 			hidden_effect = {
 				country_event = { days = 3 id = france.39 }
