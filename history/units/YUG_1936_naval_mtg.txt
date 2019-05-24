@@ -5,7 +5,7 @@ units= {
 	###### Kraljevska Jugoslovenska Ratna Mornarica (KJRM) ######
 	fleet = {
 		name = "Kraljevska Mornarica"			
-		naval_base = 3924 # Split
+		naval_base = 9809 # Split
 		task_force = {				
 			name = "Kraljevska Mornarica"			
 			location = 3924 # Split
