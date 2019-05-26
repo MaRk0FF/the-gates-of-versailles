@@ -1,0 +1,325 @@
+ideas = {
+	country = {
+		confused_government = {
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = generic_spy_political
+			
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.5 
+				political_advisor_cost_factor = 0.25 
+				trade_laws_cost_factor = 0.25 
+				mobilization_laws_cost_factor = 0.25 
+				economy_cost_factor = 0.15 
+			}
+		}
+		
+		novus_imperium_romanum = {
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                war_support_factor = 0.10
+                army_core_attack_factor = 0.1
+				army_defence_factor = 0.1
+				conscription_factor = 0.1
+			}
+		}
+		
+		unstable_government = {
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+                war_support_factor = -0.50
+                stability_factor = -0.40
+				political_power_gain = -0.30 
+				political_advisor_cost_factor = 0.75 
+				trade_laws_cost_factor = 0.25 
+				mobilization_laws_cost_factor = 0.75 
+				economy_cost_factor = 0.15
+				democratic_drift = 0.05
+				totalitarian_drift = 0.05
+				liberal_drift = 0.05
+				communism_drift = 0.05
+				radical_socialist = 0.05
+			}
+		}
+		
+		workers_propaganda = {
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                production_speed_buildings_factor = 0.1
+				stability_factor = 0.05
+				war_support_factor = 0.025
+			}
+		}
+		
+		mussolini_propaganda = {     
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                war_support_factor = 0.02
+                stability_factor = 0.05
+				fascism_drift = 0.10
+				political_power_gain = 0.10
+			}
+		}
+		
+		mussolini_legions = {     
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                non_core_manpower = 0.02
+				conscription_factor = 0.05
+				fascism_drift = 0.02
+			}
+		}
+		
+		keep_loyalists = {     
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                stability_factor = -0.05
+				fascism_drift = 0.20
+				political_power_gain = -0.10
+			}
+		}
+		
+		rid_loyalists = {     
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                stability_factor = 0.05
+				political_power_gain = 0.15
+			}
+		}
+		
+		revolutionary_activity = {     
+			
+			allowed = {
+				original_tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.05
+				stability_factor = -0.10
+			}
+		}
+		
+		french_commune_supported = {     
+			
+			allowed = {
+				original_tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.05
+				stability_factor = -0.10
+			}
+		}
+		
+		northern_france_communists = {     
+			
+			allowed = {
+				original_tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.09
+				political_power_gain = -0.25
+				stability_factor = -0.15
+				production_speed_buildings_factor = -0.25
+			}
+		}
+		
+		ITA_plan_one = {     
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				political_power_factor = 0.15
+			}
+		}
+		
+		ITA_trained_workers = {     
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1 
+				industry_repair_factor = 0.2
+			}
+	    }
+		
+		military_based_economy_ita = {     
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				consumer_goods_factor = 0.05
+                production_speed_industrial_complex_factor = -0.15
+				conversion_cost_civ_to_mil_factor = -0.2
+			}
+	    }
+		
+		civilian_based_economy_ita = {     
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_arms_factory_factor = -0.15
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = -0.05
+				conversion_cost_civ_to_mil_factor = 0.2
+			}
+	    }
+		
+		modern_dockyards = {     
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			    industrial_capacity_dockyard = 0.2
+				ships_at_battle_start = 0.25
+				spotting_chance = 0.1
+				naval_hit_chance = 0.05
+				navy_max_range_factor = 0.10
+			}
+	    }
+    }
+}
