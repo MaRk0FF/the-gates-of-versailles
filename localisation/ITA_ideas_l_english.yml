@@ -2,6 +2,25 @@
  ITA_plan_one:0 "Reformed Economy"
  ITA_plan_one_desc:0 "The economy has been in shanbles due to our weak democratic predecessors, now we have reformed the economy to one of the best in western Europe!"
  brand_new_tools:0 "Brand New Tools"
-  brand_new_tools_desc:0 "With our new tools we can now build faster, and more efficiently then ever before!"
-  ITA_trained_workers:0 "Trained Workers"
-  ITA_trained_workers_desc:0 "With our workers well trained we can produce and construct much faster then before."
+ brand_new_tools_desc:0 "With our new tools we can now build faster, and more efficiently then ever before!"
+ ITA_trained_workers:0 "Trained Workers"
+ ITA_trained_workers_desc:0 "With our workers well trained we can produce and construct much faster then before."
+ confused_government:0 "Unstable Government"
+ confused_government_desc:0 "When the Great War was over, the new Italian democracy brought with it uncertainty and instability. Although the democracy has been dealt with, the instability still lingers."
+ novus_imperium_romanum:0 "Novus Imperium Romanum"
+ novus_imperium_romanum_desc:0 "The Roman Empire still lives within our veins! With our leader, we will make our ancestors proud and restore the glory Italy once had!"
+ military_based_economy_ita:0 "Military Based Economy"
+ civilian_based_economy_ita:0 "Civilian Based Economy"
+ modern_dockyards:0 "Modern Dockyards"
+ #Ministers
+ giorgio_amendola:0 "Giorgio Amendola"
+ costantino_lazzari:0 "Constantino Lazzari"
+ pietro_badoglio_versailles:0 "Pietro Badoglio"
+ umberto_ii:0 "Umberto II"
+ 
+ #Austria
+ AUS_paying_italy:0 "Payements to Italy"
+ AUS_paying_italy_desc:0 "With Italy's help with our industry we have to pay them back in return."
+ AUS_italian_aid:0 "Italian Aid"
+ AUS_italian_aid_desc:0 "With our payments to Italy our industrial capabilities have increased significantly. With this new industrial capability we will be able to create largest army in the Balkans!"
+ 
