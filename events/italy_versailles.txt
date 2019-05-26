@@ -30,8 +30,8 @@ country_event = {
             popularity = -0.7
         }
 		add_popularity = {
-            ideology = radical_socialist
-            popularity = 0.1
+            ideology = monarchist
+            popularity = 0.2
         }
 		add_popularity = {
             ideology = communism
@@ -58,201 +58,159 @@ country_event = {
 		}
 	}
 }
-	
-# Decide Between Radicals or Moderates
+
+# Deal with Austria
 country_event = {
 	id = italy.18
 	title = italy.18.t
 	desc = italy.18.d
-	picture = GFX_report_event_albanian_partisans
+	picture = 
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = italy.18.a
-		add_ideas = internationalism
-	}
-	
-	option = {
+		ai_chance = {
+			factor = 90
+		}
+		ITA = {
+			country_event = { id = italy.19 hours = 2 }
+		}
+		39 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+		736 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+		4 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			
+		}
+		add_timed_idea = {
+        idea = AUS_paying_italy
+        days = 365
+    } 
+       add_timed_idea = {
+        idea = AUS_italian_aid
+        days = 365
+    }	
+    }
+	option = { #Reject
 		name = italy.18.b
-		add_ideas = radical_socialist_influence
+		ai_chance = {
+			factor = 10
+		}
+		ITA = {
+			country_event = { id = italy.20 hours = 3 }
+		}
+}
+}
+
+country_event = {# Austrians accept deal
+	id = italy.19
+	title = italy.19.t
+	desc = italy.19.d
+	picture = 
+
+	option = {
+		name = italy.19.a
 	}
 }
 
-# French Revolution!
-country_event = {
+country_event = {# Austrians accept deal
 	id = italy.20
 	title = italy.20.t
 	desc = italy.20.d
-	picture = GFX_report_event_communists_cheer
-	
-	is_triggered_only = yes
-	
-	option = { # Support Communists
+	picture = 
+
+	option = {
 		name = italy.20.a
-		trigger = { is_ai = no }
-		hidden_effect = {
-			set_capital = 14
-			start_civil_war = {
-				ruling_party = communism
-				ideology = neutrality
-				size = 0.5
-				capital = 16
-				states = { 16 18 34 8 28 42 51 31 25 26 20 22 32 21 735 784 1 513 459 406 458 665 661 448 273 514 557 515 272 701 297 741 799 286 728 781 765 783 460 793 20 17 }
-			}
-			random_other_country = {
-				limit = {
-					original_tag = FRA
-					has_government = neutrality
-				}
-				load_oob = "FRN_ITA_Supported_Civil_War"
-				set_equipment_fraction = 0.5
-				set_stability = 0.7
-				set_war_support = 0.9
-				add_popularity = {
-					ideology = neutrality
-					popularity = 0.7
-				}
-				add_popularity = {
-					ideology = totalitarian
-					popularity = 0.1
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = 0.2
-				}
-				SWI = { leave_faction = yes }
-				BAD = { leave_faction = yes }
-				WES = { leave_faction = yes }
-				NAP = { leave_faction = yes }
-			}
-			news_event = { hours = 6 id = news.340 }
-			
-			load_oob = "FRA_ITA_Supported_Civil_War"
-			set_equipment_fraction = 0.6
-			set_stability = 0.9
-			set_war_support = 0.9
-			
-			add_popularity = {
-				ideology = communism
-				popularity = 0.9
-			}
-			add_popularity = {
-				ideology = radical_socialist 
-				popularity = 0.1
-			}
-			random_other_country = {
-				limit = {
-					original_tag = FRA
-					has_government = neutrality
-				}
-			}
-
-		}
-		custom_effect_tooltip = france_communists_chosen
+		add_opinion_modifier = {
+        target = AUS
+        modifier = didnt_accept_deal
+    } 
 	}
-	
-	option = { # VIVA LA EMPERUR!
-		name = italy.20.b
-		hidden_effect = {
-			set_capital = 16
-			start_civil_war = {
-				ruling_party = neutrality
-				ideology = communism
-				size = 0.5
-				capital = 14
-				states = { 14 19 23 33 30 15 24 29 27 114 449 662 450 663 451 452 447 446 453 552 769 456 457 551 556 700 274 558 660 539 671 670 }
-			}
-			random_other_country = {
-				limit = {
-					original_tag = FRA
-					has_government = communism
-				}
-				load_oob = "FRA_ITA_Supported_Civil_War"
-				set_equipment_fraction = 0.5
-				set_stability = 0.8
-				set_war_support = 0.9
-				add_popularity = {
-					ideology = communism
-					popularity = 1
-				}
-			}
-			news_event = { hours = 6 id = news.340 }
-			
-			load_oob = "FRN_ITA_Supported_Civil_War"
-			set_equipment_fraction = 0.7
-			set_stability = 0.8
-			set_war_support = 0.9
-			
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.9
-			}
-			add_popularity = {
-				ideology = totalitarian
-				popularity = 0.1
-			}
-			random_other_country = {
-				limit = {
-					original_tag = ITA
-					has_government = communism
-				}
-			}
-
-		}
-		custom_effect_tooltip = france_napoleon_vi_chosen
-	}
-}
-
-# France Revolutionary Activity 
-country_event = {
-	id = italy.21
-	title = italy.21.t
-	desc = italy.21.d
-	picture = GFX_report_event_communist_leader
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = italy.21.a
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 2
-				OR = {
-				ITA = { has_government = communism }
-				communism > 0.2
-			}
-		}
-		add_ideas = revolutionary_activity
-	}
-}
-
-}
-
-# French Commune being supported by Italy (Communism)
-country_event = {
-	id = italy.22
-	title = italy.22.t
-	desc = italy.22.d
-	picture = GFX_report_event_crowd_in_prague
-	
-	fire_only_once = yes
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	trigger = {
-		tag = FRA
-		ITA = { has_government = communism }
-		ITA = { has_completed_focus = ITA_therisingofthefrenchcommune }
-	}
-	
-	option = {
-		name = italy.22.a
-		add_ideas = french_commune_supported
-    }
 }
 
 country_event = {# The Political Situation
