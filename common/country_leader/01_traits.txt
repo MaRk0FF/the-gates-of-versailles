@@ -2,13 +2,6 @@ leader_traits = {
 	
 	#GATES OF VERSAILLES TRAITS FOR LEADERS#
 	
-	trained_leader = {
-		stability_factor = 0.05
-		fascism_drift = 0.05
-		drift_defence_factor = 0.10
-		political_power_factor = 0.25
-	}
-	
 	kaiser_of_people = {
 		random = no
 		political_power_factor = 0.10
@@ -55,11 +48,11 @@ leader_traits = {
 		}
 	}
 	
-	totalitarian_fanatic = {
+	monarchist_fanatic = {
 		random = no
-		# Boosts Totalitaranism
+		# Boosts Monarchism
 		sprite = 13
-		totalitarian_drift = 0.1
+		monarchist_drift = 0.1
 		
 		ai_will_do = {
 			factor = 0
