@@ -1,0 +1,397 @@
+focus_tree = { 
+id = ITA_Versailles
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = ITA 
+} 
+}
+
+ continuous_focus_position = { x = 50 y = 5500 } 
+
+    focus = {
+		id = ITA_rebuild_economy
+		icon = GFX_ITA_rebuild_economy
+		x = 5
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}	
+		completion_reward = {
+			add_ideas = ITA_plan_one
+		}
+	}
+	
+	focus = {
+		id = ITA_naval_rearment
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = ITA_rebuild_economy }
+		x = 10
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}	
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ITA_modern_dockyards
+		icon = GFX_goal_continuous_naval_production
+		prerequisite = { focus = ITA_naval_rearment }
+		x = 10
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}	
+		completion_reward = {
+			add_ideas = modern_dockyards
+		}
+	}
+	
+	focus = {
+		id = ITA_modernize_construction_tools
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = ITA_rebuild_economy }
+		x = 3
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+            bonus = 0.5
+            uses = 1
+            category = industry
+		}
+	}
+}
+
+    focus = {
+		id = ITA_state_funded_oil_wells
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = ITA_modernize_construction_tools }
+		x = 3
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_resource = {
+            type = oil
+            amount = 15
+            state = 162
+    }
+	modify_building_resources = {
+        building = synthetic_refinery
+        resource = oil
+        amount = 2
+    }
+	}
+}
+
+    focus = {
+		id = ITA_colonial_mines
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = ITA_state_funded_oil_wells }
+		x = 3
+		y = 5
+		cost = 10
+		completion_reward = {
+			add_resource = {
+            type = tungsten
+            amount = 25
+            state = 865
+    }
+	}
+}
+
+    focus = {
+		id = ITA_trained_workers
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = ITA_rebuild_economy }
+		x = 7
+		y = 1
+		cost = 10
+		completion_reward = {
+		add_ideas = ITA_trained_workers
+	}
+}
+
+   focus = {
+		id = ITA_a_deal_with_austria
+		icon = GFX_goal_ita_a_deal_with_austria
+		prerequisite = { focus = ITA_trained_workers }
+		x = 7
+		y = 3
+		cost = 10
+		completion_reward = {
+		AUS = {
+			country_event = { id = italy.18 hours = 3 }
+		}
+	}
+}
+
+    focus = {
+		id = ITA_civilian_industry_effort_versailles
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = ITA_a_deal_with_austria }
+		x = 7
+		y = 5
+		cost = 10
+		completion_reward = {
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+	}
+}
+
+    focus = {
+		id = ITA_economic_research_college
+		icon = GFX_goal_ita_economic_research_college
+		prerequisite = { focus = ITA_rebuild_economy }
+		x = 5
+		y = 2
+		cost = 10
+		completion_reward = {
+		add_research_slot = 1
+	}
+}
+
+    focus = {
+		id = ITA_italian_highways_2
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = ITA_economic_research_college }
+		x = 5
+		y = 4
+		cost = 10
+		completion_reward = {
+		2 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+		157 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+		160 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+	}
+}
+
+    focus = {
+		id = ITA_italian_electronics
+		icon = GFX_goal_ita_italian_electronics
+		prerequisite = { focus = ITA_italian_highways_2 }
+		prerequisite = { focus = ITA_colonial_mines }
+		prerequisite = { focus = ITA_civilian_industry_effort_versailles }
+		x = 5
+		y = 6
+		cost = 10
+		completion_reward = {
+		add_tech_bonus = {
+            bonus = 0.5
+            uses = 2
+            category = electronics
+		}
+	}
+}
+
+    focus = {
+		id = ITA_military_based_economy
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = ITA_italian_electronics }
+		mutually_exclusive = { focus = ITA_civilian_based_economy }
+		x = 4
+		y = 7
+		cost = 10
+		completion_reward = {
+		add_ideas = military_based_economy_ita
+	}
+}
+
+    focus = {
+		id = ITA_civilian_based_economy
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = ITA_italian_electronics }
+		mutually_exclusive = { focus = ITA_military_based_economy }
+		x = 6
+		y = 7
+		cost = 10
+		completion_reward = {
+		add_ideas = civilian_based_economy_ita
+	}
+}
+
+   focus = {
+		id = ITA_nuclear_effort_versailles
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = ITA_military_based_economy focus = ITA_civilian_based_economy }
+		x = 4
+		y = 8
+		cost = 10
+		completion_reward = {
+		add_tech_bonus = {
+            bonus = 0.5
+            uses = 1
+            category = nuclear
+		}
+	}
+}
+
+    focus = {
+		id = ITA_rocketry
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = ITA_military_based_economy focus = ITA_civilian_based_economy }
+		x = 6
+		y = 8
+		cost = 10
+		completion_reward = {
+		add_tech_bonus = {
+            bonus = 0.5
+            uses = 1
+            category = rocketry
+		}
+	}
+}
