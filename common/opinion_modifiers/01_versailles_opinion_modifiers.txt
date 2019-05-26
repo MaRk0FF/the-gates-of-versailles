@@ -25,23 +25,14 @@ opinion_modifiers = {
 	FRA_failure_of_deportation = { value = -100 }
 }
 
-opinion_modifiers = {
-	FRA_faction_restructuration = { value = -15 }
-}
-
-#Switzlerand (that use Belgium tag yeah ik right)
+#Flanders
 opinion_modifiers = {
 	BEL_deportation_attempt = { value = -100 }
 }
 
-#Austria
-opinion_modifiers = {
-	vienna_meeting = { value = 30 }                                                
-}
-
 #Italy
 opinion_modifiers = {
-	anti_colonialism_campaign = { value = -45 }                                                
+	didnt_accept_deal = { value = -30 }
 }
 
 #Ethiopia
