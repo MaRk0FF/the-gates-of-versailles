@@ -710,7 +710,19 @@ country_event = {
 	fire_only_once = yes
 	
 	option = {
-		name = france.49.a #Intervene in the civil war - Authoritarian Side
-		
+		name = france.49.a #Intervene in the civil war in Switzerland in exchange of Romandie
+		FRA = { add_to_faction = SWI }
+		FRA = {
+		add_named_threat = { threat = 4 name = FRA_accord_genève }
+		add_to_war = { 
+		targeted_alliance = SWI
+		enemy = D01
+		hostility_reason = asked_to_join
+			}
+		}
+		SWI = {
+			FRA = { transfer_state = 790 }
+			
+		}
 	}
 }
