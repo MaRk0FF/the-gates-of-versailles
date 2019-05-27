@@ -1,5 +1,5 @@
 ﻿l_english:
-#French Focus Tree - Other Stuff#
+#French Focus Tree - Other Stuff (custom tooltips for events,etc...)#
 fra_october_events:0 "The October Events must happen"
 series_of_events:0 "This will unlocked a series of debates in the next weeks in the Imperial Court about personal freedoms and civil rights"
 FRA_agressive_diplomacy:0 "Agressive Diplomacy"
@@ -13,3 +13,6 @@ fra_domination_benelux:0 "The French Empire must dominate the Benelux first"
 war_risk_and_puppet_rebelion:0 "§RWarning,The original members of the Continental Alliance may not like this and could seek help from Germany or Great-Britain in case you do anything that mess them!§"
 FRA_accord_dusseldorf:0 "Accord de Düsseldorf"
 fra_announce_faction_restructuration:0 "France must have announced the restructuration of the Continental Alliance"
+fra_indochinese_revolution_tt:0 "The Indochinese people did rise into power but they have a weak military,§Rbut they might be searching some help in neighbouring countries..."
+fra_series_of_debate_democratic_1_tt:0 "§GThe more centrist and peaceful parties will gain influence while the more extreme and autoritharian one will lose influence§"
+fra_series_of_debate_democratic_2_tt:0 "§RThe more extremist and autoritharian parties will gain influence while the more soft and peaceful one will lose influence§"
