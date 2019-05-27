@@ -24,19 +24,26 @@ country_event = { #Indochinese Revolution
 	
 	option = {
 		name = france.35.a
+		hidden_effect = {
 		IND = {
 			transfer_state = 799
 			load_oob = "IND_FRA_Civil_War_OOB"
+			}
 		}
+		
 		FRA = {
 			declare_war_on = {
 			target = IND
 			type = annex_everything
 			}
 		}
+		
+		hidden_effect = {
 		SIA = {
 		country_event = { days = 1 id = siam.1 }
+			}
 		}
+		custom_effect_tooltip = fra_indochinese_revolution_tt
 	}
 }
 
@@ -47,10 +54,6 @@ country_event = { #France lost the war of Independence
 	picture = GFX_report_event_france_indochinese_revolution_succesful
 	
 	fire_only_once = yes
-	
-	mean_time_to_happen = {
-		days = 35
-	}
 	
 	trigger = {
 		FRA = {
@@ -183,7 +186,7 @@ country_event = { #La solution radicale
 			}
 			
 			add_stability = -0.03
-			add_manpower = -24054
+			add_manpower = -56402
 			add_war_support = 0.03
 		}
 	}
@@ -201,6 +204,7 @@ country_event = { #De Gaulle escape to Belgium
 		name = france.39.a
 		
 		SWI = {
+		hidden_effect = {
 		create_country_leader = {
 			name = "Charles de Gaulle"
 			desc = "POLITICS_CHARLES_DE_GAULLES_BELGIUM_DESC"
@@ -214,12 +218,11 @@ country_event = { #De Gaulle escape to Belgium
 				ideology = liberal
 				popularity = 0.07
 				}
+			set_country_flag = swi_cdg_liberal
+					}
 			add_opinion_modifier = {
 			target = FRA
 			modifier = BEL_deportation_attempt
-				}
-			hidden_effect = {
-			set_country_flag = swi_cdg_liberal
 				}
 			}
 		FRA = {
@@ -242,6 +245,7 @@ country_event = { #State religion question
 	
 	option = {
 		name = france.40.a #Enforce Catholicism
+			hidden_effect = {
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.05
@@ -271,10 +275,13 @@ country_event = { #State religion question
 				popularity = -0.02
 			}
 			add_stability = -0.03
+			}
+			custom_effect_tooltip = fra_series_of_debate_democratic_2_tt
 		}
 		
 	option = {
 		name = france.40.b #Secular country
+			hidden_effect = {
 			add_popularity = {
 				ideology = neutrality
 				popularity = -0.05
@@ -304,6 +311,8 @@ country_event = { #State religion question
 				popularity = 0.02
 			}
 			add_stability = 0.03
+			}
+			custom_effect_tooltip = fra_series_of_debate_democratic_1_tt
 		}
 	}
 	
@@ -318,6 +327,7 @@ country_event = { #Debate about Border Control
 	
 	option = {
 		name = france.41.a #Strict Border Control
+			hidden_effect = {
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.05
@@ -348,10 +358,13 @@ country_event = { #Debate about Border Control
 			}
 			add_stability = -0.03
 			country_event = { id = france.45 hours = 24 }
+			}
+			custom_effect_tooltip = fra_series_of_debate_democratic_2_tt
 		}
 		
 	option = {
 		name = france.41.b #Not-strict Bordel Control
+			hidden_effect = {
 			add_popularity = {
 				ideology = neutrality
 				popularity = -0.05
@@ -382,6 +395,8 @@ country_event = { #Debate about Border Control
 			}
 			add_stability = 0.03
 			country_event = { id = france.45 hours = 24 }
+			}
+			custom_effect_tooltip = fra_series_of_debate_democratic_1_tt
 		}
 	}
 	
@@ -516,6 +531,7 @@ country_event = { #Debate about Naturalisation and Colonisation
 	
 	option = {
 		name = france.45.a #Do not allow these people to be French
+			hidden_effect = {
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.05
@@ -546,10 +562,13 @@ country_event = { #Debate about Naturalisation and Colonisation
 			}
 			add_stability = -0.03
 			country_event = { id = france.46 hours = 24 }
+			}
+			custom_effect_tooltip = fra_series_of_debate_democratic_2_tt
 		}
 		
 	option = {
 		name = france.45.b #Allow naturalisation and consider indigenous people "French"
+			hidden_effect = {
 			add_popularity = {
 				ideology = neutrality
 				popularity = -0.05
@@ -580,8 +599,10 @@ country_event = { #Debate about Naturalisation and Colonisation
 			}
 			add_stability = 0.03
 			country_event = { id = france.46 hours = 24 }
+			}
+			custom_effect_tooltip = fra_series_of_debate_democratic_1_tt
+		}
 	}
-}
 
 country_event = { #Debate about Freedom and Civil Rights
 	id = france.46
@@ -594,6 +615,7 @@ country_event = { #Debate about Freedom and Civil Rights
 	
 	option = {
 		name = france.46.a #l'Etat c'est moi!
+			hidden_effect = {
 			add_popularity = {
 				ideology = neutrality
 				popularity = 0.05
@@ -624,10 +646,13 @@ country_event = { #Debate about Freedom and Civil Rights
 			}
 			add_stability = -0.03
 			country_event = { id = france.46 hours = 24 }
+			}
+			custom_effect_tooltip = fra_series_of_debate_democratic_2_tt
 		}
 		
 	option = {
 		name = france.46.b #We shall become an empire like Great-Britain,the more liberties they have,the less they will try to escape our country! (yes i know this is so fucking long so FUCK IS SOMEONE DISCOVER THIS)
+			hidden_effect = {
 			add_popularity = {
 				ideology = neutrality
 				popularity = -0.05
@@ -658,8 +683,10 @@ country_event = { #Debate about Freedom and Civil Rights
 			}
 			add_stability = 0.03
 			country_event = { id = france.46 hours = 24 }
+			}
+			custom_effect_tooltip = fra_series_of_debate_democratic_1_tt
+		}
 	}
-}
 
 country_event = { #Create a puppet state with the Duchy of Baden
 	id = france.47
