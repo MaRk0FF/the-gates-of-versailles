@@ -25,6 +25,10 @@ opinion_modifiers = {
 	FRA_failure_of_deportation = { value = -100 }
 }
 
+opinion_modifiers = {
+	FRA_bad_wur_unification = { value = -100 }
+}
+
 #Flanders
 opinion_modifiers = {
 	BEL_deportation_attempt = { value = -100 }
