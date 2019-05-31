@@ -884,6 +884,12 @@ focus = {
 	factor = 1
 	}
 	
+	available = {
+	has_global_flag = swi_quit_faction
+	has_global_flag = bad_approches_wurtemburg
+	has_global_flag = wst_seek_interest_gb
+	}
+	
 	completion_reward = {
 		add_opinion_modifier = {
 		target = NAP
@@ -908,18 +914,24 @@ focus = {
 
 #Focus for Ultimatum to Switzerland
 focus = { 
-id = FRA_ultimatumtoswitzerland
-icon = GFX_goal_generic_military_sphere
-x = 34
-y = 4
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_innerfactionrarrangement } 
-ai_will_do = { 
- factor = 1
- } 
+	id = FRA_ultimatumtoswitzerland
+	icon = GFX_goal_generic_military_sphere
+	x = 34
+	y = 4
+	cost = 10
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_innerfactionrarrangement } 
+	ai_will_do = { 
+	factor = 1
+	} 
 
- } 
+	available = {
+	has_global_flag = swi_swiss_civilwar
+	}
+	completion_reward = {
+	
+	}
+} 
 
 #Focus for Topple Fascist Regimes in Europe
 focus = { 
