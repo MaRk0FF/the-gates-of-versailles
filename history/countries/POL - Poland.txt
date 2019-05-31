@@ -94,9 +94,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Adolf Warski"
+	name = "Anarchy"
 	desc = ""
-	picture = "Portrait_Poland_Adolf_Warski_Versailles"
+	picture = ""
 	expire = "1965.1.1"
 	ideology = marxism
 	traits = {
