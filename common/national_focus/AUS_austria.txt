@@ -1133,6 +1133,7 @@ type = puppet_wargoal_focus
 focus = { 
 id = AUS_opposefascism
 icon = GFX_focus_generic_anti_fascist_diplomacy
+mutually_exclusive = { focus = AUS_theroadtoglory } 
 x = 48
 y = 0
 cost = 10
