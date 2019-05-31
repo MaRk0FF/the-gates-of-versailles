@@ -74,18 +74,20 @@ country_event = {
 
 				remove_unit_leader = 600
 
-				98 = { set_demilitarized_zone = yes }
-				87 = { set_demilitarized_zone = yes }
-				857 = { set_demilitarized_zone = yes }
-				97 = { set_demilitarized_zone = yes }
-				762 = { set_demilitarized_zone = yes }
-				80 = { set_demilitarized_zone = yes }
-				89 = { set_demilitarized_zone = yes }
-				858 = { set_demilitarized_zone = yes }
-				91 = { set_demilitarized_zone = yes }
-				92 = { set_demilitarized_zone = yes }
-				88 = { set_demilitarized_zone = yes }
-				90 = { set_demilitarized_zone = yes }
+				hidden_effect = {
+				98 = { set_demilitarized_zone = no }
+				87 = { set_demilitarized_zone = no }
+				857 = { set_demilitarized_zone = no }
+				97 = { set_demilitarized_zone = no }
+				762 = { set_demilitarized_zone = no }
+				80 = { set_demilitarized_zone = no }
+				89 = { set_demilitarized_zone = no }
+				858 = { set_demilitarized_zone = no }
+				91 = { set_demilitarized_zone = no }
+				92 = { set_demilitarized_zone = no }
+				88 = { set_demilitarized_zone = no }
+				90 = { set_demilitarized_zone = no }	
+			}
 		}
 	}
 
@@ -222,8 +224,140 @@ country_event = {
 
 		}
 
-	option = { # Fantastic
+	option = { # 
 		name = poland.28.b
 			add_political_power = 10
 		}
 	}
+
+country_event = {
+	id = poland.29
+	title = poland.29.t
+	desc = poland.29.d
+	#picture =# 
+	
+	is_triggered_only = yes
+	
+	option = { # 
+		name = poland.29.a
+			add_political_power = 15
+
+		}
+
+	option = { # 
+		name = poland.29.b
+			add_political_power = 10
+		}
+
+	option = { # 
+		name = poland.29.c
+			add_political_power = 5
+		}
+	}
+
+country_event = {
+	id = poland.30
+	title = poland.30.t
+	desc = poland.30.d
+	#picture =# 
+	
+	is_triggered_only = yes
+	
+	option = { # 
+		name = poland.30.a
+			add_political_power = 25
+		}
+	}
+
+country_event = {
+	id = poland.31
+	title = poland.31.t
+	desc = poland.31.d
+	#picture =# 
+	
+	is_triggered_only = yes
+	
+	option = { # 
+		name = poland.31.a
+			POL = {
+			annex_country = { target = LIT }
+			}
+
+			hidden_effect = {
+				POL = {
+					add_state_core = 855
+					add_state_core = 11
+					add_state_core = 189 
+				}
+			}
+		}
+	}
+
+country_event = {
+	id = poland.32
+	title = poland.32.t
+	desc = poland.32.d
+	#picture =# 
+	
+	is_triggered_only = yes
+	
+	option = { # 
+		name = poland.32.a
+			POL = {
+			annex_country = { target = LAT }
+			annex_country = { target = EST }
+			}
+		}
+	option = { # 
+		name = poland.32.b
+			add_political_power = 25
+		}
+	}
+
+country_event = {
+	id = poland.33
+	title = poland.33.t
+	desc = poland.33.d
+	#picture =# 
+	
+	is_triggered_only = yes
+	
+	option = { # 
+		name = poland.33.a
+			add_political_power = 25
+
+			hidden_effect = {
+				create_country_leader = {
+				name = "Wladyslaw V"
+				#desc = "POLITICS_WILLY_3_DESC"
+				#picture = "Portrait_Germany_Wilhelm_III.tga"
+				expire = "1965.1.1"
+				ideology = despotism 
+				traits = {}
+				}
+			}
+		}
+	}
+
+country_event = {
+	id = poland.34
+	title = poland.34.t
+	desc = poland.34.d
+	#picture =# 
+	
+	is_triggered_only = yes
+	
+	option = { # 
+		name = poland.34.a
+			add_political_power = -10
+
+			POL = {
+				add_to_faction = FIN
+			}
+		}
+	option = { # 
+		name = poland.34.b
+			add_political_power = 10
+		}
+	}
+
