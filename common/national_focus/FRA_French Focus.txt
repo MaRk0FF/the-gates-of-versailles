@@ -555,18 +555,33 @@ available_if_capitulated = yes
 
 #Focus for Strike at Bavaria
 focus = { 
-id = FRA_strikeatbavaria
-icon = GFX_goal_generic_occupy_states_ongoing_war
-x = 29
-y = 5
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_puppetwurtemburg } 
-ai_will_do = { 
- factor = 1
- } 
+	id = FRA_strikeatbavaria
+	icon = GFX_goal_generic_occupy_states_ongoing_war
+	x = 29
+	y = 5
+	cost = 10
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_puppetwurtemburg } 
+	ai_will_do = { 
+	factor = 1
+	} 
 
- }
+	available = {
+		NOT = {
+			BAV = { is_puppet_of = FRA }
+			BAV = { exists = no }
+		}
+	}
+
+	completion_reward = {
+	FRA = {
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = BAV
+			}
+		}
+	}
+}
  
 #Focus for Operation Coeur de l'Allemagne
 focus = { 
@@ -798,18 +813,33 @@ focus = {
 
 #Focus for Puppet Wurtemburg
 focus = { 
-id = FRA_puppetwurtemburg
-icon = GFX_goal_generic_occupy_states_ongoing_war
-x = 29
-y = 4
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_thegreatcampaign } 
-ai_will_do = { 
- factor = 1
- } 
+	id = FRA_puppetwurtemburg
+	icon = GFX_goal_generic_occupy_states_ongoing_war
+	x = 29
+	y = 4
+	cost = 5
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_thegreatcampaign } 
+	ai_will_do = { 
+	factor = 1
+	} 
 
- } 
+	available = {
+		NOT = {
+			WUR = { is_puppet_of = FRA }
+			WUR = { exists = no }
+		}
+	}
+
+	completion_reward = {
+	FRA = {
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = WUR
+			}
+		}
+	}
+} 
 
 #Focus for Topple Prussian Goverment
 focus = { 
