@@ -12,7 +12,7 @@ ideas = {
 					always = yes
 				}
 
-				picture = generic_goods_red_bonus
+				picture = poland_underdeveloped_economy
 
 				removal_cost = -1
 
@@ -36,7 +36,7 @@ ideas = {
 					always = yes
 				}
 
-				picture = generic_goods_red_bonus
+				picture = poland_sluggish_economy
 
 				removal_cost = -1
 
@@ -44,30 +44,6 @@ ideas = {
 					production_speed_infrastructure_factor = -0.05
 					consumer_goods_factor = 0.1
 					industrial_capacity_factory = -0.1
-					production_factory_efficiency_gain_factor = -0.1
-					production_speed_buildings_factor = -0.10
-				}
-			}
-
-		POL_industry3 = {
-
-				allowed = {
-					original_tag = POL
-					always = no
-				}
-
-				allowed_civil_war = {
-					always = yes
-				}
-
-				picture = generic_goods_red_bonus
-
-				removal_cost = -1
-
-				modifier = {
-					production_speed_infrastructure_factor = -0.05
-					consumer_goods_factor = 0.1
-					industrial_capacity_factory = -0.08
 					production_factory_efficiency_gain_factor = -0.1
 					production_speed_buildings_factor = -0.10
 				}
@@ -84,7 +60,7 @@ ideas = {
 					always = yes
 				}
 
-				picture = generic_goods_red_bonus
+				picture = poland_developed_economy
 
 				removal_cost = -1
 
@@ -107,7 +83,7 @@ ideas = {
 					always = yes
 				}
 
-				picture = man_five_year_plan_industry
+				picture = poland_thriving_economy
 
 				removal_cost = -1
 
@@ -132,12 +108,12 @@ ideas = {
 
 					removal_cost = -1
 
-					picture = general_staff
+					picture = poland_military_in_charge
 				
 					modifier = {
-						army_org_factor = -0.1
-						army_leader_cost_factor = 0.25
-						command_power_gain_mult = -0.25
+						stability_factor = -0.2
+						war_support_factor = -0.05
+						political_power_cost = 0.1
 					}
 			}
 		
@@ -159,7 +135,8 @@ ideas = {
 						modifier = {
 							surrender_limit = 0.1
 							army_core_defence_factor = 0.05
-							partisan_effect = 0.05
+							partisan_effect = 0.2
+							war_support_factor = 0.05
 						}
 				}
 
@@ -200,11 +177,74 @@ ideas = {
 					picture = generic_intel_bonus
 				
 					modifier = {
-						stability_factor = -0.2
-						war_support_factor = -0.05
-						political_power_cost = 0.1
+						army_org_factor = -0.1
+						army_leader_cost_factor = 0.25
+						command_power_gain_mult = -0.25
 					}
 			}
+
+		a_combination = {
+				allowed = {
+						original_tag = POL
+						always = no
+					}
+
+					allowed_civil_war = {
+						always = no
+					}
+
+					removal_cost = -1
+
+					picture = poland_a_compromise
+				
+					modifier = {
+						army_org_factor = -0.15
+						army_leader_cost_factor = 0.5
+						command_power_gain_mult = -0.15
+					}
+		}
+
+		the_future = {
+				allowed = {
+						original_tag = POL
+						always = no
+					}
+
+					allowed_civil_war = {
+						always = no
+					}
+
+					removal_cost = -1
+
+					picture = Generic_infantry_bonus
+				
+					modifier = {
+						army_org_factor = -0.05
+						army_leader_cost_factor = 0.15
+						command_power_gain_mult = -0.25
+					}
+		}
+
+		the_past = {
+				allowed = {
+						original_tag = POL
+						always = no
+					}
+
+					allowed_civil_war = {
+						always = no
+					}
+
+					removal_cost = -1
+
+					picture = poland_the_past
+				
+					modifier = {
+						army_org_factor = -0.05
+						army_leader_cost_factor = 0.25
+						command_power_gain_mult = -0.05
+					}
+		}
 
 		cheap_guns = {
 			
@@ -237,13 +277,514 @@ ideas = {
 				always = yes
 			}
 
-			picture = motorized_focus
+			picture = poland_ursus
 
 			removal_cost = -1
 
 			modifier = {
 				motorized_attack_factor = 0.05
 				motorized_defence_factor = 0.05
+			}
+		}
+
+		military_reborn = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.1
+				land_reinforce_rate = 0.1
+				defence = 0.1
+			}
+		}
+
+		decrease_taxation = {
+
+		allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.05
+				political_power_cost = -0.05
+			}
+		}
+
+		increase_taxation = {
+
+		allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.05
+				political_power_cost = 0.05
+			}
+		}
+
+		supported_agriculture = {
+
+		allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = 0.05
+			}
+		}
+
+		supported_industry = {
+
+		allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+				global_building_slots_factor = 0.1
+			}
+		}
+
+		spend_lavishly = {
+
+		allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 0.1
+				stability_factor = -0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		tighten_our_belts = {
+
+		allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = -0.1
+				stability_factor = 0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		revamped_education_system = {
+
+		allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.03
+				}
+			}
+
+		legalized_abortion = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+				monthly_population = -0.05
+				stability_factor = 0.05
+				}
+			}
+
+		business_in_lithuania = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.03
+				}
+			}
+
+			rights_of_men = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+					stability_factor = 0.05
+				}
+			}
+
+			slavic_corporation_union = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+					min_export = 0.05
+					industrial_capacity_factory = 0.1
+					political_power_factor = -0.05
+					economy_cost_factor = 0.05
+					trade_opinion_factor = 0.05
+				}
+			}
+
+			hate_big_biz = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+					trade_opinion_factor = -0.05
+				}
+			}
+
+			corporate_with_libtards = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+					political_power_factor = 0.10
+				}
+			}
+
+			new_polish_constitution = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+					political_power_factor = 0.10
+					stability_factor = 0.2
+				}
+			}
+
+			fascist_guard = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+					partisan_effect = 0.10
+				}
+			}
+
+			miltary_support = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+					army_morale_factor = 0.05
+					army_org_factor = 0.10
+				}
+			}
+
+			economic_corporatism = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+					consumer_goods_factor = -0.05
+					production_speed_buildings_factor = 0.05
+					industrial_capacity_factory = 0.1
+				}
+			}
+
+			revolutionary_militias = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+					army_org_factor = 0.1
+					army_morale_factor = 0.05
+					planning_speed = 0.1
+				}
+			}
+
+			village_communes = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+					monthly_population = 0.05
+					local_resources_factor = 0.1
+				}
+			}
+
+			increased_quotas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+					industrial_capacity_factory = 0.1
+				}
+			}
+
+			polish_communism = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+					stability_factor = 0.1
+					political_power_factor = 0.1
+				}
+			}
+
+			polish_civil_code = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+					political_power_factor = 0.1
+				}
+			}
+
+			enforce_catholicism = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+					political_power_factor = 0.05
+					stability_factor = -0.05
+				}
+			}
+
+			religious_tolerance = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			#picture = idea_chi_army_corruption3
+
+			removal_cost = -1
+
+			modifier = {
+					political_power_factor = -0.05
+					stability_factor = 0.05
+				}
 			}
 		}
 	}
