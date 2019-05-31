@@ -41,6 +41,10 @@ opinion_modifiers = {
 	FRA_WST_betrayal = { value = -75 }
 }
 
+opinion_modifiers = {
+	ENG_FRA_speech_against_us = { value = -15 }
+}
+
 #Flanders
 opinion_modifiers = {
 	BEL_deportation_attempt = { value = -100 }
