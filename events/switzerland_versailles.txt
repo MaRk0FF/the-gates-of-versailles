@@ -61,5 +61,6 @@ country_event = { #Switzerland leave the continental Alliance
 			remove_from_faction = SWI 
 			}
 		}
+		set_global_flag = swi_quit_faction
 	}
 }	
