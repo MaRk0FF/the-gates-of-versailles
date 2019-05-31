@@ -20,4 +20,6 @@ swi_swiss_civilwar:0 "Switzerland must have fell into a civil war between Libera
 swi_quit_faction:0 "Switzerland must have quit the continental alliance"
 bad_approches_wurtemburg:0 "Baden must have approached Wurtemburg to a possible union between the two countries"
 wst_seek_interest_gb:0 "Westphalia must seek some interest from Great-Britain"
-nap_feared_ita:0 "Naples must fear Italy"
+bad_wur_union: "The South German Defense Union"
+FRA_bad_wur_unification:0 "Baden-Wurttemberg Unification"
+bad_wur_unification_tt:0 "The country of Baden and Wurttemberg will merge into one country, Badenese troops will joined the army and France will lose influence on that part of the region"

@@ -10,3 +10,5 @@
  INS_independent_neutrality:0 "Independent State of Indonesia"
  INS_FRA_neutrality_autonomy_puppet:1 "Colonie Française d'Indonésie"
  INS_FRA_neutrality_autonomy_puppet_DEF:1 "The French Colony of Indonesia"
+ BAD_WUR_UNION_neutrality:0 "Baden-Wurtemburg"
+ BAD_WUR_UNION_neutrality_DEF:0 "the Union of Baden-Wurtemburg"
