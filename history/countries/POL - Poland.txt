@@ -25,6 +25,14 @@ set_technology = {
 
 set_convoys = 10
 
+add_ideas = {
+	POL_industry
+	military_in_charge
+	the_polish_spirit
+	catholic_influence
+	unpopular_in_the_military
+}
+
 set_politics = {
 
 	parties = {
@@ -64,11 +72,77 @@ set_politics = {
 }
 
 create_country_leader = {
+	name = "Roman Dmowski"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = centrist_conservative
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Bolesław Piasecki"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Adolf Warski"
+	desc = ""
+	picture = "Portrait_Poland_Adolf_Warski_Versailles"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
 	name = "Wladyslaw Sikorski"
 	desc = "POLITICS_WLADYSLAW_SIKORSKI_DESC"
 	picture = "Portrait_Poland_Wladyslaw_Sikorski_Versailles.dds"
 	expire = "1965.1.1"
 	ideology = military_junta
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Stanisław Wojciechowski"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = reformist_socialist
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Wojciech Korfanty"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = classical_liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Royal Chamber"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = constitutional_monarchy
 	traits = {
 		#
 	}
