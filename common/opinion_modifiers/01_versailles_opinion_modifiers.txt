@@ -8,7 +8,7 @@
 # months/years/days = timer
 # trade = yes/no
 
-#France
+#France (and countries in their alliance)
 opinion_modifiers = {
 	ENG_FRA_accusation_of_october_events = { value = -50 }
 }
@@ -27,6 +27,18 @@ opinion_modifiers = {
 
 opinion_modifiers = {
 	FRA_bad_wur_unification = { value = -100 }
+}
+
+opinion_modifiers = {
+	WST_ENG_positive_relation = { value = +30 }
+}
+
+opinion_modifiers = {
+	ENG_WST_positive_relation = { value = +30 }
+}
+
+opinion_modifiers = {
+	FRA_WST_betrayal = { value = -75 }
 }
 
 #Flanders
