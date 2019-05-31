@@ -727,7 +727,7 @@ country_event = { #Rearrange the Kingdom of Westphalia - Accords de Düsseldorf
 	}
 }
 
-country_event = {
+country_event = { #Intervene in Switzerland civil war in exchange of Romandie - Accord de Genève
 	id = france.49
 	title = france.49.t
 	desc = france.49.d
@@ -750,6 +750,26 @@ country_event = {
 		SWI = {
 			FRA = { transfer_state = 790 }
 			
+		}
+	}
+}
+
+country_event = { #Napoleon's Speech against Great-Britain
+	id = france.50
+	title = france.50.t
+	desc = france.50.d
+#	picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Napoleon's Speech against Great-Britain
+		name = france.50.a
+		ENG = {
+		add_opinion_modifier = {
+		target = FRA
+		modifier = ENG_FRA_speech_against_us
+			}
 		}
 	}
 }
