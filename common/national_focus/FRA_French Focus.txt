@@ -9,6 +9,8 @@ focus_tree = {
 			tag = FRA
 		}
 	}
+	
+continuous_focus_position = { x = 0 y = 1200 }
 
 #Focus for Establish the Duchy of Warsaw
 focus = { 
@@ -492,18 +494,21 @@ focus = {
 
 #Focus for An Old Rivalry
 focus = { 
-id = FRA_anoldrivalry
-icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
-x = 21
-y = 2
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_agressivediplomacy } 
-ai_will_do = { 
- factor = 1
- } 
+	id = FRA_anoldrivalry
+	icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
+	x = 21
+	y = 2
+	cost = 10
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_agressivediplomacy } 
+	ai_will_do = { 
+	factor = 1
+	} 
 
- } 
+	completion_reward = {
+	country_event = { id = france.50 }
+	}
+} 
 
 #Focus for Back to the Great War Alliance
 focus = { 
@@ -559,7 +564,7 @@ focus = {
 	icon = GFX_goal_generic_occupy_states_ongoing_war
 	x = 29
 	y = 5
-	cost = 10
+	cost = 5
 	available_if_capitulated = yes 
 	prerequisite = { focus = FRA_puppetwurtemburg } 
 	ai_will_do = { 
@@ -585,18 +590,49 @@ focus = {
  
 #Focus for Operation Coeur de l'Allemagne
 focus = { 
-id = FRA_operationcoeurdeallemagne
-icon = GFX_goal_generic_occupy_states_ongoing_war
-x = 29
-y = 6
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_strikeatbavaria } 
-ai_will_do = { 
- factor = 1
- } 
+	id = FRA_operationcoeurdeallemagne
+	icon = GFX_goal_generic_occupy_states_ongoing_war
+	x = 29
+	y = 6
+	cost = 15
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_strikeatbavaria } 
+	ai_will_do = { 
+	factor = 1
+	} 
 
- }
+	available = {
+		NOT = {
+			SAX = { is_puppet_of = FRA }
+			SAX = { exists = no }
+		}
+		NOT = {
+			HAN = { is_puppet_of = FRA }
+			HAN = { exists = no }
+		}
+		NOT = {
+			MEK = { is_puppet_of = FRA }
+			MEK = { exists = no }
+		}
+	}
+
+	completion_reward = {
+	FRA = {
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = SAX
+			}
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = MEK
+			}
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = HAN
+			}
+		}
+	}
+}
 
 #Focus for l'Université de Paris
 focus = { 
@@ -623,18 +659,21 @@ focus = {
 
 #Focus for Support the Irish
 focus = { 
-id = FRA_supporttheirish
-icon = GFX_goal_molotov_ribbentrop_pact
-x = 21
-y = 4
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_antibritishpropaganda } 
-ai_will_do = { 
- factor = 1
- } 
+	id = FRA_supporttheirish
+	icon = GFX_goal_molotov_ribbentrop_pact
+	x = 21
+	y = 4
+	cost = 2
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_antibritishpropaganda } 
+	ai_will_do = { 
+	factor = 1
+	} 
 
- } 
+	completion_reward = {
+	add_ideas = FRA_anti_british_propaganda
+	}
+} 
 
 #Focus for Polish Pressure
 focus = { 
@@ -843,18 +882,33 @@ focus = {
 
 #Focus for Topple Prussian Goverment
 focus = { 
-id = FRA_toppleprussiangoverment
-icon = GFX_goal_anti_comintern_pact
-x = 29
-y = 7
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_operationcoeurdeallemagne } 
-ai_will_do = { 
- factor = 1
- } 
+	id = FRA_toppleprussiangoverment
+	icon = GFX_goal_anti_comintern_pact
+	x = 29
+		y = 7
+	cost = 10
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_operationcoeurdeallemagne } 
+	ai_will_do = { 
+	factor = 1
+	} 
 
- } 
+	available = {
+		NOT = {
+			GER = { is_puppet_of = FRA }
+			GER = { exists = no }
+		}
+	}
+
+	completion_reward = {
+	FRA = {
+		create_wargoal = {
+			type = topple_government
+			target = GER
+			}
+		}
+	}
+} 
 
 #Focus for Piedmont or War
 focus = { 
