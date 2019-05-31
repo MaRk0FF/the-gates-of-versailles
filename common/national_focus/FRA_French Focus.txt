@@ -929,7 +929,7 @@ focus = {
 	has_global_flag = swi_swiss_civilwar
 	}
 	completion_reward = {
-	
+	country_event = { id = france.49 }
 	}
 } 
 
