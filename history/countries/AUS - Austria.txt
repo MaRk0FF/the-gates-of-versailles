@@ -72,7 +72,7 @@ create_country_leader = {
 	desc = "POLITICS_KARL_RENNER_DESC"
 	picture = "gfx/leaders/Europe/Portrait_AUS_Karl_Renner.dds"
 	expire = "1965.1.1"
-	ideology = social_democracy
+	ideology = state_socialism
 	traits = {
 		#
 	}

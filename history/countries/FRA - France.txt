@@ -102,23 +102,19 @@ set_politics = {
 		}
 		
 		communism = {
-			popularity = 6
+			popularity = 13
 		}
 		
 		neutrality = {
 			popularity = 59
 		}
 		
-		totalitarian = {
+		monarchist = {
 			popularity = 4
 		}
 		
 		liberal = {
 			popularity = 10
-		}
-		
-		radical_socialist = {
-			popularity = 7
 		}
 	}
 	

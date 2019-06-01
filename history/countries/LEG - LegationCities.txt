@@ -30,9 +30,6 @@ set_politics = {
 		fascism = {
 			popularity = 5
 		}
-		totalitarian = {
-			popularity = 0
-		}
 		neutrality = {
 			popularity = 50
 		}

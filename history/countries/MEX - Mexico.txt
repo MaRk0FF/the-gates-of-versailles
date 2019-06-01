@@ -71,10 +71,10 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 4
+			popularity = 9
 		}
 		liberal = {
-			popularity = 10
+			popularity = 15
 		}
 
 		fascism = {
@@ -82,15 +82,11 @@ set_politics = {
 		}
 		
 		communism = {
-			popularity = 44
-		}
-		
-		radical_socialist = {
-			popularity = 37
+			popularity = 70
 		}
 		
 		neutrality = { 
-			popularity = 4
+			popularity = 5
 		}
 	}
 	

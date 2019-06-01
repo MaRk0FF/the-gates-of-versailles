@@ -64,7 +64,7 @@ country_event = {
 	id = italy.18
 	title = italy.18.t
 	desc = italy.18.d
-	picture = 
+	picture = GFX_report_event_carol_meeting
 	
 	is_triggered_only = yes
 	
@@ -191,7 +191,9 @@ country_event = {# Austrians accept deal
 	id = italy.19
 	title = italy.19.t
 	desc = italy.19.d
-	picture = 
+	picture = GFX_report_event_carol_meeting
+
+	is_triggered_only = yes
 
 	option = {
 		name = italy.19.a
@@ -202,7 +204,9 @@ country_event = {# Austrians accept deal
 	id = italy.20
 	title = italy.20.t
 	desc = italy.20.d
-	picture = 
+	picture = GFX_report_event_carol_meeting
+
+	is_triggered_only = yes
 
 	option = {
 		name = italy.20.a

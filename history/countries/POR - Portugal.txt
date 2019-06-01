@@ -75,29 +75,23 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 6
+			popularity = 9
 		}
 		social_democratic = { 
-			popularity = 2
+			popularity = 9
 		}
 		liberal = { 
-			popularity = 7
+			popularity = 10
 		}
 		fascism = {
-			popularity = 13
-		}
-		totalitarian = {
-			popularity = 54
-		}
-		neutrality = {
-			popularity = 10
+			popularity = 64
 		}
 		communism = {
 			popularity = 8
 		}
 	}
 	
-	ruling_party = totalitarian
+	ruling_party = fascism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
@@ -108,7 +102,7 @@ create_country_leader = {
 	desc = "POLITICS_ANTÓNIO_DE_OLIVEIRA_SALAZAR_DESC"
 	picture = "Portrait_POR_Antonio_de_Oliveira_Salazar.dds"
 	expire = "1965.1.1"
-	ideology = dictatorship
+	ideology = nazism
 	traits = {
 		#
 	}

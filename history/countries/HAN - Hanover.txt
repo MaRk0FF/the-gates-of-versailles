@@ -24,7 +24,7 @@ set_politics = {
 		}
 		
 		neutrality = {
-			popularity = 55
+			popularity = 65
 		}
 		
 		social_democratic = {
@@ -33,10 +33,6 @@ set_politics = {
 		
 		liberal = {
 			popularity = 0
-		}
-		
-		totalitarian = {
-			popularity = 10
 		}
 	}
 	

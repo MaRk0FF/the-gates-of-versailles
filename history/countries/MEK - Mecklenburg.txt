@@ -34,10 +34,6 @@ set_politics = {
 		liberal = {
 			popularity = 15
 		}
-		
-		totalitarian = {
-			popularity = 0
-		}
 	}
 	
 	ruling_party = democratic

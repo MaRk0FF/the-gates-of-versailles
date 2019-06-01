@@ -1,4 +1,4 @@
-#############################################
+﻿#############################################
 # Baden Events - Gates to Versailles Edition#
 #############################################
 
@@ -8,7 +8,7 @@ country_event = { #Baden seek a union with Wurtemburg
 	id = baden.1
 	title = baden.1.t
 	desc = batden.1.d
-#	picture =
+#	picture = GFX_report_event_carol_meeting
 
 	trigger = {
 		tag = BAD
@@ -17,6 +17,12 @@ country_event = { #Baden seek a union with Wurtemburg
 			is_in_faction_with = FRA
 			}
 		date > 1937.1.1
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1
 	}
 	
 	option = { #Form the union now (very few chances for not fucked up France war with this union but still possible by AI)
