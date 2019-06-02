@@ -25,7 +25,7 @@ set_technology = {
 
 set_autonomy = {
 		target = ARM
-		autonomous_state = autonomy_colony
+		autonomous_state = autonomy_puppet
 		freedom_level = 0.65
 	}
 
