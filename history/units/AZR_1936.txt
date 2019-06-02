@@ -63,7 +63,7 @@ units = {
 		location = 7661
 		division_template = "Piyada Diviziyası"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "AZR" } }
-		start_experience_factor = 0.5
+		start_experience_factor = 0.4
 		start_equipment_factor = 0.9
 	}
 	division= {
@@ -74,7 +74,7 @@ units = {
 		location = 11674
 		division_template = "Süvari Diviziyası"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "AZR" } }
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
 	}
 	division= {
@@ -85,7 +85,7 @@ units = {
 		location = 1610
 		division_template = "Piyada Diviziyası"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "AZR" } }
-		start_experience_factor = 0.4
+		start_experience_factor = 0.3
 		start_equipment_factor = 0.9
 	}
 	division= {
@@ -96,7 +96,7 @@ units = {
 		location = 7495
 		division_template = "Piyada Diviziyası"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "AZR" } }
-		start_experience_factor = 0.3
+		start_experience_factor = 0.2
 		start_equipment_factor = 0.9
 	}
 }

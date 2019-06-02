@@ -52,8 +52,8 @@ units = {
 		location = 6997
 		division_template = "Hatuk Brigad"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
-		start_experience_factor = 0.4
-		start_equipment_factor = 0.95
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
 	}
 
 	division= {	# "Yerevan Infantry Division"
@@ -70,8 +70,8 @@ units = {
 		location = 1467
 		division_template = "Hatuk Brigad"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
-		start_experience_factor = 0.4
-		start_equipment_factor = 0.95
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
 	}
 }
 
