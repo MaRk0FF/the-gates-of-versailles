@@ -19,7 +19,7 @@ state={
 		add_core_of = BAD
 	}
 	provinces={
-		3530 3692 6542 6568 6712 11640 
+		3530 3679 3692 6542 6568 6581 6712 11640 
 	}
 	manpower=2211000
 	state_category=city
