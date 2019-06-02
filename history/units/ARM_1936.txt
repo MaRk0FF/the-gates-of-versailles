@@ -52,7 +52,7 @@ units = {
 		location = 6997
 		division_template = "Hatuk Brigad"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
-		start_experience_factor = 0.75
+		start_experience_factor = 0.4
 		start_equipment_factor = 0.95
 	}
 
@@ -61,7 +61,7 @@ units = {
 		location = 12320
 		division_template = "Hardzakman Bazhanumy"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
-		start_experience_factor = 0.75
+		start_experience_factor = 0.5
 		start_equipment_factor = 0.95
 	}
 	
@@ -70,7 +70,7 @@ units = {
 		location = 1467
 		division_template = "Hatuk Brigad"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
-		start_experience_factor = 0.75
+		start_experience_factor = 0.4
 		start_equipment_factor = 0.95
 	}
 }
