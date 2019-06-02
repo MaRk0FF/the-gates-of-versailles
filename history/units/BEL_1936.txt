@@ -178,18 +178,6 @@ units = {
 		start_equipment_factor = 0.5
 
 	}
-
-
-	### Belgian Congo ###
-	division= {	
-		name = "Force Publique du Congo Belge"
-		location = 10968  # Leopoldville
-		division_template = "Division Coloniale"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "BEL" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
-	}
 }
 
 air_wings = {
