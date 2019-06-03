@@ -386,7 +386,7 @@ focus = {
 	available_if_capitulated = yes
 	mutually_exclusive = { focus = FRA_democratictransition } 
 	ai_will_do = { 
-	factor = 1
+	factor = 100
 	}	
 
 	completion_reward = { 
@@ -405,7 +405,7 @@ focus = {
 	prerequisite = { focus = FRA_vivelempireetvivelafrance }
 	mutually_exclusive = { focus = FRA_agressivediplomacy }  
 	ai_will_do = { 
-	factor = 1
+	factor = 0
 	} 
 
 	completion_reward = {
@@ -459,7 +459,7 @@ focus = {
 	prerequisite = { focus = FRA_vivelempireetvivelafrance } 
 	mutually_exclusive = { focus = FRA_passivediplomacy } 
 	ai_will_do = { 
-	factor = 1
+	factor = 100
 	} 
 	
 	completion_reward = {
@@ -1885,7 +1885,7 @@ focus = {
 	available_if_capitulated = yes 
 	mutually_exclusive = { focus = FRA_vivelempireetvivelafrance } 
 	ai_will_do = { 
-	factor = 1
+	factor = 0
 	}
 
  } 
