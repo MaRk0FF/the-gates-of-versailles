@@ -20,8 +20,7 @@ ideas = {
 				democratic_acceptance = -85
 			}
 		}
-	}
-	country = {
+		
 		FRA_anti_british_propaganda = {
 			
 			allowed = {
@@ -40,6 +39,73 @@ ideas = {
 			modifier = {
 				stability_factor = 0.005
 				war_support_factor = 0.005
+			}
+		}
+		
+		FRA_germanic_ethnicity_problems = {
+		
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+#			picture =
+
+			modifier = {
+				conscription_factor = -0.15
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.06
+				}
+			}
+		
+		FRA_naval_competition_boost = {
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+#			picture =
+
+			modifier = {
+				production_speed_dockyard_factor = 0.15
+				industrial_capacity_dockyard = 0.1
+				production_speed_naval_base_factor = 0.15
+				}
+			}
+		
+		FRA_preparing_for_war = {
+		
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+#			picture =
+
+			modifier = {
+			political_power_gain = 0.3
+			training_time_army_factor = -0.2
+			army_org_Factor = 0.1
+			planning_speed = 0.25
 			}
 		}
 	}
