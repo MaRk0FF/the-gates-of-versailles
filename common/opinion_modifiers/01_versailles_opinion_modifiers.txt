@@ -30,11 +30,11 @@ opinion_modifiers = {
 }
 
 opinion_modifiers = {
-	WST_ENG_positive_relation = { value = +30 }
+	WST_ENG_positive_relation = { value = 30 }
 }
 
 opinion_modifiers = {
-	ENG_WST_positive_relation = { value = +30 }
+	ENG_WST_positive_relation = { value = 30 }
 }
 
 opinion_modifiers = {
@@ -43,6 +43,14 @@ opinion_modifiers = {
 
 opinion_modifiers = {
 	ENG_FRA_speech_against_us = { value = -15 }
+}
+
+opinion_modifiers = {
+	FRA_IRE_positive_relations = { value = 40 }
+}
+
+opinion_modifiers = {
+	IRE_FRA_positive_relations = { value = 40 }
 }
 
 #Flanders
