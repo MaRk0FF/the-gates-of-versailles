@@ -4,6 +4,9 @@ ideas = {
 			allowed = {
 				original_tag = AFG
 			}
+			
+			removal_cost = -1
+			
 				modifier = {
 				political_power_factor = 0.15
 				theocracy_drift = 0.10
@@ -14,6 +17,9 @@ ideas = {
 			allowed = {
 				original_tag = AFG
 			}
+			
+			removal_cost = -1
+			
 				modifier = {
 				political_power_factor = 0.10
 				democratic_acceptance = -100
