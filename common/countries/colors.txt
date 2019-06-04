@@ -98,6 +98,10 @@ SAU = {
 	color = rgb { 0 112 0 }
 	color_ui = rgb { 0 112 0 }
 }
+AFG = {
+	color = rgb { 39 121 55 }
+	color_ui = rgb { 39 121 55 }
+}
 ######## END
 SWE = {
 	color = rgb { 36 132 247 }
