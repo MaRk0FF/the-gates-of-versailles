@@ -53,5 +53,9 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_generic_social_progress"
 	texturefile = "gfx/interface/goals/generic_social_progress.dds"			
+	}
+    SpriteType = {
+	name = "GFX_generic_brighter_future"
+	texturefile = "gfx/interface/goals/generic_brighter_future.dds"			
 	}	
 }
