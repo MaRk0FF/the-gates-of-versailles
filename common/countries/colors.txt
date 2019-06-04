@@ -5,6 +5,10 @@ TEX = {
 	color = rgb { 2 35 166 }
 	color_ui = rgb { 2 35 166 }
 }
+AOA = {
+	color = rgb { 135 82 54 }
+	color_ui = rgb { 135 82 54 }
+}
 LIC = {
 	color = rgb { 0 0 128 }
 	color_ui = rgb { 0 0 128 }
