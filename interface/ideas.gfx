@@ -3754,7 +3754,7 @@ spriteTypes = {
 	}
 	spiritType = {
 		name = "GFX_idea_AFG_Islamic_Kingdom"
-		texturefile = "gfx/interface/ideas/AFG_Islamic_Kingdom.dds"
+		texturefile = "gfx/interface/ideas/AFG_Islamic_Kingdom_1.dds"
 	}
 	spiritType= {
 		name = "GFX_AFG_Anti_British_Sentiment"
