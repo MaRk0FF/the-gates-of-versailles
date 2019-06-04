@@ -15,32 +15,32 @@ news_event = { #October Events in France
 	is_triggered_only = yes
 	
 	option = {
-		name = news.333.a
+		name = news.340.a
 		trigger = {
 			TAG = FRA
 		}
 	}
 	option = {
-		name = news.333.b
+		name = news.340.b
 		trigger = {
 			is_in_faction_with = FRA
 			NOT = { TAG = FRA}
 		}
 	}
 	option = {
-		name = news.333.c
+		name = news.340.c
 		trigger = {
 			TAG = ENG
 		}
 	}
 	option = {
-		name = news.333.d
+		name = news.340.d
 		trigger = {
 			TAG = GER
 		}
 	}
 	option = {
-		name = news.333.e
+		name = news.340.e
 		trigger = {
 			NOT = { TAG = ENG }
 			NOT = { TAG = GER }
@@ -163,9 +163,9 @@ news_event = { #Victor Emmanuel III Executed
 }
 
 news_event = { #Aostan Revolt
-	id = news.340
-	title = news.340.t
-	desc = news.340.desc
+	id = news.341
+	title = news.341.t
+	desc = news.341.desc
 	picture = GFX_news_event_016
 	
 	major = yes
@@ -173,25 +173,25 @@ news_event = { #Aostan Revolt
 	is_triggered_only = yes
 	
 	option = {
-		name = news.340.a
+		name = news.341.a
 		trigger = {
 			TAG = ITA
 		}
 	}
 	option = {
-		name = news.340.b
+		name = news.341.b
 		trigger = {
 			TAG = FRA
 		}
 	}
 	option = {
-		name = news.340.c
+		name = news.341.c
 		trigger = {
 			TAG = AUS
 		}
 	}
 	option = {
-		name = news.340.d
+		name = news.341.d
 		trigger = {
 			is_in_faction_with = ITA
 			NOT = { TAG = AUS }
@@ -199,13 +199,13 @@ news_event = { #Aostan Revolt
 		}
 	}
 	option = {
-		name = news.340.e
+		name = news.341.e
 		trigger = {
 			is_in_faction_with = FRA 
 		}
 	}
 	option = {
-		name = news.340.f
+		name = news.341.f
 		trigger = {
 			NOT = { TAG = AUS }
 			NOT = { TAG = ITA }

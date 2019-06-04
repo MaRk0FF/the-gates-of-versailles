@@ -67,6 +67,10 @@ opinion_modifiers = {
 	didnt_accept_deal = { value = -30 }
 }
 
+opinion_modifiers = {
+	sent_weapons = { value = 25 }
+}
+
 #Ethiopia
 opinion_modifiers = {
 	anti_colonialist = { value = -50 }

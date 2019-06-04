@@ -1,14 +1,4 @@
 ideas = {
-		country = {
-				
-				AFG_Islamist_Monarchy = {
-					
-					allowed = {
-							original tag = AFG
-					}
-					}
-				}
-		}
 	political_advisor = {
 
 		AFG_haji_faiz_muhammed_zikeria = {

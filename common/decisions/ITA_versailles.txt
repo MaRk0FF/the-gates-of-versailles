@@ -26,7 +26,7 @@ ITA_general_academy = {
 
 		complete_effect = {
 			add_ideas = improved_officer_classes
-			add_army_experience = 15
+			army_experience = 15
 		}
 
 		ai_will_do = {
@@ -60,7 +60,7 @@ ITA_general_academy = {
 
 		complete_effect = {
 			add_ideas = napoleonic_strategy_taught
-			add_army_experience = 25
+			army_experience = 25
 		}
 
 		ai_will_do = {
