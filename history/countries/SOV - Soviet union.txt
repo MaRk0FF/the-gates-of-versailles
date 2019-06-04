@@ -205,45 +205,20 @@ set_technology = {
 set_convoys = 50
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 64
-		}
-
-		fascism = {
-			popularity = 5
-		}
-		
-		communism = {
-			popularity = 4
-		}
-		
-		theocracy = {
-			popularity = 7
-		}
-		
-		neutrality = {
-			popularity = 3
-		}
-		
-		social_democratic = {
-			popularity = 2
-		}
-		
-		liberal = {
-			popularity = 5
-		}
-		
-		monarchist = {
-			popularity = 10
-		}
-	}
-	
 	ruling_party = democratic
 	last_election = "1933.7.1"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 64
+	fascism = 5
+	communism = 4
+	theocracy = 7
+	neutrality = 3
+	social_democratic = 2
+	liberal = 5
+	monarchist = 10
 }
 
 create_faction = russian_alliance

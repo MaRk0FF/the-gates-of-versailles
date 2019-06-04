@@ -91,37 +91,18 @@ add_to_faction = NAP
 set_convoys = 300
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 12
-		}
-
-		fascism = {
-			popularity = 2
-		}
-		
-		communism = {
-			popularity = 13
-		}
-		
-		neutrality = {
-			popularity = 59
-		}
-		
-		monarchist = {
-			popularity = 4
-		}
-		
-		liberal = {
-			popularity = 10
-		}
-	}
-	
 	ruling_party = neutrality
 	last_election = "1932.5.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	democratic = 12
+	fascism = 2
+	communism = 13
+	neutrality = 59
+	monarchist = 4
+	liberal = 10
 }
 
 add_ideas = {

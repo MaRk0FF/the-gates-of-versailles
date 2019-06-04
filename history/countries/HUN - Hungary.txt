@@ -126,36 +126,18 @@ if = {
 }
 
 set_politics = {
-	parties = {
-		democratic = { 
-			popularity = 12
-		}
-
-		fascism = {
-			popularity = 21
-		}
-		
-		communism = {
-			popularity = 2
-		}
-		
-		neutrality = {
-			popularity = 51
-		}
-		
-		social_democratic = {
-			popularity = 5
-		}
-		
-		liberal = {
-			popularity = 9
-		}
-	}
-	
 	ruling_party = neutrality
 	last_election = "1935.3.31"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	democratic = 12
+	fascism = 21
+	communism = 2
+	neutrality = 51
+	social_democratic = 5
+	liberal = 9
 }
 		
 create_country_leader = {

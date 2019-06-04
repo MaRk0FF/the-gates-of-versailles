@@ -178,27 +178,16 @@ create_import = {
 
 set_convoys = 400
 
-
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 21
-		}
-
-		fascism = {
-			popularity = 10
-		}
-		
-		monarchist = {
-			popularity = 69
-		}
-	}
-	
 	ruling_party = monarchist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	democratic = 21
+	fascism = 10
+	neutrality = 69
 }
 
 create_country_leader = {

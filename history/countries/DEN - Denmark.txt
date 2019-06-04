@@ -127,37 +127,18 @@ if = {
 
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 15
-		}
-		
-		liberal = { 
-			popularity = 9
-		}
-
-		fascism = {
-			popularity = 7
-		}
-		
-		communism = {
-			popularity = 12
-		}
-		
-		monarchist = {
-			popularity = 55
-		}
-		
-		neutrality = {
-			popularity = 2
-		}
-	}
-	
 	ruling_party = monarchist
 	last_election = "1935.10.22"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	democratic = 15
+	liberal = 9
+	fascism = 7
+	communism = 12
+	monarchist = 55
+	neutrality = 2
 }
 
 set_convoys = 40

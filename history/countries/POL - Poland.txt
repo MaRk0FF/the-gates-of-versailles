@@ -32,41 +32,19 @@ add_ideas = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 10
-		}
-
-		fascism = {
-			popularity = 14
-		}
-		
-		communism = {
-			popularity = 1
-		}
-		
-		neutrality = {
-			popularity = 65
-		}
-		
-		social_democratic = {
-			popularity = 5
-		}
-		
-		liberal = {
-			popularity = 2
-		}
-		
-		monarchist = {
-			popularity = 3
-		}
-	}
-	
 	ruling_party = neutrality
 	last_election = "1935.9.8"
 	election_frequency = 36
 	elections_allowed = no
+}
+set_popularities = {
+	democratic = 10
+	fascism = 14
+	communism = 1
+	neutrality = 65
+	social_democratic = 5
+	liberal = 2
+	monarchist = 3
 }
 
 create_country_leader = {

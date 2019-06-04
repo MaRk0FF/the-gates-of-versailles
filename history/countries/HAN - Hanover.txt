@@ -7,39 +7,19 @@ set_technology = {
 	tech_support = 1
 	tech_recon = 1
 }
-
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 8
-		}
-
-		fascism = {
-			popularity = 15
-		}
-		
-		communism = {
-			popularity = 9
-		}
-		
-		neutrality = {
-			popularity = 65
-		}
-		
-		social_democratic = {
-			popularity = 3
-		}
-		
-		liberal = {
-			popularity = 0
-		}
-	}
-	
 	ruling_party = neutrality
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	democratic = 8
+	fascism = 15
+	communism = 9
+	neutrality = 65
+	social_democratic = 3
+	liberal = 0
 }
 
 set_convoys = 0

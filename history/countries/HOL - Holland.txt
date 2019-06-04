@@ -37,29 +37,16 @@ if = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 3
-		}
-
-		fascism = {
-			popularity = 4
-		}
-		
-		communism = {
-			popularity = 2
-		}
-
-		neutrality = { 
-			popularity = 91
-		}
-	}
-	
 	ruling_party = neutrality
 	last_election = "1933.4.26"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	democratic = 3
+	fascism = 4
+	communism = 2
+	neutrality = 91
 }
 
 set_convoys = 450

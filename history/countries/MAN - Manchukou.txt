@@ -80,33 +80,17 @@ set_convoys = 65
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 9
-		}
-
-		fascism = {
-			popularity = 6
-		}
-
-		neutrality = {
-			popularity = 10
-		}
-		
-		monarchist = {
-			popularity = 65
-		}
-		
-		theocracy = {
-			popularity = 10
-		}
-	}
-	
 	ruling_party = monarchist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	democratic = 9
+	fascism = 6
+	neutrality = 10
+	monarchist = 65
+	theocracy = 10
 }
 
 create_country_leader = {

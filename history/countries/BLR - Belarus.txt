@@ -38,32 +38,17 @@ set_technology = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 9
-		}
-		social_democratic = { 
-			popularity = 11
-		}
-
-		neutrality = {
-			popularity = 64
-		}
-		
-		communism = {
-			popularity = 11
-		}
-
-		fascism = { 
-			popularity = 5
-		}
-	}
-
 	ruling_party = neutrality
-	last_election = "1933.7.1"
+	last_election = "1933.71.1"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	democratic = 9
+	social_democratic = 11
+	fascism = 5
+	communism = 11
+	neutrality = 64
 }
 
 create_country_leader = {

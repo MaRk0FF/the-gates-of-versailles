@@ -253,39 +253,21 @@ give_guarantee = URG
 	}
 }
 
-
-
-
 set_convoys = 400
 
-
 set_politics = {
-
-	parties = {
-		communism = {
-			popularity = 0
-		}
-		social_democratic = {
-			popularity = 0
-		}
-		liberal = {
-			popularity = 40
-		}
-		democratic = { # conservative
-			popularity = 33
-		}
-		neutrality = { # authoritarian
-			popularity = 27
-		}
-		fascism = {
-			popularity = 0
-		}
-	}
-	
 	ruling_party = neutrality
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 33
+	social_democratic = 0
+	liberal = 40
+	fascism = 0
+	communism = 0
+	neutrality = 27
 }
 
 add_ideas = {

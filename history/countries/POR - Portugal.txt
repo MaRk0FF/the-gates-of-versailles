@@ -71,30 +71,19 @@ set_technology = {
 }
 
 set_convoys = 50
-set_politics = {
 
-	parties = {
-		democratic = { 
-			popularity = 9
-		}
-		social_democratic = { 
-			popularity = 9
-		}
-		liberal = { 
-			popularity = 10
-		}
-		fascism = {
-			popularity = 64
-		}
-		communism = {
-			popularity = 8
-		}
-	}
-	
+set_politics = {
 	ruling_party = fascism
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
+}
+set_popularities = {
+	democratic = 9
+	social_democratic = 9
+	liberal = 10
+	fascism = 64
+	communism = 8
 }
 
 create_country_leader = {

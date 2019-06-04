@@ -87,77 +87,20 @@ set_autonomy = {
 }
 
 set_politics = {
-
-	parties = {
-		democratic = { 
-			popularity = 10
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 0
-			banned = yes #default is no
-		}
-		
-		neutrality = { 
-			popularity = 100
-		}
-	}
-	
 	ruling_party = neutrality
 	last_election = "1935.2.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 10
+	fascism = 0
+	communism = 0
+	neutrality = 90
 }
 
 set_convoys = 20
 set_stability = 0.55
-
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-		democratic = { 
-			popularity = 10
-		}
-
-		fascism = {
-			popularity = 0
-			banned = yes
-		}
-		
-		communism = {
-			popularity = 0
-			banned = yes #default is no
-		}
-		
-		neutrality = { 
-			popularity = 100
-		}
-	}
-	
-	ruling_party = neutrality
-		last_election = "1939.2.8"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-
-	create_country_leader = {
-		name = "Ismet Inönü"
-		desc = "POLITICS_ISMET_INÖNÜ_DESC"
-		picture = "Portrait_Turkey_Ismet_Inonu.dds"
-		expire = "1965.1.1"
-		ideology = despotism
-		traits = {
-			#
-		}
-	}
-
-}
 
 # Atatürk still alive in '36, however, Inönü was already Prime Minister (but not President)
 create_country_leader = {
