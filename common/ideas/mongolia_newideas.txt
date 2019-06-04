@@ -1,0 +1,112 @@
+ideas = {
+
+	country = {
+		MON_bastard_of_russia = {
+			
+			allowed = {
+				original_tag = MON
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_russian_bastard
+			
+			modifier = {
+				democratic_acceptance = -48
+				opinion_gain_monthly_factor = -0.25
+			}
+		}
+		MON_communist_junta = {
+			
+			allowed = {
+				original_tag = MON
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = communist_junta
+			
+			modifier = {
+				communism_acceptance = 100
+				experience_gain_army_factor = -0.15
+				military_leader_cost_factor = 0.50
+			}
+		}
+		MON_unstable_government = {
+			
+			allowed = {
+				original_tag = MON
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = unstable_government
+			
+			modifier = {
+				drift_defence_factor = -0.15
+				political_power_factor = -0.15
+				political_advisor_cost_factor = 0.5
+				stability_factor = -0.5
+			}
+		}
+		MON_revolutionary = {
+			
+			allowed = {
+				original_tag = MON
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = asian_revolutionary
+			
+			modifier = {
+				mobilization_speed = 0.15
+				guarantee_cost = -0.35
+				guarantee_tension = -0.5
+				army_core_defence_factor = 0.15
+			}
+		}
+		MON_poor_industry = {
+			
+			allowed = {
+				original_tag = MON
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = poor_industry
+			
+			modifier = {
+				political_power_factor = -0.15
+				consumer_goods_factor = 0.08
+			    production_speed_buildings_factor = -0.2
+				production_speed_industrial_complex_factor = -0.2
+			}
+		}
+	}
+}
