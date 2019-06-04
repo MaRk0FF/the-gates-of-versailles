@@ -1,0 +1,17 @@
+spriteTypes = {
+    
+	SpriteType = {
+	    name = "GFX_JAP_strengthen_the_monarchists"
+		texturefile = "gfx/interface/goals/JAP_strengthen_the_monarchists.dds"
+	}
+	
+	SpriteType = {
+	    name = "GFX_JAP_focus_on_china"
+		texturefile = "gfx/interface/goals/JAP_focus_on_china.dds"
+	}
+	
+	SpriteType = {
+	    name = "GFX_JAP_focus_on_south_east_asia"
+		texturefile = "gfx/interface/goals/JAP_focus_on_south_east_asia.dds"
+	}
+}
