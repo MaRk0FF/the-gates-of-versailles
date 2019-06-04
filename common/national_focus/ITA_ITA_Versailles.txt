@@ -148,6 +148,21 @@ tag = ITA
 	}
 	
 	focus = {
+		id = ITA_improve_grain_production
+		icon = GFX_goal_ita_grain_improvement
+		prerequisite = { focus = ITA_modern_dockyards }
+		x = 10
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}	
+		completion_reward = {
+			add_ideas = improved_grain_production
+		}
+	}
+	
+	focus = {
 		id = ITA_modernize_construction_tools
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = ITA_rebuild_economy }
@@ -395,3 +410,178 @@ tag = ITA
 		}
 	}
 }
+
+#Army Branch
+    focus = {
+		id = ITA_armed_branches_reform
+		icon = GFX_focus_chi_army_reform
+		x = 20
+		y = 0
+		cost = 10
+		completion_reward = {
+		add_tech_bonus = {
+            bonus = 0.5
+            uses = 2
+            category = infantry_weapons
+			category = artillery
+		}
+	}
+}
+
+    focus = {
+		id = ITA_fire_incompetent_generals
+		icon = GFX_goal_generic_relinquish_commanders
+		prerequisite = { focus = ITA_armed_branches_reform }
+		mutually_exclusive = { focus = ITA_maintain_general_staff }
+		x = 18
+		y = 1
+		cost = 5
+		completion_reward = {
+		add_stability = -0.1
+		add_popularity = {
+        ideology = fascism
+        popularity = -0.1
+        }
+		add_ideas = incompetent_generals_fired
+		remove_unit_leader = 503
+		remove_unit_leader = 505
+		remove_unit_leader = 506
+		remove_unit_leader = 507
+	}
+	
+	}
+	
+	focus = {
+		id = ITA_hire_new_generals
+		icon = GFX_focus_generic_military_academy
+		prerequisite = { focus = ITA_armed_branches_reform }
+		mutually_exclusive = { focus = ITA_maintain_general_staff }
+		available = {
+		has_political_power > 65
+		}
+		x = 18
+		y = 2
+		cost = 5
+		completion_reward = {
+		create_corps_commander = {
+		add_political_power = -65
+	    name = "Ettore Bastico Bastico"
+	    picture = "Portrait_Italy_Ettore_Bastico.dds"
+	    traits = { war_hero }
+	    skill = 4
+	    rank = 1
+	    attack_skill = 3
+	    defense_skill = 2
+	    planning_skill = 2
+	    logistics_skill = 2
+    }
+	unlock_decision_tooltip = ITA_improve_officer_classes
+	unlock_decision_tooltip = ITA_teach_napoleonic_strategy
+	}
+	
+	}
+	
+	focus = {
+		id = ITA_mechanized_force
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = ITA_hire_new_generals focus = ITA_train_current_general_staff }
+		x = 19
+		y = 3
+		cost = 5
+		completion_reward = {
+		add_tech_bonus = {
+            bonus = 0.5
+            uses = 2
+            category = armor
+		}
+	}
+	
+	}
+	
+	focus = {
+		id = ITA_artillery_focus_versailles
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = ITA_hire_new_generals focus = ITA_train_current_general_staff }
+		x = 21
+		y = 3
+		cost = 5
+		completion_reward = {
+		add_tech_bonus = {
+            bonus = 0.5
+            uses = 2
+            category = artillery
+		}
+	}
+	
+	}
+	
+	focus = {
+		id = ITA_motorized_infantry
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = ITA_artillery_focus_versailles }
+		prerequisite = { focus = ITA_mechanized_force }
+		x = 20
+		y = 4
+		cost = 5
+		completion_reward = {
+		add_tech_bonus = {
+            bonus = 0.5
+            uses = 2
+            category = motorized_equipment
+		}
+	}
+	
+	}
+	
+	focus = {
+		id = ITA_rework_our_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = ITA_artillery_focus_versailles }
+		prerequisite = { focus = ITA_mechanized_force }
+		x = 20
+		y = 5
+		cost = 5
+		completion_reward = {
+		add_tech_bonus = {
+            bonus = 0.5
+            uses = 2
+            category = land_doctrine
+		}
+	}
+	
+	}
+	
+	focus = {
+		id = ITA_maintain_general_staff
+		icon = GFX_generic_brighter_future
+		prerequisite = { focus = ITA_armed_branches_reform }
+		mutually_exclusive = { focus = ITA_fire_incompetent_generals }
+		x = 22
+		y = 1
+		cost = 5
+		completion_reward = {
+		add_stability = 0.1
+		add_popularity = {
+        ideology = fascism
+        popularity = 0.1
+        }
+		add_ideas = maintained_general_staff
+	}
+}
+
+    focus = {
+		id = ITA_train_current_general_staff
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = ITA_maintain_general_staff }
+		available = {
+		has_political_power > 65
+		}
+		x = 22
+		y = 2
+		cost = 5
+		completion_reward = {
+		add_political_power = -65
+	    unlock_decision_tooltip = ITA_train_corp_commanders
+	}
+}
+   

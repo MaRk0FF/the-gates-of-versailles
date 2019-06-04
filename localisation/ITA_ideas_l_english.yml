@@ -12,6 +12,13 @@
  military_based_economy_ita:0 "Military Based Economy"
  civilian_based_economy_ita:0 "Civilian Based Economy"
  modern_dockyards:0 "Modern Dockyards"
+ improved_grain_production:0 "Improved Grain Production"
+ incompetent_generals_fired:0 "Incompetent Generals Fired"
+ incompetent_generals_fired_desc:0 "With our incompetent generals fired, more experienced generals have taken charge."
+ maintained_general_staff:0 "Maintained General Staff"
+ maintained_general_staff_desc:0 "We have maintained our general staff as it is the only logical choice to go forward with. Although this will cause some 'minor' problems with our army's performance."
+ improved_officer_classes:0 "Improved Officer Classes"
+ napoleonic_strategy_taught:0 "Napoleonic Strategy"
  #Ministers
  giorgio_amendola:0 "Giorgio Amendola"
  costantino_lazzari:0 "Constantino Lazzari"
