@@ -28,7 +28,7 @@ set_popularities = {
 	monarchist = 22
 }
 add_ideas = {
-	AFG_Islamist_Monarchy 
+	AFG_Islamic_Kingdom
 	AFG_Anti_British_Sentiment
 }
 
