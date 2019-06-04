@@ -3,4 +3,4 @@ path="mod/the-gates-of-versailles/"
 tags={
 	"Alternative History"
 }
-supported_version="1.6.x"
+supported_version="1.7.x"
