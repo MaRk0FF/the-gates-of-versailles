@@ -437,6 +437,26 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_ideology_liberal_group"
+		texturefile = "gfx/interface/ideologies/liberal_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_social_democratic_group"
+		texturefile = "gfx/interface/ideologies/social_democratic_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_monarchist_group"
+		texturefile = "gfx/interface/ideologies/monarchist_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_nazbol_group"
+		texturefile = "gfx/interface/ideologies/nazbol_group.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_ideology_unknown"
 		texturefile = "gfx/interface/ideologies/unknown.dds"
 		legacy_lazy_load = no
