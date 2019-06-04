@@ -1298,8 +1298,7 @@ focus = {
 	completion_reward = {
 	add_popularity = { ideology = democratic popularity = -0.1 }
 	add_popularity = { ideology = liberal popularity = -0.1 }
-	add_popularity = { ideology = communism popularity = +0.05 }
-	add_popularity = { ideology = radical_socialist popularity = 0.05 }
+	add_popularity = { ideology = communism popularity = 0.05 }
 	add_popularity = { ideology = neutrality popularity = 0.2 }
 	}
 } 
@@ -1867,8 +1866,7 @@ y = 3
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = FRA_electionsforanewgoverment } 
-mutually_exclusive = { focus = FRA_prwins } 
-mutually_exclusive = { focus = FRA_ } 
+mutually_exclusive = { focus = FRA_prwins }
 ai_will_do = { 
  factor = 1
  } 

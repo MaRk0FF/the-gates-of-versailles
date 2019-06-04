@@ -33,8 +33,6 @@ ideas = {
 			}
 
 			removal_cost = -1
-
-#			picture =
 			
 			modifier = {
 				stability_factor = 0.005
@@ -54,8 +52,6 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
-#			picture =
 
 			modifier = {
 				conscription_factor = -0.15
@@ -76,8 +72,6 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
-#			picture =
 
 			modifier = {
 				production_speed_dockyard_factor = 0.15
@@ -98,8 +92,6 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
-#			picture =
 
 			modifier = {
 			political_power_gain = 0.3

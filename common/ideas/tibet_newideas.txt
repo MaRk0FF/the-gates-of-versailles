@@ -61,9 +61,6 @@ ideas = {
 			picture = traitor_of_the_empire
 			
 			modifier = {
-				CHI = {
-					defense_bonus_against = 0.25
-				}
 				conscription = 0.01
 				military_leader_cost_factor = 1.00
 				command_power_gain = -0.45

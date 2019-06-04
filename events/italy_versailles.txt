@@ -64,7 +64,7 @@ country_event = {
 	id = italy.18
 	title = italy.18.t
 	desc = italy.18.d
-	picture = 
+	picture = GFX_report_event_royal_parade
 	
 	is_triggered_only = yes
 	
@@ -293,7 +293,7 @@ country_event = {# France Joins war
     is_triggered_only = yes
 
 	option = { #great
-		name = Very Good
+		name = italy.24.a
 		
 }
 
@@ -307,8 +307,8 @@ country_event = {# France Sends Equipment
 
     is_triggered_only = yes
 
-	option = { #great
-		name = Very Good
+	option = { 
+	name = italy.25.a
 	add_opinion_modifier = {
         target = FRA
         modifier = sent_weapons

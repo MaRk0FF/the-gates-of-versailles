@@ -18,6 +18,10 @@ country_event = { #Set up relations with Great-Britain
 			}
 		date > 1937.1.1
 	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 1 }
 	
 	option = { #We are happy Mr.Churchill
 		name = westphalia.1.a

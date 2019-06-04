@@ -53,6 +53,10 @@ opinion_modifiers = {
 	IRE_FRA_positive_relations = { value = 40 }
 }
 
+opinion_modifiers = {
+	FRA_faction_restructuration = { value = -25 }
+}
+
 #Flanders
 opinion_modifiers = {
 	BEL_deportation_attempt = { value = -100 }

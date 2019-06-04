@@ -67,10 +67,8 @@ ideas = {
 				mobilization_laws_cost_factor = 0.75 
 				economy_cost_factor = 0.15
 				democratic_drift = 0.05
-				totalitarian_drift = 0.05
 				liberal_drift = 0.05
 				communism_drift = 0.05
-				radical_socialist = 0.05
 			}
 		}
 		

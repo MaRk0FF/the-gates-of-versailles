@@ -100,9 +100,9 @@ ideas = {
 			allowed = {
 				original_tag = "ITA"
 			}
-			available = {
-				has_completed_focus = ITA_ridofmussolini 				
-			}
+			#available = {
+			#	has_completed_focus = ITA_ridofmussolini #				
+			#}
 			
 
 			
@@ -125,9 +125,9 @@ ideas = {
 			allowed = {
 				original_tag = "ITA"
 			}
-			available = {
-				has_completed_focus = ITA_ridofmussolini 		
-			}
+			#available = {
+			#	has_completed_focus = ITA_ridofmussolini #				
+			#}
 			
 
 			
@@ -171,9 +171,9 @@ ideas = {
 			allowed = {
 				original_tag = "ITA"
 			}
-			available = {
-				has_completed_focus = ITA_ridofmussolini 		
-			}
+			#available = {
+			#	has_completed_focus = ITA_ridofmussolini #				
+			#}
 			
 
 			
@@ -196,9 +196,9 @@ ideas = {
 			allowed = {
 				original_tag = "ITA"
 			}
-			available = {
-				has_completed_focus = ITA_ridofmussolini 		
-			}
+			#available = {
+			#	has_completed_focus = ITA_ridofmussolini #				
+			#}
 			
 
 			
@@ -221,9 +221,9 @@ ideas = {
 			allowed = {
 				original_tag = "ITA"
 			}
-			available = {
-				has_completed_focus = ITA_ridofmussolini 		
-			}
+			#available = {
+			#	has_completed_focus = ITA_ridofmussolini #				
+			#}
 			
 
 			
@@ -246,9 +246,9 @@ ideas = {
 			allowed = {
 				original_tag = "ITA"
 			}
-			available = {
-				has_completed_focus = ITA_ridofmussolini 		
-			}
+			#available = {
+			#	has_completed_focus = ITA_ridofmussolini #				
+			#}
 			
 
 			
