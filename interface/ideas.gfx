@@ -3752,3 +3752,11 @@ spriteTypes = {
 		name = "GFX_idea_AUS_italian_aid"
 		texturefile = "gfx/interface/ideas/aus_italian_aid.dds"
 	}
+	spiritType = {
+		name = "GFX_idea_AFG_Islamic_Kingdom"
+		texturefile = "gfx/interface/ideas/AFG_Islamic_Kingdom.dds"
+	}
+	spiritType= {
+		name = "GFX_AFG_Anti_British_Sentiment"
+		texturefile = "gfx/interface/ideas/AFG_Anti_British_Sentiment.dds"
+	}
