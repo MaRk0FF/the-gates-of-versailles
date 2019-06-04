@@ -64,7 +64,7 @@ country_event = {
 	id = italy.18
 	title = italy.18.t
 	desc = italy.18.d
-	picture = GFX_report_event_carol_meeting
+	picture = 
 	
 	is_triggered_only = yes
 	
@@ -72,9 +72,6 @@ country_event = {
 		name = italy.18.a
 		ai_chance = {
 			factor = 90
-		}
-		ITA = {
-			country_event = { id = italy.19 hours = 2 }
 		}
 		39 = {
 					if = {
@@ -181,40 +178,88 @@ country_event = {
 		ai_chance = {
 			factor = 10
 		}
-		ITA = {
-			country_event = { id = italy.20 hours = 3 }
-		}
 }
 }
 
-country_event = {# Austrians accept deal
+country_event = {# Aosta Revolt
 	id = italy.19
 	title = italy.19.t
 	desc = italy.19.d
-	picture = GFX_report_event_carol_meeting
+	picture = GFX_report_event_saf_coup
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
 	option = {
 		name = italy.19.a
+		release = AOA
+		AOA = { load_oob = "AOA_revolt" }
+		declare_war_on = {
+        target = AOA
+        type = annex_everything
+    }
+	custom_effect_tooltip = aostan_revolt_tt
+	 hidden_effect = {
+	 FRA = {
+			country_event = { id = italy.22 hours = 2 }
+		}
+	country_event = { hours = 1 id = news.337 }	
 	}
 }
 
-country_event = {# Austrians accept deal
-	id = italy.20
-	title = italy.20.t
-	desc = italy.20.d
-	picture = GFX_report_event_carol_meeting
+}
 
-	is_triggered_only = yes
+country_event = {# Aostan request for help
+	id = italy.22
+	title = italy.22.t
+	desc = italy.22.d
+	picture = GFX_report_event_pierre_laval
 
-	option = {
-		name = italy.20.a
-		add_opinion_modifier = {
-        target = AUS
-        modifier = didnt_accept_deal
-    } 
-	}
+    is_triggered_only = yes
+
+	option = { #send guns
+		name = italy.22.a
+		ai_chance = {
+			factor = 60
+		}
+		AOA = {
+			country_event = { id = italy.25 hours = 2 }
+		}
+		send_equipment = {
+        equipment = infantry_equipment
+        amount = 2500
+        target = AOA
+    }
+	add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = -2500
+    producer = AOA
+    }
+}
+
+    option = { #join war
+		name = italy.22.b
+		ai_chance = {
+			factor = 20
+		}
+		FRA = { add_to_faction = AOA }
+	    declare_war_on = {
+        target = ITA
+        type = annex_everything
+        }
+		AOA = {
+			country_event = { id = italy.24 hours = 2 }
+		}
+		
+}
+
+    option = { #do nothing
+		name = italy.22.c
+		ai_chance = {
+			factor = 20
+		}
+		
+}
+
 }
 
 country_event = {# The Political Situation
@@ -237,6 +282,39 @@ country_event = {# The Political Situation
 	option = {
 		name = italy.23.a
 	}
+}
+
+country_event = {# France Joins war
+	id = italy.24
+	title = italy.24.t
+	desc = italy.24.d
+	picture = GFX_report_event_pierre_laval
+
+    is_triggered_only = yes
+
+	option = { #great
+		name = Very Good
+		
+}
+
+}
+
+country_event = {# France Sends Equipment
+	id = italy.25
+	title = italy.25.t
+	desc = italy.25.d
+	picture = GFX_report_event_pierre_laval
+
+    is_triggered_only = yes
+
+	option = { #great
+		name = Very Good
+	add_opinion_modifier = {
+        target = FRA
+        modifier = sent_weapons
+    }	
+}
+
 }
 
 
