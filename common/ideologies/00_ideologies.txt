@@ -476,4 +476,61 @@ ideologies = {
 
 		ai_fascist = yes # uses the fascist AI behaviour
 	}
+
+
+	nazbol = {
+	
+		types = {
+		
+			subidea1  = {
+			}
+			
+			subidea2  = {
+			}
+			
+			subidea3 = {
+			}
+			
+			subidea4 = {
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_NONALIGNED_1"
+			"FACTION_NAME_NONALIGNED_2"
+			"FACTION_NAME_NONALIGNED_3"
+			"FACTION_NAME_NONALIGNED_4"
+			"FACTION_NAME_NONALIGNED_5"
+		}
+		
+		color = { 95 44 129 }
+		
+		
+		war_impact_on_world_tension = 0.35		
+		faction_impact_on_world_tension = 0.2
+		
+		rules = {
+			can_force_government = no
+			can_puppet = yes
+			can_send_volunteers = yes
+		}
+		
+		modifiers = {
+			#increased_influence_factor = 0.3 
+			generate_wargoal_tension = 0.20
+			join_faction_tension = 0.15
+			lend_lease_tension = 0.10
+			send_volunteers_tension = 0.1
+			guarantee_tension = 0.15
+			drift_defence_factor = 0.1
+		}
+		
+		faction_modifiers = {
+		}
+
+		can_be_boosted = yes
+		can_collaborate = yes
+
+		ai_fascist = yes # uses the fascist AI behaviour
+	}
 }
