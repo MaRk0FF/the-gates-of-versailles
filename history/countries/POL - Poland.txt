@@ -72,9 +72,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Roman Dmowski"
-	desc = ""
-	picture = ""
+	name = "Woljciech Korfanty"
+	desc = "POLITICS_WOJCIECH_KORFANTY_DESCRIPTION"
+	picture = "Portrait_POL_Wojciech_Korfanty.dds"
 	expire = "1965.1.1"
 	ideology = centrist_conservative
 	traits = {
