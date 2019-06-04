@@ -1,0 +1,160 @@
+ITA_general_academy = {
+
+    ITA_improve_officer_classes = {
+
+		icon = decision_category_army_reform
+
+		allowed = {
+			tag = ITA
+		}
+
+		available = {
+			has_completed_focus = ITA_hire_new_generals
+		}
+
+		cost = 25
+
+		fire_only_once = yes
+
+		visible = {
+			tag = ITA
+			has_completed_focus = ITA_hire_new_generals
+			has_government = fascism
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			add_ideas = improved_officer_classes
+			add_army_experience = 15
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	ITA_teach_napoleonic_strategy = {
+
+		icon = decision_category_army_reform
+
+		allowed = {
+			tag = ITA
+		}
+
+		available = {
+			has_completed_focus = ITA_hire_new_generals
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			tag = ITA
+			has_completed_focus = ITA_hire_new_generals
+			has_government = fascism
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			add_ideas = napoleonic_strategy_taught
+			add_army_experience = 25
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+ITA_teach_general_staff = {
+
+    ITA_train_corp_commanders = {
+
+		icon = decision_category_army_reform
+
+		allowed = {
+			tag = ITA
+		}
+
+		available = {
+			has_completed_focus = ITA_maintain_general_staff
+		}
+
+		cost = 85
+
+		fire_only_once = yes
+
+		visible = {
+			tag = ITA
+			has_completed_focus = ITA_maintain_general_staff
+			has_government = fascism
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			custom_effect_tooltip = generals_trained_tt
+			hidden_effect = {
+			remove_unit_leader = 503
+			remove_unit_leader = 505
+		    remove_unit_leader = 506
+		    remove_unit_leader = 507
+			create_corps_commander = {
+	        name = "Ugo Cavallero"
+	        picture = "Portrait_Italy_Ugo_Cavallero.dds"
+	        traits = { trait_cautious career_officer }
+	        skill = 4
+	        rank = 1
+	        attack_skill = 3
+	        defense_skill = 2
+	        planning_skill = 2
+	        logistics_skill = 2
+        }
+		    create_corps_commander = {
+	        name = "Sebastiano Visconti Prasca"
+	        picture = "Portrait_Italy_Sebastiano_Visconti_Prasca.dds"
+	        traits = { career_officer inflexible_strategist }
+	        skill = 3
+	        rank = 1
+	        attack_skill = 3
+	        defense_skill = 2
+	        planning_skill = 1
+	        logistics_skill = 1
+        } 
+            create_corps_commander = {
+	        name = "Ubaldo Soddu"
+	        picture = "Portrait_Italy_Ubaldo_Soddu.dds"
+	        traits = { career_officer trait_cautious }
+	        skill = 3
+	        rank = 1
+	        attack_skill = 2
+	        defense_skill = 1
+	        planning_skill = 3
+	        logistics_skill = 1
+        }	
+            create_corps_commander = {
+	        name = "Italo Balbo"
+	        picture = "portrait_italy_italo_balbo.dds"
+	        traits = { career_officer politically_connected }
+	        skill = 3
+	        rank = 2
+	        attack_skill = 3
+	        defense_skill = 2
+	        planning_skill = 1
+	        logistics_skill = 2
+        }				
+		}
+		
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+	
+	   
