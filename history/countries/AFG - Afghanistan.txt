@@ -27,7 +27,10 @@ set_popularities = {
 	liberal = 0
 	monarchist = 22
 }
-
+add_ideas = {
+	AFG_Islamist_Monarchy 
+	AFG_Anti_British_Sentiment
+}
 
 create_country_leader = {
 	name = "Habibullah Kalakani"
