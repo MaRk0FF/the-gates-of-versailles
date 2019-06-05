@@ -200,7 +200,15 @@ spriteTypes = {
 		name = "GFX_idea_combined_bomber_offensive"
 		texturefile = "gfx/interface/ideas/combined_bomber_offensive.dds"
 	}	
-	
+	spiritType = {
+		name = "GFX_idea_AFG_Islamic_Kingdom.dds"
+		texturefile = "gfx/interface/ideas/AFG_Islamic_Kingdom.dds"
+	}
+	spiritType= {
+		name = "GFX_idea_AFG_AFG_Anti_British_Sentiment.dds"
+		texturefile = "gfx/interface/ideas/AFG_Anti_British_Sentiment.dds"
+	}
+
 	spriteType = {
 		name = "GFX_idea_office_of_strategic_services"
 		texturefile = "gfx/interface/ideas/office_of_strategic_services.dds"
@@ -3752,11 +3760,4 @@ spriteTypes = {
 		name = "GFX_idea_AUS_italian_aid"
 		texturefile = "gfx/interface/ideas/aus_italian_aid.dds"
 	}
-	spiritType = {
-		name = "GFX_idea_AFG_Islamic_Kingdom.dds"
-		texturefile = "gfx/interface/ideas/AFG_Islamic_Kingdom.dds"
-	}
-	spiritType= {
-		name = "GFX_idea_AFG_Anti_British_Sentiment.dds"
-		texturefile = "gfx/interface/ideas/AFG_Anti_British_Sentiment.dds"
-	}
+	
