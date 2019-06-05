@@ -58,7 +58,7 @@ units = {
 	}
 	
 	division= {	
-		name = "2. Fratelli Locali" 
+		name = "3. Fratelli Locali" 
 		location = 611
 		division_template = "Infanterie-Division"
 		start_experience_factor = 0.1
