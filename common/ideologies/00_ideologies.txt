@@ -503,7 +503,7 @@ ideologies = {
 			"FACTION_NAME_NONALIGNED_5"
 		}
 		
-		color = { 95 44 129 }
+		color = { 53 22 22 }
 		
 		
 		war_impact_on_world_tension = 0.35		
