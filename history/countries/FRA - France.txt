@@ -167,6 +167,16 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Léon Blum"
+	desc = "POLITICS_LEON_BLUM_DESC"
+	picture = "Portrait_France_Leon_Blum.dds"
+	expire = "1965.1.1"
+	ideology = reformist_socialist
+	traits = {
+		
+	}
+}
 create_corps_commander = {
 	name = "Jean de Lattre de Tassigny"
 	picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
