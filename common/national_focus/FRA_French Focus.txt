@@ -924,11 +924,8 @@ focus = {
 	factor = 1
 	} 
 
-	available = {
-		NOT = {
-			WUR = { is_puppet_of = FRA }
-			WUR = { exists = no }
-		}
+	bypass = {
+		WUR = { is_puppet_of = FRA }
 	}
 
 	completion_reward = {
