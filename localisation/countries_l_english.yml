@@ -347,6 +347,10 @@
  AFG_monarchist_ADJ:0 "Afghan"
  AFG_theocratic_ADJ:0 "Islamic"
  AFG_communism_ADJ:0 "Afghan"
+ 
+ SAX_monarchist:0 "Kingdom of Saxony"
+ AFG_monarchist_DEF:0 "the Kingdom of Saxony"
+ AFG_monarchist_ADJ:0 "Saxon"
 ###### END
  
  ENG_fascism:0 "British Empire"
