@@ -116,9 +116,20 @@ add_ideas = {
 create_country_leader = {
 	name = "Pierre-Etienne Flandin"
 	desc = "POLITICS_PIERRE_ETIENNE_FLANDIN_DESC"
-	picture = "Portrait_Pierre-Etienne_Flandin.dds"
+	picture = "Portrait_FRA_Pierre-Etienne_Flandin.dds"
 	expire = "1965.1.1"
 	ideology = conservatism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Eugène Motte"
+	desc = "POLITICS_EUGENE_MOTTE_DESC"
+	picture = "Portrait_FRA_Eugene_Motte.dds"
+	expire = "1965.1.1"
+	ideology = liberaterianism
 	traits = {
 		
 	}
