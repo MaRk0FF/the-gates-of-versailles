@@ -773,6 +773,9 @@ focus_tree = {
 			focus = JAP_liberalism
 			focus = JAP_social_democracy
 		}
+		available = {
+		    NOT = { has_completed_focus = JAP_hold_referendum }
+		}
 		x = 21
 		y = 3
 
@@ -838,6 +841,9 @@ focus_tree = {
 			focus = JAP_social_democracy
 			focus = JAP_liberalism
 			focus = JAP_conservatism
+		}
+		available = {
+		    NOT = { has_completed_focus = JAP_coup_against_the_monarchists }
 		}
 		x = 25
 		y = 3
