@@ -1,0 +1,1005 @@
+focus_tree = {
+	id = japan
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = JAP
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 150 y = 1200 }
+	
+	focus = {
+		id = JAP_industrial_prosperity
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10.00
+		x = 2
+		y = 0
+        complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 1
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 1
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+	}
+		
+	focus = {
+		id = JAP_strengthen_political_position
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		x = 23
+		y = 0
+        completion_reward = {
+		    add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = JAP_militarize_okinawa
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_industrial_prosperity
+		}
+		x = 0
+		y = 1
+			complete_tooltip = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					526 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+	}
+	focus = {
+		id = JAP_militarize_koshinetsu
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_militarize_okinawa
+		}
+		x = 0
+		y = 3
+		complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					535 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_militarize_kanto
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_militarize_koshinetsu
+		}
+		x = 0
+		y = 5
+		complete_tooltip = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+							type = arms_factory
+							level = 3
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					282 = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = arms_factory
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_industrialize_iwo_jima
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_industrial_prosperity
+		}
+		x = 2
+		y = 1
+		complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					645 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_industrialize_tohoku
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_industrialize_iwo_jima
+		}
+		x = 2
+		y = 2
+		complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					533 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_industrialize_hokkaido
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_industrialize_tohoku
+		}
+		x = 2
+		y = 3
+		complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					536 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_industrialize_weihavei
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_industrialize_hokkaido
+		}
+		x = 2
+		y = 4
+		complete_tooltip = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					844 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_invest_in_infrastructure
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_industrial_prosperity
+		}
+		x = 5
+		y = 1
+		complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 0
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = infrastructure
+																			size > 1
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_invest_in_korea
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_invest_in_infrastructure
+		}
+		available = {
+		    OR = {
+			    KOR = {
+			        all_owned_state = {					
+					    is_owned_by = JAP
+				    }
+				}
+				KOR = {
+				    is_subject_of = JAP
+				}
+			}
+		}
+		x = 4
+		y = 2
+		complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					527 = {
+					        limit = {
+							    KOR = { exists = no }
+							    NOT = {
+								    KOR = { is_subject_of = JAP }
+								}
+							}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+					525 = {
+					        limit = {
+							    KOR = { exists = no }
+							    NOT = {
+								    KOR = { is_subject_of = JAP }
+								}
+							}
+							add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						}
+					hidden_effect = {
+					    KOR = {
+						    limit = { is_subject_of = JAP }
+							
+							527 = {
+							    add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						    }
+					        525 = {
+							    add_building_construction = {
+									type = infrastructure
+									level = 2
+									instant_build = yes
+								}
+						    }
+						}
+					}	
+				}
+
+	}
+	focus = {
+		id = JAP_mobilise_korea
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_invest_in_korea
+		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = JAP_invest_in_weihavei
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_invest_in_infrastructure
+		}
+		available = {
+		    JAP = { owns_state = 844 }
+		}		
+		x = 5
+		y = 3
+		complete_tooltip = {
+					add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					844 = {
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+	}
+	focus = {
+		id = JAP_research_collaboration
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_militarize_kanto
+		}
+		prerequisite = {
+			focus = JAP_industrialize_weihavei
+		}
+		prerequisite = {
+			focus = JAP_invest_in_weihavei
+		}
+		x = 3
+		y = 6
+		completion_reward = {
+		    add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = JAP_industrialize_korea
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_invest_in_infrastructure
+		}
+		available = {
+		    OR = {
+			    KOR = {
+			        all_owned_state = {					
+					    is_owned_by = JAP
+				    }
+				}
+				KOR = {
+				    is_subject_of = JAP
+				}
+			}
+		}
+		x = 6
+		y = 2
+		complete_tooltip = {
+		            add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					527 = {
+					        limit = {
+							    KOR = { exists = no }
+							    NOT = {
+								    KOR = { is_subject_of = JAP }
+								}
+							}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+					525 = {
+					        limit = {
+							    KOR = { exists = no }
+							    NOT = {
+								    KOR = { is_subject_of = JAP }
+								}
+							}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+					hidden_effect = {
+					    KOR = {
+						    limit = { is_subject_of = JAP }
+							
+							527 = {
+							    add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						    }
+					        525 = {
+							    add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						    }
+						}
+					}	
+				}
+
+	}
+	focus = {
+		id = JAP_militarize_korea
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_industrialize_korea
+		}
+		available = {
+		    OR = {
+			    KOR = {
+			        all_owned_state = {					
+					    is_owned_by = JAP
+				    }
+				}
+				KOR = {
+				    is_subject_of = JAP
+				}
+			}
+		}
+		x = 6
+		y = 4
+		complete_tooltip = {
+		            add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+					add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+				}
+			completion_reward = {
+					527 = {
+					        limit = {
+							    KOR = { exists = no }
+							    NOT = {
+								    KOR = { is_subject_of = JAP }
+								}
+							}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					525 = {
+					        limit = {
+							    KOR = { exists = no }
+							    NOT = {
+								    KOR = { is_subject_of = JAP }
+								}
+							}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+					hidden_effect = {
+					    KOR = {
+						    limit = { is_subject_of = JAP }
+							
+							527 = {
+							    add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						    }
+					        525 = {
+							    add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						    }
+						}
+					}	
+				}
+
+	}
+	focus = {
+		id = JAP_strengthen_the_monarchists
+		icon = GFX_JAP_strengthen_the_monarchists
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_strengthen_political_position
+		}
+		mutually_exclusive = {
+			focus = JAP_unite_the_people
+			focus = JAP_hold_elections
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = JAP_focus_on_south_east_asia
+		icon = GFX_JAP_focus_on_south_east_asia
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_strengthen_the_monarchists
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = JAP_focus_on_china
+		icon = GFX_JAP_focus_on_china
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_strengthen_the_monarchists
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = JAP_hold_elections
+		icon = GFX_generic_hold_elections
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_strengthen_political_position
+		}
+		mutually_exclusive = {
+			focus = JAP_unite_the_people
+			focus = JAP_strengthen_the_monarchists
+		}
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = JAP_conservatism
+		icon = GFX_generic_conservative
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_hold_elections
+		}
+		mutually_exclusive = {
+			focus = JAP_liberalism
+			focus = JAP_social_democracy
+		}
+		x = 20
+		y = 2
+
+	}
+	focus = {
+		id = JAP_liberalism
+		icon = GFX_generic_liberal
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_hold_elections
+		}
+		mutually_exclusive = {
+			focus = JAP_conservatism
+			focus = JAP_social_democracy
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = JAP_social_democracy
+		icon = GFX_generic_social_democratic
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_hold_elections
+		}
+		mutually_exclusive = {
+			focus = JAP_liberalism
+			focus = JAP_conservatism
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = JAP_coup_against_the_monarchists
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_conservatism
+			focus = JAP_liberalism
+			focus = JAP_social_democracy
+		}
+		x = 21
+		y = 3
+
+	}
+	focus = {
+		id = JAP_limit_emperor_powers
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_conservatism
+			focus = JAP_liberalism
+			focus = JAP_social_democracy
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = JAP_pacific_defence_pact
+		icon = GFX_goal_generic_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_limit_emperor_powers
+		}
+		mutually_exclusive = {
+			focus = JAP_ally_with_britain
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = JAP_ally_with_britain
+		icon = GFX_focus_chi_british_cooperation
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_limit_emperor_powers
+		}
+		mutually_exclusive = {
+			focus = JAP_pacific_defence_pact
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = JAP_guardian_of_the_pacific
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_ally_with_britain
+			focus = JAP_pacific_defence_pact
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = JAP_hold_referendum
+		icon = GFX_generic_hold_elections
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_social_democracy
+			focus = JAP_liberalism
+			focus = JAP_conservatism
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = JAP_unite_the_people
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_strengthen_political_position
+		}
+		mutually_exclusive = {
+			focus = JAP_strengthen_the_monarchists
+			focus = JAP_hold_elections
+		}
+		x = 32
+		y = 1
+
+	}
+	focus = {
+		id = JAP_fascism_focus
+		icon = GFX_goal_support_fascism
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_unite_the_people
+		}
+		mutually_exclusive = {
+			focus = JAP_communism_focus
+		}
+		x = 34
+		y = 2
+
+	}
+	focus = {
+		id = JAP_take_over_the_country
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_fascism_focus
+		}
+		x = 34
+		y = 3
+
+	}
+	focus = {
+		id = JAP_communism_focus
+		icon = GFX_goal_support_communism
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_unite_the_people
+		}
+		mutually_exclusive = {
+			focus = JAP_fascism_focus
+		}
+		x = 30
+		y = 2
+
+	}
+	focus = {
+		id = JAP_recruitment_propaganda
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_fascism_focus
+			focus = JAP_communism_focus
+		}
+		x = 32
+		y = 3
+
+	}
+	focus = {
+		id = JAP_rocket_science
+		icon = GFX_focus_rocketry
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_research_collaboration
+		}
+		x = 1
+		y = 7
+		available_if_capitulated = yes
+			completion_reward = {
+					add_tech_bonus = {
+							name = jet_rocket_bonus
+							ahead_reduction = 2
+							uses = 2
+							category = rocketry
+							category = jet_technology
+						}
+				}
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0.25
+							always = yes
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_nuclear_science
+		icon = GFX_focus_wonderweapons
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_research_collaboration
+		}
+		x = 5
+		y = 7
+		completion_reward = {
+					add_tech_bonus = {
+							name = nuclear_bonus
+							ahead_reduction = 2
+							category = nuclear
+						}
+				}
+			ai_will_do = {
+					factor = 1
+					modifier = {
+							factor = 0.25
+							always = yes
+						}
+				}
+
+	}
+	focus = {
+		id = JAP_free_education
+		icon = GFX_focus_research2
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_research_collaboration
+		}
+		available = {
+		    has_stability > 0.5
+			date > 1939.1.1
+		}
+		x = 3
+		y = 7
+		completion_reward = {
+		    add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = JAP_conquer_china
+		icon = GFX_JAP_focus_on_china
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_take_over_the_country
+		}
+		x = 35
+		y = 5
+
+	}
+	focus = {
+		id = JAP_stage_a_coup
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_communism_focus
+		}
+		x = 30
+		y = 3
+
+	}
+}
