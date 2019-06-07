@@ -16,6 +16,13 @@ state={
 		victory_points = {
 			3768 1 
 		}
+		victory_points = {
+			762 1 
+		}
+		victory_points = {
+			9736 1 
+		}
+		
 		add_core_of = FRA
 
 	}
