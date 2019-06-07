@@ -183,7 +183,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Giovanni Messe"
-	picture = "Portrait_Italy_Giovanni_Messe.dds"
+	picture = "Portrait_Italy_Giovanni_Messe_Versailles.dds"
 	traits = {  armor_officer war_hero }
 	skill = 4
 	rank = 1
