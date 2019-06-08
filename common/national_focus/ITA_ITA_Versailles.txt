@@ -8,7 +8,7 @@ tag = ITA
 } 
 }
 
- continuous_focus_position = { x = 50 y = 5500 } 
+ continuous_focus_position = { x = 55 y = 1350 } 
 
     focus = {
 		id = ITA_rebuild_economy
@@ -28,7 +28,7 @@ tag = ITA
 		id = ITA_naval_rearment
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = ITA_rebuild_economy }
-		x = 10
+		x = 9
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -136,7 +136,7 @@ tag = ITA
 		id = ITA_modern_dockyards
 		icon = GFX_goal_continuous_naval_production
 		prerequisite = { focus = ITA_naval_rearment }
-		x = 10
+		x = 9
 		y = 3
 		cost = 10
 		ai_will_do = {
@@ -151,7 +151,7 @@ tag = ITA
 		id = ITA_improve_grain_production
 		icon = GFX_goal_ita_grain_improvement
 		prerequisite = { focus = ITA_modern_dockyards }
-		x = 10
+		x = 9
 		y = 5
 		cost = 10
 		ai_will_do = {
@@ -397,7 +397,7 @@ tag = ITA
 
     focus = {
 		id = ITA_rocketry
-		icon = GFX_focus_wonderweapons
+		icon = GFX_focus_rocketry
 		prerequisite = { focus = ITA_military_based_economy focus = ITA_civilian_based_economy }
 		x = 6
 		y = 8
@@ -410,6 +410,97 @@ tag = ITA
 		}
 	}
 }
+
+    focus = {
+		id = ITA_modernized_trains
+		icon = GFX_goal_focus_italian_trains
+		prerequisite = { focus = ITA_rebuild_economy }
+		x = 1
+		y = 1
+		cost = 10
+		completion_reward = {
+		157 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+		add_ideas = ITA_modernized_trains_idea
+	}
+}
+
+    focus = {
+		id = ITA_industrialize_naples
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = ITA_modernized_trains }
+		available = {
+		owns_state = 117
+		owns_state = 870
+		owns_state = 869
+		owns_state = 156
+		}
+		x = 1
+		y = 3
+		cost = 10
+		completion_reward = {
+		add_political_power = -40
+		117 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+		869 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+		156 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+	}
+}
+
+    focus = {
+		id = ITA_sicilian_mines
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus = ITA_industrialize_naples }
+		available = {
+		owns_state = 115
+		}
+		x = 1
+		y = 5
+		cost = 10
+		completion_reward = {
+		add_political_power = -25
+		add_resource = {
+            type = steel
+            amount = 25
+            state = 115
+        }
+	}
+}
+
 
 #Army Branch
     focus = {
@@ -435,7 +526,7 @@ tag = ITA
 		mutually_exclusive = { focus = ITA_maintain_general_staff }
 		x = 18
 		y = 1
-		cost = 5
+		cost = 1
 		completion_reward = {
 		add_stability = -0.1
 		add_popularity = {
@@ -461,11 +552,11 @@ tag = ITA
 		}
 		x = 18
 		y = 2
-		cost = 5
+		cost = 1
 		completion_reward = {
 		create_corps_commander = {
 		add_political_power = -65
-	    name = "Ettore Bastico Bastico"
+	    name = "Ettore Bastico"
 	    picture = "Portrait_Italy_Ettore_Bastico.dds"
 	    traits = { war_hero }
 	    skill = 4
@@ -477,6 +568,13 @@ tag = ITA
     }
 	unlock_decision_tooltip = ITA_improve_officer_classes
 	unlock_decision_tooltip = ITA_teach_napoleonic_strategy
+	unlock_decision_tooltip = ITA_hire_vittorio_ambrosio
+	unlock_decision_tooltip = ITA_hire_mario_roatta
+	hidden_effect = {
+	unlock_decision_tooltip = ITA_remove_napoleonic_straegy_teachings
+	unlock_decision_tooltip = ITA_remove_improved_officer_classes
+	}
+	
 	}
 	
 	}
@@ -487,7 +585,7 @@ tag = ITA
 		prerequisite = { focus = ITA_hire_new_generals focus = ITA_train_current_general_staff }
 		x = 19
 		y = 3
-		cost = 5
+		cost = 10
 		completion_reward = {
 		add_tech_bonus = {
             bonus = 0.5
@@ -504,7 +602,7 @@ tag = ITA
 		prerequisite = { focus = ITA_hire_new_generals focus = ITA_train_current_general_staff }
 		x = 21
 		y = 3
-		cost = 5
+		cost = 10
 		completion_reward = {
 		add_tech_bonus = {
             bonus = 0.5
@@ -518,11 +616,10 @@ tag = ITA
 	focus = {
 		id = ITA_motorized_infantry
 		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = ITA_artillery_focus_versailles }
-		prerequisite = { focus = ITA_mechanized_force }
-		x = 20
+		prerequisite = { focus = ITA_artillery_focus_versailles focus = ITA_mechanized_force }
+		x = 19
 		y = 4
-		cost = 5
+		cost = 10
 		completion_reward = {
 		add_tech_bonus = {
             bonus = 0.5
@@ -536,11 +633,10 @@ tag = ITA
 	focus = {
 		id = ITA_rework_our_doctrine
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = ITA_artillery_focus_versailles }
-		prerequisite = { focus = ITA_mechanized_force }
-		x = 20
-		y = 5
-		cost = 5
+		prerequisite = { focus = ITA_artillery_focus_versailles focus = ITA_mechanized_force }
+		x = 21
+		y = 4
+		cost = 10
 		completion_reward = {
 		add_tech_bonus = {
             bonus = 0.5
@@ -558,7 +654,7 @@ tag = ITA
 		mutually_exclusive = { focus = ITA_fire_incompetent_generals }
 		x = 22
 		y = 1
-		cost = 5
+		cost = 1
 		completion_reward = {
 		add_stability = 0.1
 		add_popularity = {
@@ -578,10 +674,496 @@ tag = ITA
 		}
 		x = 22
 		y = 2
-		cost = 5
+		cost = 1
 		completion_reward = {
 		add_political_power = -65
 	    unlock_decision_tooltip = ITA_train_corp_commanders
 	}
 }
+
+    focus = {
+		id = ITA_better_guns
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = ITA_rework_our_doctrine }
+		prerequisite = { focus = ITA_motorized_infantry }
+		x = 20
+		y = 5
+		cost = 10
+		completion_reward = {
+		add_tech_bonus = {
+            bonus = 0.5
+            uses = 2
+            category = infantry_weapons
+		}
+	}
+}
+
+    focus = {
+		id = ITA_marines_versailles
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = ITA_better_guns }
+		mutually_exclusive = ( focus = ITA_paratroopers_versailles }
+		x = 19
+		y = 6
+		cost = 10
+		completion_reward = {
+		add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = marines
+				technology = marines2
+			}
+	}
+}
+
+    focus = {
+		id = ITA_paratroopers_versailles
+		icon = GFX_goal_italian_paratroopers
+		prerequisite = { focus = ITA_better_guns }
+		mutually_exclusive = ( focus = ITA_marines_versailles }
+		x = 21
+		y = 6
+		cost = 10
+		completion_reward = {
+		add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+			}
+	}
+}
+
+    focus = {
+		id = ITA_a_reformed_army
+		icon = GFX_goal_ita_reformed_army
+		prerequisite = { focus = ITA_paratroopers_versailles focus = ITA_marines_versailles }
+		available = {
+		OR = {
+		has_idea = improved_officer_classes
+		has_idea = napoleonic_strategy_taught
+		has_decision = ITA_train_corp_commanders
+		}
+		}
+		x = 20
+		y = 7
+		cost = 1
+		completion_reward = {
+		add_ideas = ITA_reformed_army
+	}
+}
+
+#Naval Tree
+
+    focus = {
+		id = ITA_dominate_the_sea
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		available = {
+		owns_state = 162
+		}
+		x = 13
+		y = 7
+		cost = 5
+		completion_reward = {
+		162 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = naval_base
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+	}
+}
+
+   focus = {
+		id = ITA_rearm_naval_ii
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = ITA_dominate_the_sea }
+		x = 13
+		y = 8
+		cost = 5
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = naval_effort_built }
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = { tag = ROOT }
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ITA_mediterranean_fleet
+		icon = GFX_goal_ita_mediterranean
+		prerequisite = { focus = ITA_rearm_naval_ii }
+		mutually_exclusive = { focus = ITA_global_navy }
+		x = 12
+		y = 9
+		cost = 1
+		completion_reward = {
+		add_ideas = ita_mediterranean_fleet
+		add_tech_bonus = {
+				name = fleet_in_being_bonus
+				bonus = 1.0
+				uses = 2
+				category = fleet_in_being_tree
+			}
+	}
+}
+
+    focus = {
+		id = ITA_global_navy
+		icon = GFX_goal_ita_global_fleet
+		prerequisite = { focus = ITA_rearm_naval_ii }
+		mutually_exclusive = { focus = ITA_mediterranean_fleet }
+		x = 14
+		y = 9
+		cost = 1
+		completion_reward = {
+		add_ideas = ita_global_navy
+		add_tech_bonus = {
+				name = sub_op_bonus
+				bonus = 1.0
+				uses = 2
+				technology = convoy_interdiction_ti
+				technology = unrestricted_submarine_warfare
+				technology = wolfpacks
+				technology = advanced_submarine_warfare
+				technology = combined_operations_raiding
+			}
+	}
+}
+
+    focus = {
+		id = ITA_first_carrier
+		icon = GFX_goal_generic_navy_carrier
+		prerequisite = { focus = ITA_global_navy }
+		x = 14
+		y = 10
+		cost = 10
+		completion_reward = {
+		add_tech_bonus = {
+        bonus = 0.5 
+        uses = 2 
+        technology = early_carrier
+        technology = basic_carrier
+        technology = improved_carrier
+        technology = advanced_carrier
+    }
+	}
+    }
+	
+	focus = {
+		id = ITA_italian_wolves
+		icon = GFX_goal_generic_navy_anti_submarine
+		prerequisite = { focus = ITA_first_carrier }
+		x = 14
+		y = 11
+		cost = 10
+		completion_reward = {
+        add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+    }
+	}
+	
+	focus = {
+		id = ITA_battleship_supreme
+		icon = GFX_goal_ita_battleship
+		prerequisite = { focus = ITA_mediterranean_fleet }
+		x = 12
+		y = 10
+		cost = 10
+		completion_reward = {
+        add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+    }
+	}
+	
+	focus = {
+		id = ITA_destroyer_effort
+		icon = GFX_focus_generic_destroyer
+		prerequisite = { focus = ITA_battleship_supreme }
+		x = 12
+		y = 11
+		cost = 10
+		completion_reward = {
+        add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+    }
+	}
+	
+	focus = {
+		id = ITA_amphibous_invasion_preparations
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = ITA_destroyer_effort focus = ITA_italian_wolves }
+		x = 13
+		y = 12
+		cost = 10
+		completion_reward = {
+        add_ideas = ITA_amphibous_invasion_bonus
+    }
+	}
+	
+	focus = {
+		id = ITA_somalian_port
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = ITA_amphibous_invasion_preparations }
+		available = {
+		owns_state = 559
+		owns_state = 818
+		}
+		x = 13
+		y = 13
+		cost = 10
+		completion_reward = {
+        559 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = naval_base
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+		818 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = naval_base
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+    }
+	}
+	
+#Air Tree
+
+	focus = {
+		id = ITA_the_modern_landscape
+		icon = GFX_goal_generic_air_fighter2
+		x = 20
+		y = 9
+		cost = 10
+		completion_reward = {
+        air_experience = 10
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}			
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = air_doctrine
+			}
+    }
+	
+	focus = {
+		id = ITA_fighter_effort
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = ITA_the_modern_landscape }
+		x = 19
+		y = 10
+		cost = 10
+		completion_reward = {
+        add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 0.5
+				uses = 3
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+    }
+	}
+	
+	focus = {
+		id = ITA_bomber_effort
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = ITA_the_modern_landscape }
+		x = 21
+		y = 10
+		cost = 10
+		completion_reward = {
+        add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.5
+				uses = 3
+				technology = strategic_bomber1
+				technology = strategic_bomber2
+				technology = strategic_bomber3
+				category = tactical_bomber
+			}
+    }
+	}
+	
+	focus = {
+		id = ITA_cas_effort
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = ITA_fighter_effort }
+		x = 19
+		y = 11
+		cost = 10
+		completion_reward = {
+        add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 0.75
+				ahead_reduction = 2
+				uses = 2
+				category = cas_bomber
+			}
+    }
+	}
+	
+	focus = {
+		id = ITA_nav_bomber_effort
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = ITA_bomber_effort }
+		x = 21
+		y = 11
+		cost = 10
+		completion_reward = {
+        add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = naval_bomber
+			}
+    }
+	}
+	
+	focus = {
+		id = ITA_air_doctrine_improvement
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = ITA_cas_effort focus = ITA_nav_bomber_effort }
+		x = 20
+		y = 12
+		cost = 10
+		completion_reward = {
+        add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+    }
+	}
+   
    
