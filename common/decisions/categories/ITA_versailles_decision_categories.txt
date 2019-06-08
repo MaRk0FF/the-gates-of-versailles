@@ -49,3 +49,28 @@ ITA_teach_general_staff = {
 		}
 	}
 }
+
+ITA_remove_programs = {
+
+	icon = decision_category_army_reform
+	
+	allowed = {
+		original_tag = ITA
+	}
+
+	priority = {
+		base = 0
+		modifier = {
+			add = 5
+			has_idea = napoleonic_strategy_taught
+			has_idea = improved_officer_classes
+		}
+	}
+
+	visible = {
+		OR = {
+			has_government = fascism
+			has_completed_focus = ITA_hire_new_generals
+		}
+	}
+}
