@@ -199,14 +199,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_combined_bomber_offensive"
 		texturefile = "gfx/interface/ideas/combined_bomber_offensive.dds"
-	}	
-	spiritType = {
-		name = "GFX_idea_AFG_Islamic_Kingdom.dds"
-		texturefile = "gfx/interface/ideas/AFG_Islamic_Kingdom.dds"
-	}
-	spiritType= {
-		name = "GFX_idea_AFG_AFG_Anti_British_Sentiment.dds"
-		texturefile = "gfx/interface/ideas/AFG_Anti_British_Sentiment.dds"
 	}
 
 	spriteType = {
@@ -3744,8 +3736,24 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/napoleonic_strategy.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_the_polish_spirit"
-		texturefile = "gfx/interface/ideas/polish_nationalism.dds"
+		name = "GFX_idea_ITA_reformed_army"
+		texturefile = "gfx/interface/ideas/ita_reformed_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_modernized_trains_idea"
+		texturefile = "gfx/interface/ideas/generic_uprade_train.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ita_global_navy"
+		texturefile = "gfx/interface/ideas/ita_global_navy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ita_mediterranean_fleet"
+		texturefile = "gfx/interface/ideas/idea_yug_federal_defense_council.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_amphibous_invasion_bonus"
+		texturefile = "gfx/interface/ideas/FRA_scw_intervention_nationalists_focus.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_catholic_influence"
@@ -3760,4 +3768,5 @@ spriteTypes = {
 		name = "GFX_idea_AUS_italian_aid"
 		texturefile = "gfx/interface/ideas/aus_italian_aid.dds"
 	}
+}
 	
