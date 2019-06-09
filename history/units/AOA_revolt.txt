@@ -18,48 +18,48 @@ units = {
 	division= {	
 		name = "1. Vice Guardia" 
 		location = 3782
-		division_template = "Infanterie-Division"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.4
 	}
 	
 	division= {	
 		name = "2. Vice Guardia" 
 		location = 3782
-		division_template = "Infanterie-Division"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.4
 	}
 	
 	division= {	
 		name = "1. Guardia Aostan" 
 		location = 3782
-		division_template = "Infanterie-Division"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 	}
 	
 	division= {	
 		name = "2. Guardia Aostan" 
 		location = 3782
-		division_template = "Infanterie-Division"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.3
 	}
 	
 	division= {	
 		name = "1. Fratelli Locali" 
 		location = 611
-		division_template = "Infanterie-Division"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.1
 	}
 	
 	division= {	
 		name = "2. Fratelli Locali" 
 		location = 611
-		division_template = "Infanterie-Division"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.1
 	}
 	
 	division= {	
 		name = "3. Fratelli Locali" 
 		location = 611
-		division_template = "Infanterie-Division"
+		division_template = "Division d'Infanterie"
 		start_experience_factor = 0.1
 	}
