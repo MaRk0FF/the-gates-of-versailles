@@ -24,33 +24,8 @@ focus_tree = {
 					type = infrastructure
 					level = 3
 					instant_build = yes 
-			    	}
+			    		}
 				}
 		}	
 	}
-
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-
-
-
-
-
-
-
-
-
 }
