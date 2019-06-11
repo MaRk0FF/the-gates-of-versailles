@@ -1,24 +1,34 @@
 ideas = {
+
 	country = {
+	
+
 		AFG_Islamic_Kingdom = {
+		
 			allowed = {
 				original_tag = AFG
 			}
 			
 			removal_cost = -1
+			
+			picture = AFG_Islamic_Kingdom
 			
 				modifier = {
 				political_power_factor = 0.15
 				theocracy_drift = 0.10
 				justify_war_goal_time = -0.15
 				}
-		}	
+		}
+		
 		AFG_Anti_British_Sentiment = {
+		
 			allowed = {
 				original_tag = AFG
 			}
 			
 			removal_cost = -1
+			
+			picture = AFG_Anti_British_Settlement
 			
 				modifier = {
 				political_power_factor = 0.10
