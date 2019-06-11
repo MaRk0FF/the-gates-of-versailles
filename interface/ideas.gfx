@@ -3777,5 +3777,14 @@ spriteTypes = {
 		name = "GFX_idea_FRA_German_Ethnicity_Problems"
 		texturefile = "gfx/interface/ideas/FRA_germanethnicityproblems.dds"
 	}
+	#Afghanistan
+	spriteType = {
+		name = "GFX_idea_AFG_Anti_British_Settlement"
+		texturefile = "gfx/interface/ideas/AFG_Antibritishsentiment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Islamic_Kingdom"
+		texturefile = "gfx/interface/ideas/AFG_Islamickingdom.dds"
+	}
 }
 	
