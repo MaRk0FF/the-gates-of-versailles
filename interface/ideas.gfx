@@ -3768,5 +3768,14 @@ spriteTypes = {
 		name = "GFX_idea_AUS_italian_aid"
 		texturefile = "gfx/interface/ideas/aus_italian_aid.dds"
 	}
+	#France
+	spriteType = {
+		name = "GFX_idea_FRA_Fear_Of_Democratic_Coup"
+		texturefile = "gfx/interface/ideas/FRA_fearofdemocraticcoup.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_German_Ethnicity_Problems"
+		texturefile = "gfx/interface/ideas/FRA_germanethnicityproblems.dds"
+	}
 }
 	
