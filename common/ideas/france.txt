@@ -390,7 +390,7 @@ ideas = {
 
 			removal_cost = -1
 			
-			picture = 
+			#picture = 
 			
 			modifier = {
 				stability_factor = 0.005
@@ -434,6 +434,8 @@ ideas = {
 			}
 
 			removal_cost = -1
+			
+			picture = FRA_Naval_Competition_Boost
 
 			modifier = {
 				production_speed_dockyard_factor = 0.15
@@ -455,6 +457,8 @@ ideas = {
 
 			removal_cost = -1
 
+			picture = FRA_Preparing_For_War
+			
 			modifier = {
 			political_power_gain = 0.3
 			training_time_army_factor = -0.2
