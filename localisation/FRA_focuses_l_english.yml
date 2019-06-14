@@ -1,7 +1,7 @@
 ﻿l_english:
 #French Focus Tree - Other Stuff (custom tooltips for events,etc...)#
 fra_october_events:0 "The October Events must happen"
-series_of_events:0 "This will unlocked a series of debates in the next weeks in the Imperial Court about personal freedoms and civil rights"
+series_of_events:0 "§GThis will unlocked a series of debates in the next weeks in the Imperial Court about personal freedoms and civil rights§!\n"
 FRA_agressive_diplomacy:0 "Agressive Diplomacy"
 FRA_passive_diplomacy:0 "Passive Diplomacy"
 FRA_faction_restructuration:0 "French faction restructuration"
@@ -28,6 +28,7 @@ IRE_FRA_positive_relations:0 "Positive relations established with Ireland"
 heat_up_tt:0 "§RIn a near future, Very near future, Something will happen that will make the world boiling...§!\n"
 wwii_begining_tt:0 "§RYou will declare war on Great-Britain for that naval clashes in the English Channel§!\n"
 wwii_not_begining_tt:0 "§BThe war will not begin, But lying after years of propaganda will have consequences...§!\n"
+fra_ita_aoa_revolt:0 "§RYou prepare something for Italy,which could be a pretext to a war between the Pact of Rome and your country§!\n"
 
 #French Focus Tree - Actual Focus Tree localisation
 FRA_vivelempireetvivelafrance:0 "Vive l'Empire et vive la France"
@@ -72,3 +73,4 @@ FRA_restorationofabsolutism:0 "Restoration of Absolutism"
 FRA_promotionofpersonalfreedom:0 "Promotion of Personal freedom"
 FRA_allowparamilitarygroupsforsurveillance:0 "Allow paramilitary groups surveillance"
 FRA_amasssurveillancesociety:0 "A mass surveillance society"
+FRA_grantgermanscitizenship:0 "Allow Germans to push for French Citizenship"
