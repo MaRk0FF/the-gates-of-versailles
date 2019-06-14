@@ -762,7 +762,6 @@ focus = {
 	} 
 
 	completion_reward = {
-	remove_ideas = MTG_naval_treaty_adherent
 	add_ideas = FRA_naval_competition_boost
 	}
 } 
