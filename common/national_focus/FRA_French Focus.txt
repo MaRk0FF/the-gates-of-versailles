@@ -970,17 +970,25 @@ focus = {
 #Focus for Piedmont or War
 focus = { 
 id = FRA_piedmontorwar
-icon = GFX_focus_generic_provoke_border_clashes
-x = 27
-y = 4
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_thegreatcampaign } 
-ai_will_do = { 
- factor = 1
- } 
+	icon = GFX_focus_generic_provoke_border_clashes
+	x = 27
+	y = 4
+	cost = 10
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_thegreatcampaign } 
+	ai_will_do = { 
+	factor = 1
+	} 
 
- } 
+	completion_reward = {
+	hidden_effect = {
+		ITA = {
+			country_event = { id = italy.19 days = 3 }
+			}
+		}
+	custom_effect_tooltip = fra_ita_aoa_revolt
+	}
+} 
 
 #Focus for Fund Scottish Rebels
 focus = { 
@@ -1076,18 +1084,21 @@ focus = {
 
 #Focus for Topple Fascist Regimes in Europe
 focus = { 
-id = FRA_topplefascistregimesineurope
-icon = GFX_focus_generic_anti_fascist_diplomacy
-x = 27
-y = 5
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_piedmontorwar } 
-ai_will_do = { 
- factor = 1
- } 
+	id = FRA_topplefascistregimesineurope
+	icon = GFX_focus_generic_anti_fascist_diplomacy
+	x = 27
+	y = 5
+	cost = 10
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_piedmontorwar } 
+	ai_will_do = { 
+	factor = 1
+	}
 
- } 
+	bypass = {
+		AUS = { has_war_with = FRA }
+		}
+	} 
 
 #Focus for End the Russian Hegemony
 focus = { 
@@ -1332,6 +1343,24 @@ prerequisite = { focus = FRA_statusoffrance }
 
 	completion_reward = {
 		country_event = { id = france.40 }
+	}
+}
+
+#Focus for Naval Competition
+focus = { 
+	id = FRA_grantgermanscitizenship
+#	icon =
+	x = 62
+	y = 2
+	cost = 6
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_thestatereligionquestion } 
+	ai_will_do = { 
+	factor = 1
+	} 
+
+	completion_reward = {
+	remove_ideas = FRA_germanic_ethnicity_problems
 	}
 } 
 
@@ -1764,7 +1793,7 @@ focus = {
 	y = 3
 	cost = 10
 	available_if_capitulated = yes 
-	prerequisite = { focus = FRA_thestatereligionquestion }
+	prerequisite = { focus = FRA_grantgermanscitizenship }
 	available = {
 	has_country_flag = fra_october_events
 	}
