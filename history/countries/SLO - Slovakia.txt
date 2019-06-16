@@ -4,13 +4,10 @@ oob = "SLO_1939"
 
 set_technology = {
 	gw_artillery = 1
-	interwar_artillery = 1
-	interwar_antiair = 1
 	gwtank = 1
 	basic_light_tank = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	infantry_weapons2 = 1
 	support_weapons = 1
 	tech_support = 1
 	tech_recon = 1
@@ -61,10 +58,17 @@ give_guarantee = CZE
 	}
 }
 
+set_politics = {
+	ruling_party = social_democratic
+	last_election = "1934.3.26"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
 set_popularities = {
-	democratic = 5
-	fascism = 90
-	communism = 5
+	social_democratic = 72
+	fascism = 12
+	democratic = 16
 }
 
 create_country_leader = {
@@ -73,6 +77,17 @@ create_country_leader = {
 	picture = "Portrait_Slovakia_Jozef_Tiso.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Emanuel Lehocky"
+	desc = "POLITICS_EMANUEL_LEHOCKY_DESC"
+	picture = "Portrait_Slovakia_Emanuel_Lehocky.dds"
+	expire = "1965.1.1"
+	ideology = labourism
 	traits = {
 		#
 	}
