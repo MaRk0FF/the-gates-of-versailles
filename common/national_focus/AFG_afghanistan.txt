@@ -1,0 +1,231 @@
+focus_tree = {
+	id = AFG
+
+	country = {
+		factor = 0
+		modifier = {
+		add = 10 
+		tag = AFG
+		}
+	}
+	
+	continuous_focus_position = { x = 0 y = 2000 }
+
+	#Start Industrial Tree
+
+	focus = {
+		id = develop_northern_provinces
+		x = 0
+		y= 0
+		cost = 3
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			415 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+				type = infrastructure
+				level = 1
+				instant_build = yes 
+				}
+			}
+			267 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes 
+				}
+			} 		
+		}
+	}
+	focus = {
+		id = develop_southern_provinces
+		x = 2
+		y = 0
+		cost = 3
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			442 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes 
+				}
+			}
+			445 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes 
+				}
+			}
+		}	
+	}
+	focus = {
+		id = expand_iron_mines_bamyan
+		x = 2
+		y = 1
+		cost = 3
+		prerequisite = { focus = develop_southern_provinces }
+		prerequisite = { focus = develop_northern_provinces }
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_resource = {
+            type = steel
+            amount = 20
+            state = 267
+			}
+			267 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes 
+				}	
+			}
+			267 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes 
+				}	
+			}
+		}
+	}
+	focus = {
+		id = revitalize_oil_industry_in_Herat
+		x = 0
+		y = 1
+		cost = 3
+		prerequisite = { focus = develop_southern_provinces }
+		prerequisite = { focus = develop_northern_provinces }
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_resource = {
+            type = oil
+            amount = 20
+            state = 415
+			}
+			add_resource = {
+            type = rubber
+            amount = 10
+            state = 415
+			}
+			415 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes 
+				}
+			}
+			415 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes 
+				}
+			}
+		}
+	}
+	focus = {
+		id = expanding_the_copper_mines_of_balochistan
+		x = 0
+		y = 2
+		cost = 3
+		prerequisite = { focus = revitalize_oil_industry_in_Herat }
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_resource = {
+            type = steel
+            amount = 10
+            state = 445
+			}
+			445 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes 
+				}
+			}
+			445 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes 
+				}
+			}
+		}
+	}
+	focus = {
+		id = mine_for_aluminum_in_peshawar
+		x = 2
+		y = 2
+		cost = 3
+		prerequisite = { focus = expand_iron_mines_bamyan }
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_resource = {
+            type = aluminum
+            amount = 10
+            state = 442
+			}
+			442 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes 
+				}
+			}
+			442 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes 
+				}
+			}
+		}
+	}
+	focus = {
+		id = revitalized_industry
+		x = 1
+		y = 3
+		prerequisite = { focus = mine_for_aluminum_in_peshawar }
+		prerequisite = { focus = expanding_the_copper_mines_of_balochistan }
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = revitalized_economy
+		}
+	}
+}
+	
+	
