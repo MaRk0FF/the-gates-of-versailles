@@ -118,12 +118,12 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
             type = oil
-            amount = 20
+            amount = 8
             state = 415
 			}
 			add_resource = {
             type = rubber
-            amount = 10
+            amount = 8
             state = 415
 			}
 			415 = {
@@ -155,11 +155,6 @@ focus_tree = {
 			factor = 12
 		}
 		completion_reward = {
-			add_resource = {
-            type = steel
-            amount = 10
-            state = 445
-			}
 			445 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -169,10 +164,10 @@ focus_tree = {
 				}
 			}
 			445 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes 
 				}
 			}
