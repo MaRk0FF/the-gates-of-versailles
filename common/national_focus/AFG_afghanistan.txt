@@ -222,5 +222,161 @@ focus_tree = {
 		}
 	}
 }
+
+#Research Part of The Tree
+
+	focus = {
+		id = solve_the_education_problem
+		x = 5
+		y = 0
+		cost = 3
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+            	limit = {
+                	has_idea = AFG_bad_litteracy
+           		}
+            	swap_ideas = {
+                	remove_idea = AFG_bad_litteracy
+                	add_idea = AFG_bad_litteracy_2
+            	}
+        	}
+		}	
+	}
+
+	focus = {
+		id = push_for_education_1
+		x = 4
+		y = 1
+		prerequisite = { focus = solve_the_education_problem }
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = send_girls_to_school
+		x = 4
+		y = 2
+		prerequisite = { focus = push_for_education_1 }
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+            	limit = {
+                	has_idea = AFG_bad_litteracy_2
+           		}
+            	swap_ideas = {
+                	remove_idea = AFG_bad_litteracy_2
+                	add_idea = AFG_bad_litteracy_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = AFG_bad_litteracy_3
+				}
+				swap_ideas = {
+					remove_idea = AFG_bad_litteracy_3
+					add_idea = AFG_bad_litteracy_4
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = push_for_education_2
+		x = 6
+		y = 1
+		prerequisite = { focus = solve_the_education_problem }
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#
+		}
+	}
+	focus = {
+		id = found_the_university_of_kabul
+		x = 6
+		y = 1
+		prerequisite = { focus = push_for_education_2 }
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		completion_reward = {
+			if = {
+            	limit = {
+                	has_idea = AFG_bad_litteracy_2
+				}
+            	swap_ideas = {
+                	remove_idea = AFG_bad_litteracy_2
+                	add_idea = AFG_bad_litteracy_3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = AFG_bad_litteracy_3
+				}
+				swap_ideas = {
+					remove_idea = AFG_bad_litteracy_3
+					add_idea = AFG_bad_litteracy_4
+				}
+			}
+		}
+	}
+	focus = {
+		id = found_the_university_of_herat
+		x = 6
+		y = 2
+		prerequisite = { focus = found_the_university_of_kabul }
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = AFG_bad_litteracy_3
+				}
+				swap_ideas = {
+					remove_idea = AFG_bad_litteracy_3
+					add_idea = AFG_bad_litteracy_4
+				}
+			}
+			if = {
+				limit = {
+					has_idea = AFG_bad_litteracy_4
+				}
+				swap_ideas = {
+					remove_idea = AFG_bad_litteracy_3
+					add_idea = AFG_bad_litteracy_5
+				}
+			}
+		}
+	}	
+}
+	
 	
 	
