@@ -96,7 +96,8 @@ focus = {
 	y = 5
 	cost = 10
 	available_if_capitulated = yes 
-	prerequisite = { focus = FRA_navalcompetition focus = FRA_supporttheirish } 
+	prerequisite = { focus = FRA_navalcompetition } 
+	prerequisite = { focus = FRA_supporttheirish } 
 	ai_will_do = { 
 	factor = 1
 	} 
@@ -379,7 +380,7 @@ focus = {
 #Focus for Vive l'Empire et Vive la France
 focus = { 
 	id = FRA_vivelempireetvivelafrance
-	icon = GFX_focus_chi_reach_out_to_france
+	icon = GFX_FRA_vive_empire_france
 	x = 20
 	y = 0
 	cost = 2
@@ -875,6 +876,7 @@ focus = {
 
 	available = {
 		date > 1940.1.1
+		has_army_manpower = { size > 899999 }
 		}
 	
 	completion_reward = {
@@ -888,7 +890,7 @@ focus = {
 #Focus for the Great Campaign
 focus = { 
 	id = FRA_thegreatcampaign
-	icon = GFX_goal_generic_small_arms
+	icon = GFX_FRA_the_great_campaign
 	x = 29
 	y = 3
 	cost = 10
@@ -1305,7 +1307,7 @@ focus = {
 	completion_reward = {
 	add_popularity = { ideology = democratic popularity = -0.1 }
 	add_popularity = { ideology = liberal popularity = -0.1 }
-	add_popularity = { ideology = communism popularity = 0.05 }
+	add_popularity = { ideology = social_democratic popularity = -0.1 }
 	add_popularity = { ideology = neutrality popularity = 0.2 }
 	}
 } 
