@@ -221,7 +221,6 @@ focus_tree = {
 			add_ideas = revitalized_economy
 		}
 	}
-}
 
 #Research Part of The Tree
 
@@ -237,11 +236,11 @@ focus_tree = {
 		completion_reward = {
 			if = {
             	limit = {
-                	has_idea = AFG_bad_litteracy
+                	has_ideas = AFG_bad_litteracy
            		}
             	swap_ideas = {
                 	remove_idea = AFG_bad_litteracy
-                	add_idea = AFG_bad_litteracy_2
+                	add_ideas = AFG_bad_litteracy_2
             	}
         	}
 		}	
@@ -275,20 +274,20 @@ focus_tree = {
 		completion_reward = {
 			if = {
             	limit = {
-                	has_idea = AFG_bad_litteracy_2
+                	has_ideas = AFG_bad_litteracy_2
            		}
             	swap_ideas = {
-                	remove_idea = AFG_bad_litteracy_2
-                	add_idea = AFG_bad_litteracy_3
+                	remove_ideas = AFG_bad_litteracy_2
+                	add_ideas = AFG_bad_litteracy_3
 				}
 			}
 			if = {
 				limit = {
-					has_idea = AFG_bad_litteracy_3
+					has_ideas = AFG_bad_litteracy_3
 				}
 				swap_ideas = {
-					remove_idea = AFG_bad_litteracy_3
-					add_idea = AFG_bad_litteracy_4
+					remove_ideas = AFG_bad_litteracy_3
+					add_ideas = AFG_bad_litteracy_4
 				}
 			}
 		}
@@ -324,20 +323,20 @@ focus_tree = {
 		completion_reward = {
 			if = {
             	limit = {
-                	has_idea = AFG_bad_litteracy_2
+                	has_ideas = AFG_bad_litteracy_2
 				}
             	swap_ideas = {
-                	remove_idea = AFG_bad_litteracy_2
-                	add_idea = AFG_bad_litteracy_3
+                	remove_ideas = AFG_bad_litteracy_2
+                	add_ideas = AFG_bad_litteracy_3
 				}
 			}
 			if = {
 				limit = {
-					has_idea = AFG_bad_litteracy_3
+					has_ideas = AFG_bad_litteracy_3
 				}
 				swap_ideas = {
-					remove_idea = AFG_bad_litteracy_3
-					add_idea = AFG_bad_litteracy_4
+					remove_ideas = AFG_bad_litteracy_3
+					add_ideas = AFG_bad_litteracy_4
 				}
 			}
 		}
@@ -358,20 +357,20 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_idea = AFG_bad_litteracy_3
+					has_ideas = AFG_bad_litteracy_3
 				}
 				swap_ideas = {
-					remove_idea = AFG_bad_litteracy_3
-					add_idea = AFG_bad_litteracy_4
+					remove_ideas = AFG_bad_litteracy_3
+					add_ideas = AFG_bad_litteracy_4
 				}
 			}
 			if = {
 				limit = {
-					has_idea = AFG_bad_litteracy_4
+					has_ideas = AFG_bad_litteracy_4
 				}
 				swap_ideas = {
-					remove_idea = AFG_bad_litteracy_3
-					add_idea = AFG_bad_litteracy_5
+					remove_ideas = AFG_bad_litteracy_3
+					add_ideas = AFG_bad_litteracy_5
 				}
 			}
 		}
