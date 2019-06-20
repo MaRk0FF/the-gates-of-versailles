@@ -9,8 +9,61 @@ ideas = {
 			}
             removal_cost = -1
             modifier = {
-                industrial_capacity_factory = 0.01
+                industrial_capacity_factory = 0.05
             }
+        }
+        developing_industry	= {
+            allowed = {
+				original_tag = AFG
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = 0.10              
+            }
+        }
+        AFG_bad_litteracy_2 = {
+            allowed = {
+				original_tag = AFG
+			}
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.40
+			}
+		}
+        AFG_bad_litteracy_3 = {
+
+            allowed = {
+				original_tag = AFG
+			}
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.30
+			}
+		}
+        AFG_bad_litteracy_4 = {
+            allowed = {
+				original_tag = AFG
+			}
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.20
+			}
+        }
+		AFG_bad_litteracy_5 = {
+            allowed = {
+				original_tag = AFG
+			}
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.10
+			}
         }
     }
 }
