@@ -169,7 +169,7 @@ bookmarks = {
 		
 		"AUS"={
 			minor = yes
-			history = "BUL_THE_GATES_OF_VERSAILLES_DESC"
+			history = "AFG_THE_GATES_OF_VERSAILLES_DESC"
 			ideology = fascism
 			ideas = {
 				
@@ -180,7 +180,7 @@ bookmarks = {
 		
 		"AFG"={
 			minor = yes
-			history = "BUL_THE_GATES_OF_VERSAILLES_DESC"
+			history = "AFG_THE_GATES_OF_VERSAILLES_DESC"
 			ideology = theocracy
 			ideas = {
 				
@@ -191,7 +191,7 @@ bookmarks = {
 		
 		"POR"={
 			minor = yes
-			history = "BUL_THE_GATES_OF_VERSAILLES_DESC"
+			history = "POR_THE_GATES_OF_VERSAILLES_DESC"
 			ideology = neutrality
 			ideas = {
 				
@@ -202,7 +202,7 @@ bookmarks = {
 		
 		"TIB"={
 			minor = yes
-			history = "BUL_THE_GATES_OF_VERSAILLES_DESC"
+			history = "TIB_THE_GATES_OF_VERSAILLES_DESC"
 			ideology = neutrality
 			ideas = {
 				
@@ -213,7 +213,7 @@ bookmarks = {
 		
 		"MON"={
 			minor = yes
-			history = "BUL_THE_GATES_OF_VERSAILLES_DESC"
+			history = "MON_THE_GATES_OF_VERSAILLES_DESC"
 			ideology = neutrality
 			ideas = {
 				
