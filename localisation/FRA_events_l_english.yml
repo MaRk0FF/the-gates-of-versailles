@@ -51,6 +51,10 @@ france.47.a:0 "They are wrong thinking this is an agressive expansion"
 france.48.t:0 "Accord de Düsseldorf"
 france.48.d:0 "Westphalia is slowly escaping our influence by desperatly searching help for Great-Britain! We have forced them to signed a compromise in the city of Düsseldorf, they give us the region of Ruhrland and we install a French-Friendly regime under our influence in exchange of protection against the Prussian state. But the world say that as an agressive expansion toward the heart of Germany"
 france.48.a:0 "We gain some industrial capacity but we lose the positive view of our country to the world!"
+france.51.t:0 "Naval Skirmishes in the English Channel"
+france.51.d:0 "Today at [GetDateText], the perfidious Albion is once again provoking us, as usual. Just one day ago, they have denied access to the English Channel. Now, a full squadron of English ships attacked our groups of vessels. While they fought valiantly, they were sunk. The population, with the support of our great leader combined with anti-British sentiment, want us to declare war, What course of action shall we take?"
+france.51.a:0 "We are ready and our rifles are fully loaded!"
+france.51.b:0 "Back down a little,is it not worth the trouble..."
 
 #Siam Events Related to France#
 siam.1.t:0 "Indochina want help for the war"
