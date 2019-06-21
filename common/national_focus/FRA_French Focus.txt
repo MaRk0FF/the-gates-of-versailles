@@ -1777,7 +1777,9 @@ focus = {
 	}
 
 	completion_reward = {
-	country_event = { id = france.53 hours = 24 }
+		hidden_effect = {
+		country_event = { id = france.53 hours = 24 }
+		}
 	}
  }
  
@@ -1798,6 +1800,68 @@ focus = {
 
  }
  
+#Focus for Place Marcel Bucard
+focus = { 
+	id = FRA_placemarcelbucard
+#	icon = 
+	x = 46
+	y = 2
+	cost = 2
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_CNTRFdictatorship }
+	ai_will_do = { 
+	factor = 0
+	}
+
+ }
+ 
+#Focus for Splendid Isolation
+focus = { 
+	id = FRA_splendidisolation
+#	icon = 
+	x = 44
+	y = 3
+	cost = 10
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_placemarcelbucard }
+	mutually_exclusive = { focus = FRA_searchfriends }
+	ai_will_do = { 
+	factor = 0
+	}
+
+ }
+ 
+#Focus for Search for some friends
+focus = { 
+	id = FRA_searchfriends
+#	icon = 
+	x = 46
+	y = 3
+	cost = 10
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_placemarcelbucard }
+	mutually_exclusive = { focus = FRA_splendidisolation }
+	ai_will_do = { 
+	factor = 0
+	}
+
+ }
+ 
+#Focus for Nouvelle Société
+focus = { 
+	id = FRA_newsociety
+#	icon = 
+	x = 45
+	y = 4
+	cost = 10
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_searchfriends focus = FRA_splendidisolation }
+	ai_will_do = { 
+	factor = 0
+	}
+
+ }
+ 
 #Focus for Organize some Elections
 focus = { 
 	id = FRA_organizeelections
@@ -1808,6 +1872,38 @@ focus = {
 	available_if_capitulated = yes 
 	prerequisite = { focus = FRA_democratictransition } 
 	mutually_exclusive = { focus = FRA_CNTRFdictatorship }
+	ai_will_do = { 
+	factor = 0
+	}
+
+ }
+ 
+#Focus for Leftist parties victory
+focus = { 
+	id = FRA_leftistsvictory
+#	icon = 
+	x = 50
+	y = 2
+	cost = 0
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_organizeelections } 
+	mutually_exclusive = { focus = FRA_centristvictory }
+	ai_will_do = { 
+	factor = 0
+	}
+
+ }
+ 
+#Focus for Centrist victory
+focus = { 
+	id = FRA_centristvictory
+#	icon = 
+	x = 52
+	y = 2
+	cost = 0
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_organizeelections } 
+	mutually_exclusive = { focus = FRA_leftistsvictory }
 	ai_will_do = { 
 	factor = 0
 	}
