@@ -2725,6 +2725,44 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_army_asia_3.dds"
 	}
 	
+	##### AFGHAN IDEAS
+	
+	spriteType = {
+		name = "GFX_idea_AFG_bad_litteracy"
+		texturefile = "gfx/interface/ideas/AFG_bad_litteracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_bad_litteracy_2"
+		texturefile = "gfx/interface/ideas/AFG_bad_litteracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_bad_litteracy_3"
+		texturefile = "gfx/interface/ideas/AFG_bad_litteracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_bad_litteracy_4"
+		texturefile = "gfx/interface/ideas/AFG_bad_litteracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_bad_litteracy_5"
+		texturefile = "gfx/interface/ideas/AFG_bad_litteracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_bad_litteracy_6"
+		texturefile = "gfx/interface/ideas/AFG_bad_litteracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_backward_Military"
+		texturefile = "gfx/interface/ideas/AFG_backward_Military.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Anti_British_Settlement"
+		texturefile = "gfx/interface/ideas/AFG_Antibritishsentiment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Islamic_Kingdom"
+		texturefile = "gfx/interface/ideas/AFG_Islamickingdom.dds"
+	}
 	
 	### GENERIC PORTRAITS ASIA
 	### suffix from graphicalculturetype
@@ -3784,15 +3822,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_FRA_Preparing_For_War"
 		texturefile = "gfx/interface/ideas/FRA_preparingforwar.dds"
-	}
-	#Afghanistan
-	spriteType = {
-		name = "GFX_idea_AFG_Anti_British_Settlement"
-		texturefile = "gfx/interface/ideas/AFG_Antibritishsentiment.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_AFG_Islamic_Kingdom"
-		texturefile = "gfx/interface/ideas/AFG_Islamickingdom.dds"
-	}
+	}	
 }
 	
