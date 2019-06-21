@@ -31,7 +31,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				research_speed_factor = -0.40
+				research_speed_factor = -0.50
 			}
 		}
         AFG_bad_litteracy_3 = {
@@ -42,10 +42,20 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				research_speed_factor = -0.30
+				research_speed_factor = -0.40
 			}
 		}
-        AFG_bad_litteracy_4 = {
+       	AFG_bad_litteracy_4 = {
+            allowed = {
+				original_tag = AFG
+			}
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.30
+			}
+        }
+		AFG_bad_litteracy_5 = {
             allowed = {
 				original_tag = AFG
 			}
@@ -55,7 +65,7 @@ ideas = {
 				research_speed_factor = -0.20
 			}
         }
-		AFG_bad_litteracy_5 = {
+		AFG_bad_litteracy_6 = {
             allowed = {
 				original_tag = AFG
 			}
