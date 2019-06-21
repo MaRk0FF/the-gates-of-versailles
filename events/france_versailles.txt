@@ -1015,3 +1015,65 @@ country_event = { #CTNRF debate about the period of a president term
 		add_stability = -0.15
 	}
 }
+
+country_event = { #The CTNRF announce it's real goal (Dictatorship time)
+	id = france.55
+	title = france.55.t
+	desc = france.55.d
+#	picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = france.55.a
+			hidden_effect = {
+			kill_country_leader = yes
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.62
+			}
+			create_country_leader = {
+				name = "CTNRF"
+				#desc = "POLITICS_WILLY_3_DESC"
+				picture = "Portrait_FRA_CTNRF.dds"
+				expire = "1965.1.1"
+				ideology = fascism_ideology 
+				traits = {}
+				}
+		set_politics = {
+		ruling_party = fascism
+		elections_allowed = no
+		}	
+	}
+}
+
+country_event = { #Inauguration of Marcel Bucard as head of France
+	id = france.56
+	title = france.56.t
+	desc = france.56.d
+#	picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = france.56.a
+		hidden_effect = {
+			kill_country_leader = yes
+		}
+		create_country_leader = {
+			name = "Marcel Bucard"
+			#desc = "POLITICS_WILLY_3_DESC"
+			picture = "Portrait_FRA_Marcel_Bucard.dds"
+			expire = "1965.1.1"
+			ideology = fascism_ideology 
+			traits = {}
+			}	
+	}
+}
