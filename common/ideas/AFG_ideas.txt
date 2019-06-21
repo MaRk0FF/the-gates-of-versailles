@@ -10,6 +10,8 @@ ideas = {
             removal_cost = -1
             modifier = {
                 industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.05
             }
         }
         developing_industry	= {
@@ -75,5 +77,15 @@ ideas = {
 				research_speed_factor = -0.10
 			}
         }
+		AFG_improved_litteracy = {
+			  allowed = {
+				original_tag = AFG
+			}
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.10
+			}      
+		}
     }
 }
