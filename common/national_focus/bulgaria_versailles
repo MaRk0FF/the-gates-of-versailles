@@ -1,0 +1,39 @@
+focus tree = {
+	id = bulgarian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BUL
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = BUL_reorganize_the_state 
+		#icon = 
+		x = 14
+		y = 0
+		cost = 7
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_award =  {
+		add_tech_bonus = {
+				name = BUL_reorganize_the_state
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+
+
+
+
+}
