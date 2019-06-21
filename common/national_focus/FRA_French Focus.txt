@@ -96,7 +96,8 @@ focus = {
 	y = 5
 	cost = 10
 	available_if_capitulated = yes 
-	prerequisite = { focus = FRA_navalcompetition focus = FRA_supporttheirish } 
+	prerequisite = { focus = FRA_navalcompetition } 
+	prerequisite = { focus = FRA_supporttheirish } 
 	ai_will_do = { 
 	factor = 1
 	} 
@@ -379,7 +380,7 @@ focus = {
 #Focus for Vive l'Empire et Vive la France
 focus = { 
 	id = FRA_vivelempireetvivelafrance
-	icon = GFX_focus_chi_reach_out_to_france
+	icon = GFX_FRA_vive_empire_france
 	x = 20
 	y = 0
 	cost = 2
@@ -762,7 +763,6 @@ focus = {
 	} 
 
 	completion_reward = {
-	remove_ideas = MTG_naval_treaty_adherent
 	add_ideas = FRA_naval_competition_boost
 	}
 } 
@@ -876,6 +876,7 @@ focus = {
 
 	available = {
 		date > 1940.1.1
+		has_army_manpower = { size > 899999 }
 		}
 	
 	completion_reward = {
@@ -889,7 +890,7 @@ focus = {
 #Focus for the Great Campaign
 focus = { 
 	id = FRA_thegreatcampaign
-	icon = GFX_goal_generic_small_arms
+	icon = GFX_FRA_the_great_campaign
 	x = 29
 	y = 3
 	cost = 10
@@ -971,17 +972,25 @@ focus = {
 #Focus for Piedmont or War
 focus = { 
 id = FRA_piedmontorwar
-icon = GFX_focus_generic_provoke_border_clashes
-x = 27
-y = 4
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_thegreatcampaign } 
-ai_will_do = { 
- factor = 1
- } 
+	icon = GFX_focus_generic_provoke_border_clashes
+	x = 27
+	y = 4
+	cost = 10
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_thegreatcampaign } 
+	ai_will_do = { 
+	factor = 1
+	} 
 
- } 
+	completion_reward = {
+	hidden_effect = {
+		ITA = {
+			country_event = { id = italy.19 days = 3 }
+			}
+		}
+	custom_effect_tooltip = fra_ita_aoa_revolt
+	}
+} 
 
 #Focus for Fund Scottish Rebels
 focus = { 
@@ -1077,18 +1086,21 @@ focus = {
 
 #Focus for Topple Fascist Regimes in Europe
 focus = { 
-id = FRA_topplefascistregimesineurope
-icon = GFX_focus_generic_anti_fascist_diplomacy
-x = 27
-y = 5
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_piedmontorwar } 
-ai_will_do = { 
- factor = 1
- } 
+	id = FRA_topplefascistregimesineurope
+	icon = GFX_focus_generic_anti_fascist_diplomacy
+	x = 27
+	y = 5
+	cost = 10
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_piedmontorwar } 
+	ai_will_do = { 
+	factor = 1
+	}
 
- } 
+	bypass = {
+		AUS = { has_war_with = FRA }
+		}
+	} 
 
 #Focus for End the Russian Hegemony
 focus = { 
@@ -1295,7 +1307,7 @@ focus = {
 	completion_reward = {
 	add_popularity = { ideology = democratic popularity = -0.1 }
 	add_popularity = { ideology = liberal popularity = -0.1 }
-	add_popularity = { ideology = communism popularity = 0.05 }
+	add_popularity = { ideology = social_democratic popularity = -0.1 }
 	add_popularity = { ideology = neutrality popularity = 0.2 }
 	}
 } 
@@ -1333,6 +1345,24 @@ prerequisite = { focus = FRA_statusoffrance }
 
 	completion_reward = {
 		country_event = { id = france.40 }
+	}
+}
+
+#Focus for Naval Competition
+focus = { 
+	id = FRA_grantgermanscitizenship
+#	icon =
+	x = 62
+	y = 2
+	cost = 6
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_thestatereligionquestion } 
+	ai_will_do = { 
+	factor = 1
+	} 
+
+	completion_reward = {
+	remove_ideas = FRA_germanic_ethnicity_problems
 	}
 } 
 
@@ -1678,37 +1708,7 @@ ai_will_do = {
  factor = 1
  } 
 
- } 
-
-#Focus for Apply for the Pact of Rome
-focus = { 
-id = FRA_applyforthepactofrome
-icon = GFX_goal_generic_alliance
-x = 54
-y = 6
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_inaugurationofmarcelbucard } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Le Remaniment
-focus = { 
-id = FRA_leremaniment
-icon = GFX_focus_generic_treaty
-x = 48
-y = 6
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_inaugurationofedouarddaladier } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
+ }
 
 #Focus for A Parliamentary Empire
 focus = { 
@@ -1720,21 +1720,6 @@ cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = FRA_aftermathoftheoctoberevents } 
 mutually_exclusive = { focus = FRA_restorationofabsolutism }
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Align with Prussia
-focus = { 
-id = FRA_alignwithprussia
-icon = GFX_goal_generic_war_with_comintern
-x = 42
-y = 7
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_theworldstagerevolution } 
 ai_will_do = { 
  factor = 1
  } 
@@ -1765,7 +1750,7 @@ focus = {
 	y = 3
 	cost = 10
 	available_if_capitulated = yes 
-	prerequisite = { focus = FRA_thestatereligionquestion }
+	prerequisite = { focus = FRA_grantgermanscitizenship }
 	available = {
 	has_country_flag = fra_october_events
 	}
@@ -1776,99 +1761,7 @@ focus = {
 	completion_reward = {
 	custom_effect_tooltip = series_of_events
 	}
- } 
-
-#Focus for Inauguration of Marcel Bucard
-focus = { 
-id = FRA_inaugurationofmarcelbucard
-icon = GFX_goal_support_fascism
-x = 54
-y = 4
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_francistewins } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Inauguration of Edouard Daladier
-focus = { 
-id = FRA_inaugurationofedouarddaladier
-icon = GFX_goal_support_democracy
-x = 48
-y = 4
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_prwins } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Inauguration of Maurice Thorez
-focus = { 
-id = FRA_inaugurationofmauricethorez
-icon = GFX_focus_generic_soviet_politics
-x = 42
-y = 4
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_pcfwins } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Franciste Wins
-focus = { 
-id = FRA_francistewins
-icon = GFX_goal_support_fascism
-x = 54
-y = 3
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_electionsforanewgoverment } 
-mutually_exclusive = { focus = FRA_prwins } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for PR wins
-focus = { 
-id = FRA_prwins
-icon = GFX_goal_support_democracy
-x = 48
-y = 3
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_electionsforanewgoverment } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for PCF wins
-focus = { 
-id = FRA_pcfwins
-icon = GFX_focus_prc_agrarian_socialism
-x = 42
-y = 3
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_electionsforanewgoverment } 
-mutually_exclusive = { focus = FRA_prwins }
-ai_will_do = { 
- factor = 1
- } 
-
- } 
+ }
 
 #Focus for Democratic Transition
 focus = { 
@@ -1883,20 +1776,41 @@ focus = {
 	factor = 0
 	}
 
- } 
-
-#Focus for Elections for a new goverment
+	completion_reward = {
+	country_event = { id = france.53 hours = 24 }
+	}
+ }
+ 
+ 
+#Focus for the CTNRF dictatorship
 focus = { 
-id = FRA_electionsforanewgoverment
-icon = GFX_focus_generic_treaty
-x = 48
-y = 1
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_democratictransition } 
-ai_will_do = { 
- factor = 1
- } 
+	id = FRA_CNTRFdictatorship
+#	icon = 
+	x = 46
+	y = 1
+	cost = 3
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_democratictransition } 
+	mutually_exclusive = { focus = FRA_organizeelections }
+	ai_will_do = { 
+	factor = 0
+	}
+
+ }
+ 
+#Focus for Organize some Elections
+focus = { 
+	id = FRA_organizeelections
+#	icon = 
+	x = 50
+	y = 1
+	cost = 3
+	available_if_capitulated = yes 
+	prerequisite = { focus = FRA_democratictransition } 
+	mutually_exclusive = { focus = FRA_CNTRFdictatorship }
+	ai_will_do = { 
+	factor = 0
+	}
 
  } 
 
@@ -2185,233 +2099,4 @@ focus = {
 	}
 } 
 
-#Focus for The World Stage Revolution
-focus = { 
-id = FRA_theworldstagerevolution
-icon = GFX_focus_ger_great_red_menace
-x = 42
-y = 6
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_inaugurationofmauricethorez } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Topple the goverment of the Old Alliance
-focus = { 
-id = FRA_topplethegovermentoftheoldalliance
-icon = GFX_goal_generic_military_sphere
-x = 40
-y = 7
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_theworldstagerevolution } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Fund British Comrades
-focus = { 
-id = FRA_fundbritishcomrades
-icon = GFX_focus_generic_join_comintern
-x = 44
-y = 7
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_theworldstagerevolution } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for The British Civil War
-focus = { 
-id = FRA_thebritishcivilwar
-icon = GFX_goal_support_communism
-x = 44
-y = 8
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_fundbritishcomrades } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for The European Union of Communists
-focus = { 
-id = FRA_theeuropeanunionofcommunists
-icon = GFX_goal_generic_dangerous_deal
-x = 43
-y = 9
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_helpprussiaunifythegermanscountries focus = FRA_thebritishcivilwar } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Spread to Iberian Peninsula
-focus = { 
-id = FRA_spreadtoiberianpeninsula
-icon = GFX_goal_support_communism
-x = 37
-y = 10
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_theeuropeanunionofcommunists } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Help Prussia Unify the Germans Countries
-focus = { 
-id = FRA_helpprussiaunifythegermanscountries
-icon = GFX_focus_generic_support_the_left_right
-x = 42
-y = 8
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_alignwithprussia } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Spread to Poland
-focus = { 
-id = FRA_spreadtopoland
-icon = GFX_goal_support_communism
-x = 43
-y = 10
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_theeuropeanunionofcommunists } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Spread to Italy
-focus = { 
-id = FRA_spreadtoitaly
-icon = GFX_goal_support_communism
-x = 41
-y = 10
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_theeuropeanunionofcommunists } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Reunify the Peninsula under the red star
-focus = { 
-id = FRA_reunifythepeninsulaundertheredstar
-icon = GFX_focus_rom_abdicate
-x = 41
-y = 11
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_theeuropeanunionofcommunists } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Spread to the Balkans
-focus = { 
-id = FRA_spreadtothebalkans
-icon = GFX_goal_support_communism
-x = 39
-y = 10
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_theeuropeanunionofcommunists } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Spread to Scandinavia
-focus = { 
-id = FRA_spreadtoscandinavia
-icon = GFX_goal_support_communism
-x = 45
-y = 10
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_theeuropeanunionofcommunists } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Spread to Central Europe
-focus = { 
-id = FRA_spreadtocentraleurope
-icon = GFX_goal_support_communism
-x = 47
-y = 10
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_theeuropeanunionofcommunists } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Spread to Batlic States
-focus = { 
-id = FRA_spreadtobatlicstates
-icon = GFX_goal_support_communism
-x = 49
-y = 10
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_theeuropeanunionofcommunists } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Spread to russia
-focus = { 
-id = FRA_spreadtorussia
-icon = GFX_goal_generic_war_with_comintern
-x = 46
-y = 11
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = FRA_spreadtopoland } 
-prerequisite = { focus = FRA_spreadtobatlicstates } 
-prerequisite = { focus = FRA_spreadtocentraleurope } 
-prerequisite = { focus = FRA_spreadtoscandinavia } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#End of focuses 
  }

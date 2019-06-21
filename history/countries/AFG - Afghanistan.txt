@@ -30,6 +30,8 @@ set_popularities = {
 add_ideas = {
 	AFG_Islamic_Kingdom
 	AFG_Anti_British_Sentiment
+	AFG_bad_litteracy
+	AFG_Backward_Military
 }
 
 create_country_leader = {

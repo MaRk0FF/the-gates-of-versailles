@@ -18,11 +18,13 @@ ideas = {
 			picture = generic_victors_of_ww1
 			
 			research_bonus = {
-				land_doctrine = -0.75
+				land_doctrine = -0.33
+				air_doctrine = -0.10
+				naval_doctrine = -0.20
 			}
 			modifier = {
-				conscription = -0.003
-				war_support_factor = -0.05
+				conscription = -0.004
+				war_support_factor = -0.07
 			}
 		}
 
@@ -345,6 +347,123 @@ ideas = {
 
 			modifier = {
 				communism_drift = -0.05
+			}
+		}
+		
+	#GATES OF VERSAILLES
+	
+		FRA_fear_of_democratic_coup = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_Fear_Of_Democratic_Coup
+			
+			modifier = {
+				democratic_acceptance = -85
+				democratic_drift = -0.01
+				liberal_acceptance = -85
+				liberal_drift = -0.01
+				social_democratic_acceptance = -85
+				social_democratic_drift = -0.01
+			}
+		}
+		
+		FRA_anti_british_propaganda = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			#picture = 
+			
+			modifier = {
+				stability_factor = 0.005
+				war_support_factor = 0.005
+			}
+		}
+		
+		FRA_germanic_ethnicity_problems = {
+		
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_German_Ethnicity_Problems
+
+			modifier = {
+				conscription_factor = -0.09
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.09
+				production_speed_arms_factory_factor = -0.11
+				production_speed_industrial_complex_factor = -0.08
+				}
+			}
+		
+		FRA_naval_competition_boost = {
+
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			picture = FRA_Naval_Competition_Boost
+
+			modifier = {
+				production_speed_dockyard_factor = 0.15
+				industrial_capacity_dockyard = 0.1
+				production_speed_naval_base_factor = 0.15
+				}
+			}
+		
+		FRA_preparing_for_war = {
+		
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = FRA_Preparing_For_War
+			
+			modifier = {
+			political_power_gain = 0.3
+			training_time_army_factor = -0.2
+			army_org_Factor = 0.1
+			planning_speed = 0.25
 			}
 		}
 		

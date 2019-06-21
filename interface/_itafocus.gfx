@@ -40,5 +40,30 @@ spriteTypes = {
     SpriteType = {
 	name = "GFX_goal_generic_relinquish_commanders"
 	texturefile = "gfx/interface/goals/generic_relinquish_commanders.dds"			
-	}		
+	}	
+    
+    SpriteType = {
+	name = "GFX_goal_italian_paratroopers"
+	texturefile = "gfx/interface/goals/ITA_paratroopers.dds"			
+	}	
+	
+	SpriteType = {
+	name = "GFX_goal_focus_italian_trains"
+	texturefile = "gfx/interface/goals/focus_italian_trains.dds"			
+	}
+
+    SpriteType = {
+	name = "GFX_goal_ita_mediterranean"
+	texturefile = "gfx/interface/goals/ITA_seize_mediterranean.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ita_global_fleet"
+	texturefile = "gfx/interface/goals/ita_global_fleet.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_ita_battleship"
+	texturefile = "gfx/interface/goals/ita_battleship_supreme.dds"			
+	}
 }

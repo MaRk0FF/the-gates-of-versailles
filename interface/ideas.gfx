@@ -199,14 +199,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_combined_bomber_offensive"
 		texturefile = "gfx/interface/ideas/combined_bomber_offensive.dds"
-	}	
-	spiritType = {
-		name = "GFX_idea_AFG_Islamic_Kingdom.dds"
-		texturefile = "gfx/interface/ideas/AFG_Islamic_Kingdom.dds"
-	}
-	spiritType= {
-		name = "GFX_idea_AFG_AFG_Anti_British_Sentiment.dds"
-		texturefile = "gfx/interface/ideas/AFG_Anti_British_Sentiment.dds"
 	}
 
 	spriteType = {
@@ -2733,6 +2725,44 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_generic_army_asia_3.dds"
 	}
 	
+	##### AFGHAN IDEAS
+	
+	spriteType = {
+		name = "GFX_idea_AFG_bad_litteracy"
+		texturefile = "gfx/interface/ideas/AFG_bad_litteracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_bad_litteracy_2"
+		texturefile = "gfx/interface/ideas/AFG_bad_litteracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_bad_litteracy_3"
+		texturefile = "gfx/interface/ideas/AFG_bad_litteracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_bad_litteracy_4"
+		texturefile = "gfx/interface/ideas/AFG_bad_litteracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_bad_litteracy_5"
+		texturefile = "gfx/interface/ideas/AFG_bad_litteracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_bad_litteracy_6"
+		texturefile = "gfx/interface/ideas/AFG_bad_litteracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_backward_Military"
+		texturefile = "gfx/interface/ideas/AFG_backward_Military.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Anti_British_Settlement"
+		texturefile = "gfx/interface/ideas/AFG_Antibritishsentiment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AFG_Islamic_Kingdom"
+		texturefile = "gfx/interface/ideas/AFG_Islamickingdom.dds"
+	}
 	
 	### GENERIC PORTRAITS ASIA
 	### suffix from graphicalculturetype
@@ -3744,8 +3774,24 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/napoleonic_strategy.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_the_polish_spirit"
-		texturefile = "gfx/interface/ideas/polish_nationalism.dds"
+		name = "GFX_idea_ITA_reformed_army"
+		texturefile = "gfx/interface/ideas/ita_reformed_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_modernized_trains_idea"
+		texturefile = "gfx/interface/ideas/generic_uprade_train.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ita_global_navy"
+		texturefile = "gfx/interface/ideas/ita_global_navy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ita_mediterranean_fleet"
+		texturefile = "gfx/interface/ideas/idea_yug_federal_defense_council.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ITA_amphibous_invasion_bonus"
+		texturefile = "gfx/interface/ideas/FRA_scw_intervention_nationalists_focus.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_catholic_influence"
@@ -3760,4 +3806,22 @@ spriteTypes = {
 		name = "GFX_idea_AUS_italian_aid"
 		texturefile = "gfx/interface/ideas/aus_italian_aid.dds"
 	}
+	#France
+	spriteType = {
+		name = "GFX_idea_FRA_Fear_Of_Democratic_Coup"
+		texturefile = "gfx/interface/ideas/FRA_fearofdemocraticcoup.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_German_Ethnicity_Problems"
+		texturefile = "gfx/interface/ideas/FRA_germanethnicityproblems.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Naval_Competition_Boost"
+		texturefile = "gfx/interface/ideas/FRA_navalcompetitionboost.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FRA_Preparing_For_War"
+		texturefile = "gfx/interface/ideas/FRA_preparingforwar.dds"
+	}	
+}
 	

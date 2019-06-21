@@ -23,16 +23,16 @@ give_guarantee = SLO
 set_research_slots = 3
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = liberal
 	last_election = "1935.5.19"
 	election_frequency = 60
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 55
-	fascism = 5
-	communism = 15
-	neutrality = 25
+	democratic = 20
+	liberal = 68
+	fascism = 12
+	neutrality = 0
 }
 
 create_country_leader = {
@@ -52,6 +52,17 @@ create_country_leader = {
 	picture = "Portrait_Czech_Jaroslav_Krejci.dds"
 	expire = "1965.1.1"
 	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Rasin Alois"
+	desc = "POLITICS_RASIN_ALOIS_DESC"
+	picture = "Portrait_Czechia_Rasin_Alois.dds"
+	expire = "1965.1.1"
+	ideology = centrist_liberal
 	traits = {
 		#
 	}

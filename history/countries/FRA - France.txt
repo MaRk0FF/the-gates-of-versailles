@@ -78,7 +78,6 @@ if = {
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
 	}
-	add_ideas = MTG_naval_treaty_adherent
 }
 
 create_faction = cont_alliance
@@ -92,7 +91,7 @@ set_convoys = 300
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1932.5.1"
+	last_election = "1933.5.7"
 	election_frequency = 48
 	elections_allowed = no
 }

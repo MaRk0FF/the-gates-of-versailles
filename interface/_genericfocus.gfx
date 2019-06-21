@@ -58,4 +58,8 @@ spriteTypes = {
 	name = "GFX_generic_brighter_future"
 	texturefile = "gfx/interface/goals/generic_brighter_future.dds"			
 	}	
+	SpriteType = {
+	name = "GFX_generic_industrialize_versailles"
+	texturefile = "gfx/interface/goals/generic_industrialize_versailles.dds"			
+	}
 }

@@ -1,0 +1,401 @@
+focus_tree = {
+	id = AFG
+
+	country = {
+		factor = 0
+		modifier = {
+		add = 10 
+		tag = AFG
+		}
+	}
+	
+	continuous_focus_position = { x = 0 y = 2000 }
+
+	#Start Industrial Tree
+
+	focus = {
+		id = develop_northern_provinces
+		x = 0
+		y= 0
+		cost = 3
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			415 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { 
+				type = infrastructure
+				level = 1
+				instant_build = yes 
+				}
+			}
+			267 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes 
+				}
+			} 		
+		}
+	}
+	focus = {
+		id = develop_southern_provinces
+		x = 2
+		y = 0
+		cost = 3
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			442 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes 
+				}
+			}
+			445 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes 
+				}
+			}
+		}	
+	}
+	focus = {
+		id = expand_iron_mines_bamyan
+		x = 2
+		y = 1
+		cost = 3
+		prerequisite = { focus = develop_southern_provinces }
+		prerequisite = { focus = develop_northern_provinces }
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_resource = {
+            type = steel
+            amount = 20
+            state = 267
+			}
+			267 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes 
+				}	
+			}
+			267 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes 
+				}	
+			}
+		}
+	}
+	focus = {
+		id = revitalize_oil_industry_in_Herat
+		x = 0
+		y = 1
+		cost = 3
+		prerequisite = { focus = develop_southern_provinces }
+		prerequisite = { focus = develop_northern_provinces }
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_resource = {
+            type = oil
+            amount = 8
+            state = 415
+			}
+			add_resource = {
+            type = rubber
+            amount = 8
+            state = 415
+			}
+			415 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes 
+				}
+			}
+			415 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes 
+				}
+			}
+		}
+	}
+	focus = {
+		id = expanding_the_copper_mines_of_balochistan
+		x = 0
+		y = 2
+		cost = 3
+		prerequisite = { focus = revitalize_oil_industry_in_Herat }
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			445 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes 
+				}
+			}
+			445 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes 
+				}
+			}
+		}
+	}
+	focus = {
+		id = mine_for_aluminum_in_peshawar
+		x = 2
+		y = 2
+		cost = 3
+		prerequisite = { focus = expand_iron_mines_bamyan }
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 12
+		}
+		completion_reward = {
+			add_resource = {
+            type = aluminum
+            amount = 10
+            state = 442
+			}
+			442 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes 
+				}
+			}
+			442 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes 
+				}
+			}
+		}
+	}
+	focus = {
+		id = revitalized_industry
+		x = 1
+		y = 3
+		prerequisite = { focus = mine_for_aluminum_in_peshawar }
+		prerequisite = { focus = expanding_the_copper_mines_of_balochistan }
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_idea = revitalized_economy
+		}
+	}
+
+#Research Part of The Tree
+
+	focus = {
+		id = solve_the_education_problem
+		x = 5
+		y = 0
+		cost = 3
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+            	limit = {
+                	has_idea = AFG_bad_litteracy
+           		}
+            	swap_ideas = {
+                	remove_idea = AFG_bad_litteracy
+                	add_idea = AFG_bad_litteracy_2
+            	}
+        	}
+		}	
+	}
+
+	focus = {
+		id = push_for_education_1
+		x = 4
+		y = 1
+		prerequisite = { focus = solve_the_education_problem }
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion reward = {
+			#
+		}
+	}
+
+	focus = {
+		id = send_girls_to_school
+		x = 4
+		y = 2
+		prerequisite = { focus = push_for_education_1 }
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			if = {
+            	limit = {
+                	has_idea = AFG_bad_litteracy_2
+           		}
+            	swap_ideas = {
+                	remove_idea = AFG_bad_litteracy_2
+                	add_idea = AFG_bad_litteracy_3
+				}			
+				else = {				
+            		swap_ideas = {
+                		remove_idea = AFG_bad_litteracy_3
+                		add_idea = AFG_bad_litteracy_4
+            		}
+        		}
+			}
+		}
+	}
+	
+	focus = {
+	id = encourage_education_for_all
+	x = 4
+	y = 3
+	prerequisite = { focus = send_girls_to_school }
+	cost = 3
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+			if = {
+            	limit = {
+                	has_idea = AFG_bad_litteracy_4
+           		}
+            	swap_ideas = {
+                	remove_idea = AFG_bad_litteracy_4
+                	add_idea = AFG_bad_litteracy_5
+				}			
+				else = {				
+            		swap_ideas = {
+                		remove_idea = AFG_bad_litteracy_5
+                		add_idea = AFG_bad_litteracy_6
+            		}
+        		}
+			}
+		}
+	}
+
+	focus = {
+		id = push_for_education_2
+		x = 6
+		y = 1
+		prerequisite = { focus = solve_the_education_problem }
+		cost = 1
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			#
+		}
+	}
+	focus = {
+		id = found_the_university_of_kabul
+		x = 6
+		y = 2
+		prerequisite = { focus = push_for_education_2 }
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		completion_reward = {
+			if = {
+            	limit = {
+                	has_idea = AFG_bad_litteracy_2
+           		}
+            	swap_ideas = {
+                	remove_idea = AFG_bad_litteracy_2
+                	add_idea = AFG_bad_litteracy_3
+            	}
+        		else = {
+            		swap_ideas = {
+                		remove_idea = AFG_bad_litteracy_3
+                		add_idea = AFG_bad_litteracy_4
+            		}
+        		}
+			}
+		}
+	}
+	focus = {
+		id = found_the_university_of_herat
+		x = 6
+		y = 3
+		prerequisite = { focus = found_the_university_of_kabul }
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = AFG_bad_litteracy_3
+				}
+				swap_ideas = {
+					remove_idea = AFG_bad_litteracy_3
+					add_idea = AFG_bad_litteracy_4
+				}
+				else = {
+					swap_ideas = {
+                		remove_idea = AFG_bad_litteracy_4
+                		add_idea = AFG_bad_litteracy_5
+					}
+				}
+			}
+		}	
+	}
+}
+
+	
+	

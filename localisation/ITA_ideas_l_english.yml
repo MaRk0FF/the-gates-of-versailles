@@ -19,6 +19,11 @@
  maintained_general_staff_desc:0 "We have maintained our general staff as it is the only logical choice to go forward with. Although this will cause some 'minor' problems with our army's performance."
  improved_officer_classes:0 "Improved Officer Classes"
  napoleonic_strategy_taught:0 "Napoleonic Strategy"
+ ITA_reformed_army:0 "Reformed Military"
+ ITA_modernized_trains_idea:0 "Modernized Trains"
+ ITA_amphibous_invasion_bonus:0 "Amphibous Invasion Research"
+ ita_global_navy:0 "Global Navy"
+ ita_mediterranean_fleet:0 "Mediterranean Fleet"
  #Ministers
  giorgio_amendola:0 "Giorgio Amendola"
  costantino_lazzari:0 "Constantino Lazzari"
