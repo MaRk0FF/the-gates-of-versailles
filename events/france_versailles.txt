@@ -859,3 +859,159 @@ country_event = { #Event for WWII (Naval clash in the English Channel(Focus wasn
 		custom_effect_tooltip = wwii_not_begining_tt
 	}
 }
+
+country_event = { #Emperor Napoléon VI is assassinated #1 (via the Focus "Democratic Transition")
+	id = france.53
+	title = france.53.t
+	desc = france.53.d
+#	picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Form a Temporary Goverment under the CTNRF (Conseil de Transition pour la Nouvelle République Française)
+		name = france.53.a
+			kill_country_leader = yes
+			add_popularity = {
+				ideology = neutrality
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.7
+			}
+			create_country_leader = {
+				name = "CTNRF"
+				#desc = "POLITICS_WILLY_3_DESC"
+				picture = "Portrait_FRA_CTNRF.dds"
+				expire = "1965.1.1"
+				ideology = conservatism 
+				traits = {}
+		}
+		set_politics = {
+		ruling_party = democratic
+		}
+		remove_ideas = FRA_fear_of_democratic_coup
+	}
+}
+
+country_event = { #CTNRF debate about the period of a president term
+	id = france.54
+	title = france.54.t
+	desc = france.54.d
+#	picture =
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #3 years
+		name = france.54.a
+			set_politics = {
+				ruling_party = democratic
+				election_frequency = 36
+				elections_allowed = yes
+		}
+			hidden_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = nazbol
+				popularity = 0.02
+				}
+			}
+	}
+	
+	option = { #4 years
+		name = france.54.b
+			set_politics = {
+				ruling_party = democratic
+				election_frequency = 48
+				elections_allowed = yes
+		}
+			hidden_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = nazbol
+				popularity = 0.05
+				}
+			}
+		add_stability = -0.05
+	}
+	
+	option = { #5 years
+		name = france.54.c
+			set_politics = {
+				ruling_party = democratic
+				election_frequency = 60
+				elections_allowed = yes
+		}
+			hidden_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.15
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.07
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.07
+			}
+			add_popularity = {
+				ideology = nazbol
+				popularity = 0.07
+				}
+			}
+		add_stability = -0.10
+	}
+	
+	option = { #6 years
+		name = france.54.d
+			set_politics = {
+				ruling_party = democratic
+				election_frequency = 72
+				elections_allowed = yes
+		}
+			hidden_effect = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.2
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = nazbol
+				popularity = 0.1
+				}
+			}
+		add_stability = -0.15
+	}
+}
