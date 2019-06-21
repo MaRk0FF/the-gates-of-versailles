@@ -35,7 +35,29 @@ ideas = {
 				democratic_acceptance = -100
 				}
 		}
+		AFG_bad_litteracy = {
+			allowed = {
+				original_tag = AFG
+			}
+			removal_cost = -1
+			picture = AFG_bad_litteracy
+			modifier = {
+				research_speed_factor = -0.60
+			}
+		}
+		AFG_Backward_Military = {
+			allowed = {
+				original_tag = AFG
+			}
+			picture = AFG_backward_Military
+			removal_cost = -1
+			research_bonus = {
+				land_doctrine = -0.50
+				air_doctrine = -0.50
+			}
+		}
 	}
+}
 		
 
 		
