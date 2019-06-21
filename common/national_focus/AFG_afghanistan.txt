@@ -11,13 +11,66 @@ focus_tree = {
 	
 	continuous_focus_position = { x = 0 y = 2000 }
 
-	#Start Industrial Tree
+	focus = {
+		id = focus_on_internal_matter
+		x = 6
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = develop_the_industry
+		x = 2
+		y = 1
+		cost = 0
+		prerequisite = { focus = focus_on_internal_matter }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = focus_on_education
+		x = 10
+		y = 1
+		cost = 0
+		prerequisite = { focus = focus_on_internal_matter }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+
+
+
+
+
+
+
+
+
+	#INDUSTRIAL PART OF THE TREE
 
 	focus = {
 		id = develop_northern_provinces
 		x = 0
-		y= 0
+		y = 2
 		cost = 3
+		prerequisite = { focus = develop_the_industry }
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -43,9 +96,10 @@ focus_tree = {
 	}
 	focus = {
 		id = develop_southern_provinces
-		x = 2
-		y = 0
+		x = 4
+		y = 2
 		cost = 3
+		prerequisite = { focus = develop_the_industry }
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -71,8 +125,8 @@ focus_tree = {
 	}
 	focus = {
 		id = expand_iron_mines_bamyan
-		x = 2
-		y = 1
+		x = 4
+		y = 3
 		cost = 3
 		prerequisite = { focus = develop_southern_provinces }
 		prerequisite = { focus = develop_northern_provinces }
@@ -107,7 +161,7 @@ focus_tree = {
 	focus = {
 		id = revitalize_oil_industry_in_Herat
 		x = 0
-		y = 1
+		y = 3
 		cost = 3
 		prerequisite = { focus = develop_southern_provinces }
 		prerequisite = { focus = develop_northern_provinces }
@@ -147,7 +201,7 @@ focus_tree = {
 	focus = {
 		id = expanding_the_copper_mines_of_balochistan
 		x = 0
-		y = 2
+		y = 4
 		cost = 3
 		prerequisite = { focus = revitalize_oil_industry_in_Herat }
 		available_if_capitulated = no
@@ -175,8 +229,8 @@ focus_tree = {
 	}
 	focus = {
 		id = mine_for_aluminum_in_peshawar
-		x = 2
-		y = 2
+		x = 4
+		y = 4
 		cost = 3
 		prerequisite = { focus = expand_iron_mines_bamyan }
 		available_if_capitulated = no
@@ -209,8 +263,9 @@ focus_tree = {
 	}
 	focus = {
 		id = revitalized_industry
-		x = 1
-		y = 3
+		x = 2
+		y = 5
+		cost = 3
 		prerequisite = { focus = mine_for_aluminum_in_peshawar }
 		prerequisite = { focus = expanding_the_copper_mines_of_balochistan }
 		available_if_capitulated = no
@@ -218,17 +273,25 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_idea = revitalized_economy
+			add_ideas = revitalized_economy
+			add_tech_bonus = {
+				name = revitalized_industry
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
 		}
 	}
 
 #Research Part of The Tree
+#START WITH THE LEFT PART OF THE TREE OR IT WON'T WORK
 
 	focus = {
 		id = solve_the_education_problem
-		x = 5
-		y = 0
+		x = 10
+		y = 2
 		cost = 3
+		prerequisite = { focus = focus_on_education }
 		available_if_capitulated = no
 		ai_will_do = {
 			factor = 1
@@ -248,8 +311,8 @@ focus_tree = {
 
 	focus = {
 		id = push_for_education_1
-		x = 4
-		y = 1
+		x = 8
+		y = 3
 		prerequisite = { focus = solve_the_education_problem }
 		cost = 1
 		available_if_capitulated = yes
@@ -263,8 +326,8 @@ focus_tree = {
 
 	focus = {
 		id = send_girls_to_school
-		x = 4
-		y = 2
+		x = 8
+		y = 4
 		prerequisite = { focus = push_for_education_1 }
 		cost = 3
 		available_if_capitulated = yes
@@ -292,8 +355,8 @@ focus_tree = {
 	
 	focus = {
 	id = encourage_education_for_all
-	x = 4
-	y = 3
+	x = 8
+	y = 5
 	prerequisite = { focus = send_girls_to_school }
 	cost = 3
 	available_if_capitulated = yes
@@ -303,16 +366,16 @@ focus_tree = {
 	completion_reward = {
 			if = {
             	limit = {
-                	has_idea = AFG_bad_litteracy_4
+                	has_idea = AFG_bad_litteracy_3
            		}
             	swap_ideas = {
-                	remove_idea = AFG_bad_litteracy_4
-                	add_idea = AFG_bad_litteracy_5
+                	remove_idea = AFG_bad_litteracy_3
+                	add_idea = AFG_bad_litteracy_4
 				}			
 				else = {				
             		swap_ideas = {
-                		remove_idea = AFG_bad_litteracy_5
-                		add_idea = AFG_bad_litteracy_6
+                		remove_idea = AFG_bad_litteracy_4
+                		add_idea = AFG_bad_litteracy_5
             		}
         		}
 			}
@@ -321,8 +384,8 @@ focus_tree = {
 
 	focus = {
 		id = push_for_education_2
-		x = 6
-		y = 1
+		x = 12
+		y = 3
 		prerequisite = { focus = solve_the_education_problem }
 		cost = 1
 		available_if_capitulated = yes
@@ -335,8 +398,8 @@ focus_tree = {
 	}
 	focus = {
 		id = found_the_university_of_kabul
-		x = 6
-		y = 2
+		x = 12
+		y = 4 
 		prerequisite = { focus = push_for_education_2 }
 		cost = 3
 		available_if_capitulated = yes
@@ -357,8 +420,8 @@ focus_tree = {
             	}
         		else = {
             		swap_ideas = {
-                		remove_idea = AFG_bad_litteracy_3
-                		add_idea = AFG_bad_litteracy_4
+                		remove_idea = AFG_bad_litteracy_4
+                		add_idea = AFG_bad_litteracy_5
             		}
         		}
 			}
@@ -366,8 +429,8 @@ focus_tree = {
 	}
 	focus = {
 		id = found_the_university_of_herat
-		x = 6
-		y = 3
+		x = 12
+		y = 5
 		prerequisite = { focus = found_the_university_of_kabul }
 		cost = 3
 		available_if_capitulated = yes
@@ -388,14 +451,105 @@ focus_tree = {
 				}
 				else = {
 					swap_ideas = {
-                		remove_idea = AFG_bad_litteracy_4
-                		add_idea = AFG_bad_litteracy_5
+                		remove_idea = AFG_bad_litteracy_5
+                		add_idea = AFG_bad_litteracy_6
 					}
 				}
 			}
 		}	
 	}
-}
 
+	focus = {
+		id = finalize_education_reforms
+		x = 10
+		y = 6
+		prerequisite = { focus = found_the_university_of_herat }
+		prerequisite = { focus = encourage_education_for_all }
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			limit = {
+				has_idea = AFG_bad_litteracy_6
+			}
+			swap_ideas = {
+				remove_idea = AFG_bad_litteracy_6
+				add_idea = AFG_improved_litteracy
+			}
+		}
+	}
+
+	focus = {
+		id = modernize_electronics
+		x = 10
+		y = 7
+		prerequisite = { focus = finalize_education_reforms }
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+
+	focus = {
+		id = advance_in_nuclear_technology
+		x = 8
+		y = 7
+		prerequisite = { focus = finalize_education_reforms }
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		date > 1942.1.1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = advance_in_nuclear_technology
+				bonus = 0.5
+				uses = 2
+				category = nuclear
+			}
+		}
+	}
+
+	focus = {
+		id = experimental_rocketery
+		x = 12
+		y = 7
+		prerequisite = { focus = finalize_education_reforms }
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		date > 1942.1.1
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = experimental_rocketery
+				bonus = 0.5
+				uses = 2
+				category = rocketry
+			}
+		}
+	}
+}
 	
 	
