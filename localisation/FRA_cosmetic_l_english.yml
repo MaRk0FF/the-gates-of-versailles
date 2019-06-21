@@ -1,4 +1,7 @@
-﻿l_english: 
+﻿l_english:
+
+#ACTUAL COSMETIC USES#
+
  BEL_FRA_neutrality_autonomy_puppet:1 "Duché des Flandres"
  BEL_FRA_neutrality_autonomy_puppet_DEF:1 "The Duchy of Flanders"
  HOL_FRA_neutrality_autonomy_puppet:1 "Royaume des Pays-Bas"
@@ -16,4 +19,8 @@
  WUR_FRA_neutrality_autonomy_puppet_DEF:1 "The French puppeted kingdom of Wurttemberg"
  BAV_FRA_neutrality_autonomy_puppet:1 "Royaume de Bavière"
  BAV_FRA_neutrality_autonomy_puppet_DEF:1 "The French puppeted kingdom of Bavaria"
+ 
+ #NON-COSMETIC USES#
+ 
+ FRA_THE_GATES_OF_VERSAILLES_DESC:0 "It's been only 10 years since Emperor Napoléon VI rose to power after the abdication of his father in February 1923 and a small period of regency for 3 years. Since the first Emperor Napoleon Ist, France only changed to a Republic once from 1831 to 1842, since then the Democratic Opposition was always active and wanted the abolition of the Authoritarian rule from the Bonaparte. Will France, currently one the center of the world, be able to achieve her glory with the Bonaparte or a 3rd Republic? Only time knows." 
  
