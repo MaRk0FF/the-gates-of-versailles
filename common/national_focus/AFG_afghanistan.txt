@@ -289,6 +289,35 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+	id = encourage_education_for_all
+	x = 4
+	y = 3
+	prerequisite = { focus = send_girls_to_school }
+	cost = 3
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+			if = {
+            	limit = {
+                	has_idea = AFG_bad_litteracy_4
+           		}
+            	swap_ideas = {
+                	remove_idea = AFG_bad_litteracy_4
+                	add_idea = AFG_bad_litteracy_5
+				}			
+				else = {				
+            		swap_ideas = {
+                		remove_idea = AFG_bad_litteracy_5
+                		add_idea = AFG_bad_litteracy_6
+            		}
+        		}
+			}
+		}
+	}
 
 	focus = {
 		id = push_for_education_2
