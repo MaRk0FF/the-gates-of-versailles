@@ -1,0 +1,18 @@
+state={
+	id=877
+	name="STATE_877"
+	history = {
+		owner = BAN
+		add_core_of = BAN
+		add_claim_by = ASS
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces={
+		1075 7634 
+	}
+	manpower=498000
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

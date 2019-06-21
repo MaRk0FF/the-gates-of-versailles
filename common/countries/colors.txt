@@ -65,6 +65,30 @@ LEG = {
 	color = rgb { 31 96 149 }
 	color_ui = rgb { 31 96 149 }
 }
+TAM = {
+	color = rgb { 236 88 0 }
+	color_ui = rgb { 236 88 0 }
+}
+RJS = {
+	color = rgb { 236 180 8 }
+	color_ui = rgb { 236 180 8 }
+}
+ASS = {
+	color = rgb { 134 81 111 }
+	color_ui = rgb { 134 81 111 }
+}
+TRA = {
+	color = rgb { 125 126 82 }
+	color_ui = rgb { 125 126 82 }
+}
+MYS = {
+	color = rgb { 215 41 41 }
+	color_ui = rgb { 215 41 41 }
+}
+SND = {
+	color = rgb { 149 121 112 }
+	color_ui = rgb { 149 121 112 }
+}
 ######## CHANGED VANILLA COLORS
 GER = {
 	color = rgb { 100 100 100 }
