@@ -55,6 +55,10 @@ ideas = {
 				land_doctrine = -0.50
 				air_doctrine = -0.50
 			}
+			modifier = {
+			offence = -0.50
+			defence = -0.50
+			}
 		}
 	}
 }
